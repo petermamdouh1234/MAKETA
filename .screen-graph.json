@@ -1,0 +1,344 @@
+{
+  "nodes": [
+    {
+      "id": "src/screens/FrameScreen/FrameScreen.jsx",
+      "label": "FrameScreen",
+      "routes": [
+        "/",
+        "/frame-6",
+        "*"
+      ],
+      "isRoot": true
+    },
+    {
+      "id": "src/screens/ContactUs/ContactUs.jsx",
+      "label": "ContactUs",
+      "routes": [
+        "/contact-us"
+      ]
+    },
+    {
+      "id": "src/screens/OurWork/OurWork.jsx",
+      "label": "OurWork",
+      "routes": [
+        "/our-work"
+      ]
+    },
+    {
+      "id": "src/screens/OurServicesScreen/OurServicesScreen.jsx",
+      "label": "OurServicesScreen",
+      "routes": [
+        "/our-services-u45-marketing"
+      ]
+    },
+    {
+      "id": "src/screens/OurServicesWebApp/OurServicesWebApp.jsx",
+      "label": "OurServicesWebApp",
+      "routes": [
+        "/our-services-u45-web-u38-app"
+      ]
+    },
+    {
+      "id": "src/screens/OurServicesMedia/OurServicesMedia.jsx",
+      "label": "OurServicesMedia",
+      "routes": [
+        "/our-services-u45-media-production"
+      ]
+    },
+    {
+      "id": "src/screens/Screen6/Screen6.jsx",
+      "label": "Screen6",
+      "routes": [
+        "/our-services-u45-branding"
+      ]
+    },
+    {
+      "id": "src/screens/OurServicesMain/OurServicesMain.jsx",
+      "label": "OurServicesMain",
+      "routes": [
+        "/our-services-u45-main"
+      ]
+    },
+    {
+      "id": "src/screens/AboutUs/AboutUs.jsx",
+      "label": "AboutUs",
+      "routes": [
+        "/about-us"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "src\\screens\\FrameScreen\\FrameScreen.jsx:55:10-to-src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "source": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "target": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "data": {
+        "viaRoute": "/",
+        "trigger": {
+          "element": "<Link to=\"/\">\n            <img\n              className=\"w-[80px] h-[80px] md:w-[100px] md:h-[100px] lg:w-[120px] lg:h-[120px] object-cover hover:scale-105 transition-transform duration-300\"\n              alt=\"Maketa Agency Logo\"\n              src=\"https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png\"\n            />\n          </Link>",
+          "line": 55,
+          "endLine": 61,
+          "column": 10,
+          "endColumn": 17,
+          "sourceFile": "src\\screens\\FrameScreen\\FrameScreen.jsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\FrameScreen\\FrameScreen.jsx:128:14-to-src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "source": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "target": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "data": {
+        "viaRoute": "/",
+        "trigger": {
+          "element": "<Link to=\"/\" className=\"text-[#ffcc04] hover:text-[#ffdd44] transition-colors\">MAKETA</Link>",
+          "line": 128,
+          "endLine": 128,
+          "column": 14,
+          "endColumn": 106,
+          "sourceFile": "src\\screens\\FrameScreen\\FrameScreen.jsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\FrameScreen\\FrameScreen.jsx:166:8-to-src\\screens\\AboutUs\\AboutUs.jsx",
+      "source": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "target": "src\\screens\\AboutUs\\AboutUs.jsx",
+      "data": {
+        "viaRoute": "/about-us",
+        "trigger": {
+          "element": "<Link to=\"/about-us\" className=\"inline-block reveal-scale relative z-10\">\n          <h2 className=\"[font-family:'Bebas_Neue',Helvetica] font-normal text-white text-[80px] md:text-[100px] tracking-[0] leading-[normal] relative inline-block\">\n            DISCOVER \n            <span className=\"text-[#ffcc04] ml-4\">WHO WE ARE</span>\n            <span className=\"absolute bottom-0 left-0 w-full h-1 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300\"></span>\n          </h2>\n        </Link>",
+          "line": 166,
+          "endLine": 172,
+          "column": 8,
+          "endColumn": 15,
+          "sourceFile": "src\\screens\\FrameScreen\\FrameScreen.jsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\FrameScreen\\FrameScreen.jsx:181:14-to-src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "source": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "target": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "data": {
+        "viaRoute": "/",
+        "trigger": {
+          "element": "<Link to=\"/\"> {/* Ensure logo links to home */}\n                <img\n                  className=\"h-[191px] w-[191px] object-cover hover:scale-105 transition-transform duration-300\"\n                  alt=\"Logo\"\n                  src=\"https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png\"\n                />\n              </Link>",
+          "line": 181,
+          "endLine": 187,
+          "column": 14,
+          "endColumn": 21,
+          "sourceFile": "src\\screens\\FrameScreen\\FrameScreen.jsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\ContactUs\\ContactUs.jsx:66:8-to-src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "source": "src\\screens\\ContactUs\\ContactUs.jsx",
+      "target": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "data": {
+        "viaRoute": "/",
+        "trigger": {
+          "element": "<Link to=\"/\" className=\"reveal-left\">\n          <img\n            className=\"w-[120px] h-[100px] object-cover hover:scale-105 transition-transform duration-300\"\n            alt=\"Logo copy\"\n            src=\"https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png\"\n          />\n        </Link>",
+          "line": 66,
+          "endLine": 72,
+          "column": 8,
+          "endColumn": 15,
+          "sourceFile": "src\\screens\\ContactUs\\ContactUs.jsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\OurWork\\OurWork.jsx:81:8-to-src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "source": "src\\screens\\OurWork\\OurWork.jsx",
+      "target": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "data": {
+        "viaRoute": "/",
+        "trigger": {
+          "element": "<Link to=\"/\">\n          <img\n            className=\"h-[100px] w-[120px] object-contain hover:scale-105 transition-transform duration-300\"\n            alt=\"Logo\"\n            src=\"https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png\"\n          />\n        </Link>",
+          "line": 81,
+          "endLine": 87,
+          "column": 8,
+          "endColumn": 15,
+          "sourceFile": "src\\screens\\OurWork\\OurWork.jsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\OurServicesScreen\\OurServicesScreen.jsx:76:8-to-src\\screens\\ContactUs\\ContactUs.jsx",
+      "source": "src\\screens\\OurServicesScreen\\OurServicesScreen.jsx",
+      "target": "src\\screens\\ContactUs\\ContactUs.jsx",
+      "data": {
+        "viaRoute": "/contact-us",
+        "trigger": {
+          "element": "<Link\n          className=\"[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[24px] md:text-[35px] lg:text-[45px] text-center tracking-[0] leading-[1.2] underline block translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1600ms] hover:text-[#ffcc04]/80 transition-colors px-4\"\n          to=\"/contact-us\"\n        >\n          LET&apos;S START YOUR CAMPAIGN\n        </Link>",
+          "line": 76,
+          "endLine": 81,
+          "column": 8,
+          "endColumn": 15,
+          "sourceFile": "src\\screens\\OurServicesScreen\\OurServicesScreen.jsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\OurServicesMain\\sections\\Group3Subsection\\Group3Subsection.jsx:45:12-to-src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "source": "src\\screens\\OurServicesScreen\\OurServicesScreen.jsx",
+      "target": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "data": {
+        "viaRoute": "/",
+        "trigger": {
+          "element": "<Link to=\"/\">\n              <img\n                className=\"h-[191px] w-[191px] object-cover hover:scale-105 transition-transform duration-300\"\n                alt=\"Logo\"\n                src=\"https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png\"\n              />\n            </Link>",
+          "line": 45,
+          "endLine": 51,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src\\screens\\OurServicesMain\\sections\\Group3Subsection\\Group3Subsection.jsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\OurServicesWebApp\\OurServicesWebApp.jsx:115:8-to-src\\screens\\ContactUs\\ContactUs.jsx",
+      "source": "src\\screens\\OurServicesWebApp\\OurServicesWebApp.jsx",
+      "target": "src\\screens\\ContactUs\\ContactUs.jsx",
+      "data": {
+        "viaRoute": "/contact-us",
+        "trigger": {
+          "element": "<Link\n          className=\"[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[45px] text-center tracking-[0] leading-[30px] underline block translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1800ms] hover:text-[#ffdd44] transition-colors duration-300\"\n          to=\"/contact-us\"\n        >\n          START YOUR PROJECT TODAY\n        </Link>",
+          "line": 115,
+          "endLine": 120,
+          "column": 8,
+          "endColumn": 15,
+          "sourceFile": "src\\screens\\OurServicesWebApp\\OurServicesWebApp.jsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\OurServicesMain\\sections\\Group3Subsection\\Group3Subsection.jsx:45:12-to-src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "source": "src\\screens\\OurServicesScreen\\OurServicesScreen.jsx",
+      "target": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "data": {
+        "viaRoute": "/",
+        "trigger": {
+          "element": "<Link to=\"/\">\n              <img\n                className=\"h-[191px] w-[191px] object-cover hover:scale-105 transition-transform duration-300\"\n                alt=\"Logo\"\n                src=\"https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png\"\n              />\n            </Link>",
+          "line": 45,
+          "endLine": 51,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src\\screens\\OurServicesMain\\sections\\Group3Subsection\\Group3Subsection.jsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\OurServicesMedia\\OurServicesMedia.jsx:84:8-to-src\\screens\\ContactUs\\ContactUs.jsx",
+      "source": "src\\screens\\OurServicesMedia\\OurServicesMedia.jsx",
+      "target": "src\\screens\\ContactUs\\ContactUs.jsx",
+      "data": {
+        "viaRoute": "/contact-us",
+        "trigger": {
+          "element": "<Link\n          to=\"/contact-us\"\n          className=\"[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[45px] text-center tracking-[0] leading-[30px] underline block translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1800ms] hover:text-[#ffcc04]/80 transition-colors\"\n        >\n          LET&apos;S CREATE TOGETHER\n        </Link>",
+          "line": 84,
+          "endLine": 89,
+          "column": 8,
+          "endColumn": 15,
+          "sourceFile": "src\\screens\\OurServicesMedia\\OurServicesMedia.jsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\OurServicesMain\\sections\\Group3Subsection\\Group3Subsection.jsx:45:12-to-src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "source": "src\\screens\\OurServicesScreen\\OurServicesScreen.jsx",
+      "target": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "data": {
+        "viaRoute": "/",
+        "trigger": {
+          "element": "<Link to=\"/\">\n              <img\n                className=\"h-[191px] w-[191px] object-cover hover:scale-105 transition-transform duration-300\"\n                alt=\"Logo\"\n                src=\"https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png\"\n              />\n            </Link>",
+          "line": 45,
+          "endLine": 51,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src\\screens\\OurServicesMain\\sections\\Group3Subsection\\Group3Subsection.jsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\Screen6\\Screen6.jsx:83:8-to-src\\screens\\ContactUs\\ContactUs.jsx",
+      "source": "src\\screens\\Screen6\\Screen6.jsx",
+      "target": "src\\screens\\ContactUs\\ContactUs.jsx",
+      "data": {
+        "viaRoute": "/contact-us",
+        "trigger": {
+          "element": "<Link\n          className=\"[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[24px] md:text-[35px] lg:text-[45px] text-center tracking-[0] leading-[1.2] underline block translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1800ms] hover:text-[#ffdd33] transition-colors duration-300 px-4\"\n          to=\"/contact-us\"\n        >\n          LET&apos;S CRAFT YOUR IDENTITY\n        </Link>",
+          "line": 83,
+          "endLine": 88,
+          "column": 8,
+          "endColumn": 15,
+          "sourceFile": "src\\screens\\Screen6\\Screen6.jsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\OurServicesMain\\sections\\Group3Subsection\\Group3Subsection.jsx:45:12-to-src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "source": "src\\screens\\OurServicesScreen\\OurServicesScreen.jsx",
+      "target": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "data": {
+        "viaRoute": "/",
+        "trigger": {
+          "element": "<Link to=\"/\">\n              <img\n                className=\"h-[191px] w-[191px] object-cover hover:scale-105 transition-transform duration-300\"\n                alt=\"Logo\"\n                src=\"https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png\"\n              />\n            </Link>",
+          "line": 45,
+          "endLine": 51,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src\\screens\\OurServicesMain\\sections\\Group3Subsection\\Group3Subsection.jsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\OurServicesMain\\OurServicesMain.jsx:73:16-to-src\\screens\\ContactUs\\ContactUs.jsx",
+      "source": "src\\screens\\OurServicesMain\\OurServicesMain.jsx",
+      "target": "src\\screens\\ContactUs\\ContactUs.jsx",
+      "data": {
+        "viaRoute": "/contact-us",
+        "trigger": {
+          "element": "<Link\n                  to=\"/contact-us\"\n                  className=\"[font-family:'Poppins',Helvetica] font-medium text-sm md:text-base text-center tracking-[0] leading-[normal]\"\n                >\n                  Let&apos;s Discuss\n                </Link>",
+          "line": 73,
+          "endLine": 78,
+          "column": 16,
+          "endColumn": 23,
+          "sourceFile": "src\\screens\\OurServicesMain\\OurServicesMain.jsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\OurServicesMain\\sections\\Group3Subsection\\Group3Subsection.jsx:45:12-to-src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "source": "src\\screens\\OurServicesScreen\\OurServicesScreen.jsx",
+      "target": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "data": {
+        "viaRoute": "/",
+        "trigger": {
+          "element": "<Link to=\"/\">\n              <img\n                className=\"h-[191px] w-[191px] object-cover hover:scale-105 transition-transform duration-300\"\n                alt=\"Logo\"\n                src=\"https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png\"\n              />\n            </Link>",
+          "line": 45,
+          "endLine": 51,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src\\screens\\OurServicesMain\\sections\\Group3Subsection\\Group3Subsection.jsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\AboutUs\\AboutUs.jsx:596:16-to-src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "source": "src\\screens\\AboutUs\\AboutUs.jsx",
+      "target": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "data": {
+        "viaRoute": "/",
+        "trigger": {
+          "element": "<Link to=\"/\">\n                  <img\n                    className=\"h-[191px] w-[191px] object-cover hover:scale-105 transition-transform duration-300\"\n                    alt=\"Logo\"\n                    src=\"https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png\"\n                  />\n                </Link>",
+          "line": 596,
+          "endLine": 602,
+          "column": 16,
+          "endColumn": 23,
+          "sourceFile": "src\\screens\\AboutUs\\AboutUs.jsx"
+        }
+      }
+    }
+  ]
+}

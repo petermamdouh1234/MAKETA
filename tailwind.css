@@ -1,0 +1,309 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --body-default-font-family: "DM Sans", Helvetica;
+  --body-default-font-size: 18px;
+  --body-default-font-style: normal;
+  --body-default-font-weight: 400;
+  --body-default-letter-spacing: 0px;
+  --body-default-line-height: 30px;
+  --neutral-100: rgba(255, 255, 255, 1);
+  --neutral-colors-100: rgba(255, 255, 255, 1);
+  --neutral-colors800: rgba(30, 40, 95, 1);
+  --text-single-200-regular-font-family: "DM Sans", Helvetica;
+  --text-single-200-regular-font-size: 18px;
+  --text-single-200-regular-font-style: normal;
+  --text-single-200-regular-font-weight: 400;
+  --text-single-200-regular-letter-spacing: 0px;
+  --text-single-200-regular-line-height: 18px;
+  --text-single-300-bold-font-family: "DM Sans", Helvetica;
+  --text-single-300-bold-font-size: 20px;
+  --text-single-300-bold-font-style: normal;
+  --text-single-300-bold-font-weight: 700;
+  --text-single-300-bold-letter-spacing: 0px;
+  --text-single-300-bold-line-height: 20px;
+}
+
+:root {
+  --animate-spin: spin 1s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-fade-up {
+  animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) infinite linear;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 8s infinite;
+}
+
+.animate-spin {
+  animation: var(--animate-spin);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes image-glow {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+  }
+
+  10% {
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  90%,
+  to {
+    background-position: calc(-100% - var(--shimmer-width)) 0;
+  }
+
+  30%,
+  60% {
+    background-position: calc(100% + var(--shimmer-width)) 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+
+    --card: transparent;
+    --card-foreground: 0 0% 100%;
+
+    --primary: 45 100% 60%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 45 100% 60%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --ring: 45 100% 60%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 45 100% 60%;
+    --accent-foreground: 0 0% 0%;
+
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+
+    --card: transparent;
+    --card-foreground: 0 0% 100%;
+
+    --primary: 45 100% 60%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 100%;
+
+    --ring: 45 100% 60%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+  }
+
+  body {
+    @apply bg-black text-white;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
+    font-size: 16px;
+  }
+
+  /* Reset any fixed widths that cause zoom issues */
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hover-glow:hover {
+    box-shadow: 0 0 20px rgba(255, 204, 4, 0.3);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-bounce-subtle {
+    animation: bounce-subtle 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-slow {
+    0%, 100% {
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+
+  @keyframes bounce-subtle {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+
+  /* Responsive text utilities */
+  .text-responsive-hero {
+    font-size: clamp(80px, 8vw, 250px);
+  }
+
+  .text-responsive-title {
+    font-size: clamp(40px, 5vw, 120px);
+  }
+
+  .text-responsive-heading {
+    font-size: clamp(28px, 3.5vw, 45px);
+  }
+
+  .text-responsive-body {
+    font-size: clamp(14px, 1.5vw, 25px);
+  }
+
+  .text-responsive-small {
+    font-size: clamp(12px, 1.2vw, 18px);
+  }
+
+  /* Container responsive utilities */
+  .container-responsive {
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: clamp(16px, 4vw, 64px);
+    padding-right: clamp(16px, 4vw, 64px);
+  }
+}
