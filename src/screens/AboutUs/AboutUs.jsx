@@ -422,58 +422,73 @@ export const AboutUs = () => {
 
       {/* Clients Section */}
       <section id="our-clients" className="relative px-8 py-16 min-h-[1000px]">
-        <div className="relative max-w-[1920px] mx-auto">
-          {/* "Our" text */}
-          <div 
-            className="absolute reveal-stagger"
-            style={{ 
-              left: '600px', 
-              top: '0px'
-            }}
-          >
-            <h2 
-              className="[font-family:'Bebas_Neue',Helvetica] font-normal text-[#ffcc04] tracking-[0] leading-[0.8]"
-              style={{ fontSize: '480px' }}
-            >
-              Our
-            </h2>
-          </div>
+        <div className="relative max-w-[1440px] mx-auto">
+         {/* "Our" text */}
+<div 
+  className="absolute reveal-stagger"
+  style={{ 
+    left: '50%',
+    top: '0px',
+    transform: 'translateX(-50%)',
+    width: '90%',
+    display: 'flex',
+    justifyContent: 'left',
+    paddingBottom: '50px'
+  }}
+>
+  <h2 
+    className="[font-family:'Bebas_Neue',Helvetica] font-normal text-[#ffff] tracking-[0] leading-[0.8]"
+    style={{ fontSize: '280px', margin: 0, whiteSpace: 'nowrap' }}
+  >
+    Our
+  </h2>
+</div>
 
-          {/* "Clients" text */}
-          <div 
-            className="absolute reveal-stagger"
-            style={{ 
-              left: '861px', 
-              top: '303px'
-            }}
-          >
-            <h2 
-              className="[font-family:'Bebas_Neue',Helvetica] font-normal text-[#ffcc04] tracking-[0] leading-[0.8]"
-              style={{ fontSize: '480px' }}
-            >
-              Clients
-            </h2>
-          </div>
+{/* "Clients" text */}
+<div 
+  className="absolute reveal-stagger"
+  style={{ 
+    left: '50%',
+    top: '300px',
+    transform: 'translateX(-50%)',
+    width: '80%',
+    display: 'flex',
+    justifyContent: 'right',
+    paddingBottom: '200px'
 
-          {/* Description text */}
-          <div 
-            className="absolute reveal-up"
-            style={{ 
-              left: '84px', 
-              top: '463px',
-              width: '563px'
-            }}
-          >
-            <p className="[font-family:'Gilroy-Medium-Medium',Helvetica] font-medium text-white text-xl tracking-[0] leading-[30px]">
-              OVER THE YEARS, WE&apos;VE PARTNERED WITH AMBITIOUS BRANDS THAT TRUSTED
-              US TO DECLARE THEIR PRESENCE. FROM LOCAL BUSINESSES TO INTERNATIONAL
-              NAMES, OUR CLIENTS ARE PROOF THAT WHEN CREATIVITY MEETS STRATEGY,
-              AMAZING THINGS HAPPEN.
-            </p>
-          </div>
+  }}
+>
+  <h2 
+    className="[font-family:'Bebas_Neue',Helvetica] font-normal text-[#ffcc04] tracking-[0] leading-[0.8]"
+    style={{ fontSize: '280px', margin: 0, whiteSpace: 'nowrap' }}
+  >
+    Clients
+  </h2>
+</div>
+
+{/* Description text */}
+<div 
+  className="absolute reveal-up"
+  style={{ 
+    left: '50%',
+    top: '463px',
+    transform: 'translateX(-50%)',
+    width: '30%',
+    maxWidth: '90vw',
+    paddingBottom: '100px',
+    margin: '200px',
+  }}>
+
+  <p className="[font-family:'Gilroy-Medium-Medium',Helvetica] font-medium text-white text-xl tracking-[0] leading-[30px] paddingTop-[100px]">
+    OVER THE YEARS, WE&apos;VE PARTNERED WITH AMBITIOUS BRANDS THAT TRUSTED
+    US TO DECLARE THEIR PRESENCE. FROM LOCAL BUSINESSES TO INTERNATIONAL
+    NAMES, OUR CLIENTS ARE PROOF THAT WHEN CREATIVITY MEETS STRATEGY,
+    AMAZING THINGS HAPPEN.
+  </p>
+</div>
 
           {/* Client logos section */}
-          <div className="absolute reveal-fade" style={{ top: '700px', left: '0', right: '0' }}>
+          <div className="absolute reveal-fade" style={{ paddingTop:'auto' , top: '700px', left: '0', right: '0' }}>
             <section className="w-full h-32 overflow-hidden relative translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
               <div
                 className="flex items-center gap-[23px] px-0 py-[22px] h-32 animate-marquee"

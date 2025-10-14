@@ -1,0 +1,126 @@
+/* src/index.css */
+
+/* Rockybilly Font */
+@font-face {
+  font-family: 'Rockybilly'; /* Using 'Rockybilly' as the primary name now */
+  src: local('Rockybilly'),
+       url('./fonts/Rockybilly.ttf') format('truetype'),
+       /* Add other formats like .woff, .woff2 for better browser support */
+       url('./fonts/Rockybilly.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Bebas Neue Font */
+@font-face {
+  font-family: 'Bebas Neue';
+  src: local('Bebas Neue'),
+       url('./fonts/BebasNeue-Regular.ttf') format('truetype'),
+       url('./fonts/BebasNeue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Gilroy Fonts */
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy-Medium'),
+       url('./fonts/Gilroy-Medium.ttf') format('truetype');
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy-Bold'),
+       url('./fonts/Gilroy-Bold.ttf') format('truetype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy-ExtraBold'),
+       url('./fonts/Gilroy-ExtraBold.ttf') format('truetype');
+  font-weight: 800; /* ExtraBold */
+  font-style: normal;
+}
+
+/* Inter Font */
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter-Regular'),
+       url('./fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Playfair Display Font */
+@font-face {
+  font-family: 'Playfair Display';
+  src: local('Playfair Display'),
+       url('./fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Roboto Slab Font */
+@font-face {
+  font-family: 'Roboto Slab';
+  src: local('Roboto Slab'),
+       url('./fonts/RobotoSlab-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Utility classes for responsive text sizes as seen in the design */
+.text-responsive-title {
+  font-size: 100px; /* Base for larger screens */
+  line-height: 0.8;
+}
+@media (min-width: 768px) {
+  .text-responsive-title {
+    font-size: 150px;
+  }
+}
+@media (min-width: 1024px) {
+  .text-responsive-title {
+    font-size: 200px; /* Adjust as per actual design scale */
+  }
+}
+
+.text-responsive-hero {
+  font-size: 120px; /* Base for larger screens */
+  line-height: 0.8;
+}
+@media (min-width: 768px) {
+  .text-responsive-hero {
+    font-size: 180px;
+  }
+}
+@media (min-width: 1024px) {
+  .text-responsive-hero {
+    font-size: 240px; /* Adjust as per actual design scale */
+  }
+}
+
+
+/* Basic animations (assuming you have more complex ones elsewhere) */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-1rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards var(--animation-delay, 0s);
+}
+
+/* Marquee animation for client logos */
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-50% - var(--gap))); }
+}
+
+.animate-marquee {
+    animation: marquee var(--duration, 30s) linear infinite;
+}
+
+/* Other animations like reveal-up, reveal-fade, reveal-scale, reveal-stagger should be defined */
+/* For brevity, I'll assume they are defined elsewhere or will be simple fades/transforms */

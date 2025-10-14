@@ -69,9 +69,9 @@
   ],
   "edges": [
     {
-      "id": "src\\screens\\FrameScreen\\FrameScreen.jsx:55:10-to-src\\screens\\FrameScreen\\FrameScreen.jsx",
-      "source": "src\\screens\\FrameScreen\\FrameScreen.jsx",
-      "target": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "id": "src/screens/FrameScreen/FrameScreen.jsx:55:10-to-src/screens/FrameScreen/FrameScreen.jsx",
+      "source": "src/screens/FrameScreen/FrameScreen.jsx",
+      "target": "src/screens/FrameScreen/FrameScreen.jsx",
       "data": {
         "viaRoute": "/",
         "trigger": {
@@ -80,62 +80,46 @@
           "endLine": 61,
           "column": 10,
           "endColumn": 17,
-          "sourceFile": "src\\screens\\FrameScreen\\FrameScreen.jsx"
+          "sourceFile": "src/screens/FrameScreen/FrameScreen.jsx"
         }
       }
     },
     {
-      "id": "src\\screens\\FrameScreen\\FrameScreen.jsx:128:14-to-src\\screens\\FrameScreen\\FrameScreen.jsx",
-      "source": "src\\screens\\FrameScreen\\FrameScreen.jsx",
-      "target": "src\\screens\\FrameScreen\\FrameScreen.jsx",
-      "data": {
-        "viaRoute": "/",
-        "trigger": {
-          "element": "<Link to=\"/\" className=\"text-[#ffcc04] hover:text-[#ffdd44] transition-colors\">MAKETA</Link>",
-          "line": 128,
-          "endLine": 128,
-          "column": 14,
-          "endColumn": 106,
-          "sourceFile": "src\\screens\\FrameScreen\\FrameScreen.jsx"
-        }
-      }
-    },
-    {
-      "id": "src\\screens\\FrameScreen\\FrameScreen.jsx:166:8-to-src\\screens\\AboutUs\\AboutUs.jsx",
-      "source": "src\\screens\\FrameScreen\\FrameScreen.jsx",
-      "target": "src\\screens\\AboutUs\\AboutUs.jsx",
+      "id": "src/screens/FrameScreen/FrameScreen.jsx:208:8-to-src/screens/AboutUs/AboutUs.jsx",
+      "source": "src/screens/FrameScreen/FrameScreen.jsx",
+      "target": "src/screens/AboutUs/AboutUs.jsx",
       "data": {
         "viaRoute": "/about-us",
         "trigger": {
           "element": "<Link to=\"/about-us\" className=\"inline-block reveal-scale relative z-10\">\n          <h2 className=\"[font-family:'Bebas_Neue',Helvetica] font-normal text-white text-[80px] md:text-[100px] tracking-[0] leading-[normal] relative inline-block\">\n            DISCOVER \n            <span className=\"text-[#ffcc04] ml-4\">WHO WE ARE</span>\n            <span className=\"absolute bottom-0 left-0 w-full h-1 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300\"></span>\n          </h2>\n        </Link>",
-          "line": 166,
-          "endLine": 172,
+          "line": 208,
+          "endLine": 214,
           "column": 8,
           "endColumn": 15,
-          "sourceFile": "src\\screens\\FrameScreen\\FrameScreen.jsx"
+          "sourceFile": "src/screens/FrameScreen/FrameScreen.jsx"
         }
       }
     },
     {
-      "id": "src\\screens\\FrameScreen\\FrameScreen.jsx:181:14-to-src\\screens\\FrameScreen\\FrameScreen.jsx",
-      "source": "src\\screens\\FrameScreen\\FrameScreen.jsx",
-      "target": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "id": "src/screens/FrameScreen/FrameScreen.jsx:223:14-to-src/screens/FrameScreen/FrameScreen.jsx",
+      "source": "src/screens/FrameScreen/FrameScreen.jsx",
+      "target": "src/screens/FrameScreen/FrameScreen.jsx",
       "data": {
         "viaRoute": "/",
         "trigger": {
           "element": "<Link to=\"/\"> {/* Ensure logo links to home */}\n                <img\n                  className=\"h-[191px] w-[191px] object-cover hover:scale-105 transition-transform duration-300\"\n                  alt=\"Logo\"\n                  src=\"https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png\"\n                />\n              </Link>",
-          "line": 181,
-          "endLine": 187,
+          "line": 223,
+          "endLine": 229,
           "column": 14,
           "endColumn": 21,
-          "sourceFile": "src\\screens\\FrameScreen\\FrameScreen.jsx"
+          "sourceFile": "src/screens/FrameScreen/FrameScreen.jsx"
         }
       }
     },
     {
-      "id": "src\\screens\\ContactUs\\ContactUs.jsx:66:8-to-src\\screens\\FrameScreen\\FrameScreen.jsx",
-      "source": "src\\screens\\ContactUs\\ContactUs.jsx",
-      "target": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "id": "src/screens/ContactUs/ContactUs.jsx:66:8-to-src/screens/FrameScreen/FrameScreen.jsx",
+      "source": "src/screens/ContactUs/ContactUs.jsx",
+      "target": "src/screens/FrameScreen/FrameScreen.jsx",
       "data": {
         "viaRoute": "/",
         "trigger": {
@@ -144,14 +128,14 @@
           "endLine": 72,
           "column": 8,
           "endColumn": 15,
-          "sourceFile": "src\\screens\\ContactUs\\ContactUs.jsx"
+          "sourceFile": "src/screens/ContactUs/ContactUs.jsx"
         }
       }
     },
     {
-      "id": "src\\screens\\OurWork\\OurWork.jsx:81:8-to-src\\screens\\FrameScreen\\FrameScreen.jsx",
-      "source": "src\\screens\\OurWork\\OurWork.jsx",
-      "target": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "id": "src/screens/OurWork/OurWork.jsx:81:8-to-src/screens/FrameScreen/FrameScreen.jsx",
+      "source": "src/screens/OurWork/OurWork.jsx",
+      "target": "src/screens/FrameScreen/FrameScreen.jsx",
       "data": {
         "viaRoute": "/",
         "trigger": {
@@ -160,14 +144,14 @@
           "endLine": 87,
           "column": 8,
           "endColumn": 15,
-          "sourceFile": "src\\screens\\OurWork\\OurWork.jsx"
+          "sourceFile": "src/screens/OurWork/OurWork.jsx"
         }
       }
     },
     {
-      "id": "src\\screens\\OurServicesScreen\\OurServicesScreen.jsx:76:8-to-src\\screens\\ContactUs\\ContactUs.jsx",
-      "source": "src\\screens\\OurServicesScreen\\OurServicesScreen.jsx",
-      "target": "src\\screens\\ContactUs\\ContactUs.jsx",
+      "id": "src/screens/OurServicesScreen/OurServicesScreen.jsx:76:8-to-src/screens/ContactUs/ContactUs.jsx",
+      "source": "src/screens/OurServicesScreen/OurServicesScreen.jsx",
+      "target": "src/screens/ContactUs/ContactUs.jsx",
       "data": {
         "viaRoute": "/contact-us",
         "trigger": {
@@ -176,14 +160,14 @@
           "endLine": 81,
           "column": 8,
           "endColumn": 15,
-          "sourceFile": "src\\screens\\OurServicesScreen\\OurServicesScreen.jsx"
+          "sourceFile": "src/screens/OurServicesScreen/OurServicesScreen.jsx"
         }
       }
     },
     {
-      "id": "src\\screens\\OurServicesMain\\sections\\Group3Subsection\\Group3Subsection.jsx:45:12-to-src\\screens\\FrameScreen\\FrameScreen.jsx",
-      "source": "src\\screens\\OurServicesScreen\\OurServicesScreen.jsx",
-      "target": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "id": "src/screens/OurServicesMain/sections/Group3Subsection/Group3Subsection.jsx:45:12-to-src/screens/FrameScreen/FrameScreen.jsx",
+      "source": "src/screens/OurServicesScreen/OurServicesScreen.jsx",
+      "target": "src/screens/FrameScreen/FrameScreen.jsx",
       "data": {
         "viaRoute": "/",
         "trigger": {
@@ -192,14 +176,14 @@
           "endLine": 51,
           "column": 12,
           "endColumn": 19,
-          "sourceFile": "src\\screens\\OurServicesMain\\sections\\Group3Subsection\\Group3Subsection.jsx"
+          "sourceFile": "src/screens/OurServicesMain/sections/Group3Subsection/Group3Subsection.jsx"
         }
       }
     },
     {
-      "id": "src\\screens\\OurServicesWebApp\\OurServicesWebApp.jsx:115:8-to-src\\screens\\ContactUs\\ContactUs.jsx",
-      "source": "src\\screens\\OurServicesWebApp\\OurServicesWebApp.jsx",
-      "target": "src\\screens\\ContactUs\\ContactUs.jsx",
+      "id": "src/screens/OurServicesWebApp/OurServicesWebApp.jsx:115:8-to-src/screens/ContactUs/ContactUs.jsx",
+      "source": "src/screens/OurServicesWebApp/OurServicesWebApp.jsx",
+      "target": "src/screens/ContactUs/ContactUs.jsx",
       "data": {
         "viaRoute": "/contact-us",
         "trigger": {
@@ -208,14 +192,14 @@
           "endLine": 120,
           "column": 8,
           "endColumn": 15,
-          "sourceFile": "src\\screens\\OurServicesWebApp\\OurServicesWebApp.jsx"
+          "sourceFile": "src/screens/OurServicesWebApp/OurServicesWebApp.jsx"
         }
       }
     },
     {
-      "id": "src\\screens\\OurServicesMain\\sections\\Group3Subsection\\Group3Subsection.jsx:45:12-to-src\\screens\\FrameScreen\\FrameScreen.jsx",
-      "source": "src\\screens\\OurServicesScreen\\OurServicesScreen.jsx",
-      "target": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "id": "src/screens/OurServicesMain/sections/Group3Subsection/Group3Subsection.jsx:45:12-to-src/screens/FrameScreen/FrameScreen.jsx",
+      "source": "src/screens/OurServicesScreen/OurServicesScreen.jsx",
+      "target": "src/screens/FrameScreen/FrameScreen.jsx",
       "data": {
         "viaRoute": "/",
         "trigger": {
@@ -224,14 +208,14 @@
           "endLine": 51,
           "column": 12,
           "endColumn": 19,
-          "sourceFile": "src\\screens\\OurServicesMain\\sections\\Group3Subsection\\Group3Subsection.jsx"
+          "sourceFile": "src/screens/OurServicesMain/sections/Group3Subsection/Group3Subsection.jsx"
         }
       }
     },
     {
-      "id": "src\\screens\\OurServicesMedia\\OurServicesMedia.jsx:84:8-to-src\\screens\\ContactUs\\ContactUs.jsx",
-      "source": "src\\screens\\OurServicesMedia\\OurServicesMedia.jsx",
-      "target": "src\\screens\\ContactUs\\ContactUs.jsx",
+      "id": "src/screens/OurServicesMedia/OurServicesMedia.jsx:84:8-to-src/screens/ContactUs/ContactUs.jsx",
+      "source": "src/screens/OurServicesMedia/OurServicesMedia.jsx",
+      "target": "src/screens/ContactUs/ContactUs.jsx",
       "data": {
         "viaRoute": "/contact-us",
         "trigger": {
@@ -240,14 +224,14 @@
           "endLine": 89,
           "column": 8,
           "endColumn": 15,
-          "sourceFile": "src\\screens\\OurServicesMedia\\OurServicesMedia.jsx"
+          "sourceFile": "src/screens/OurServicesMedia/OurServicesMedia.jsx"
         }
       }
     },
     {
-      "id": "src\\screens\\OurServicesMain\\sections\\Group3Subsection\\Group3Subsection.jsx:45:12-to-src\\screens\\FrameScreen\\FrameScreen.jsx",
-      "source": "src\\screens\\OurServicesScreen\\OurServicesScreen.jsx",
-      "target": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "id": "src/screens/OurServicesMain/sections/Group3Subsection/Group3Subsection.jsx:45:12-to-src/screens/FrameScreen/FrameScreen.jsx",
+      "source": "src/screens/OurServicesScreen/OurServicesScreen.jsx",
+      "target": "src/screens/FrameScreen/FrameScreen.jsx",
       "data": {
         "viaRoute": "/",
         "trigger": {
@@ -256,14 +240,14 @@
           "endLine": 51,
           "column": 12,
           "endColumn": 19,
-          "sourceFile": "src\\screens\\OurServicesMain\\sections\\Group3Subsection\\Group3Subsection.jsx"
+          "sourceFile": "src/screens/OurServicesMain/sections/Group3Subsection/Group3Subsection.jsx"
         }
       }
     },
     {
-      "id": "src\\screens\\Screen6\\Screen6.jsx:83:8-to-src\\screens\\ContactUs\\ContactUs.jsx",
-      "source": "src\\screens\\Screen6\\Screen6.jsx",
-      "target": "src\\screens\\ContactUs\\ContactUs.jsx",
+      "id": "src/screens/Screen6/Screen6.jsx:83:8-to-src/screens/ContactUs/ContactUs.jsx",
+      "source": "src/screens/Screen6/Screen6.jsx",
+      "target": "src/screens/ContactUs/ContactUs.jsx",
       "data": {
         "viaRoute": "/contact-us",
         "trigger": {
@@ -272,14 +256,14 @@
           "endLine": 88,
           "column": 8,
           "endColumn": 15,
-          "sourceFile": "src\\screens\\Screen6\\Screen6.jsx"
+          "sourceFile": "src/screens/Screen6/Screen6.jsx"
         }
       }
     },
     {
-      "id": "src\\screens\\OurServicesMain\\sections\\Group3Subsection\\Group3Subsection.jsx:45:12-to-src\\screens\\FrameScreen\\FrameScreen.jsx",
-      "source": "src\\screens\\OurServicesScreen\\OurServicesScreen.jsx",
-      "target": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "id": "src/screens/OurServicesMain/sections/Group3Subsection/Group3Subsection.jsx:45:12-to-src/screens/FrameScreen/FrameScreen.jsx",
+      "source": "src/screens/OurServicesScreen/OurServicesScreen.jsx",
+      "target": "src/screens/FrameScreen/FrameScreen.jsx",
       "data": {
         "viaRoute": "/",
         "trigger": {
@@ -288,14 +272,14 @@
           "endLine": 51,
           "column": 12,
           "endColumn": 19,
-          "sourceFile": "src\\screens\\OurServicesMain\\sections\\Group3Subsection\\Group3Subsection.jsx"
+          "sourceFile": "src/screens/OurServicesMain/sections/Group3Subsection/Group3Subsection.jsx"
         }
       }
     },
     {
-      "id": "src\\screens\\OurServicesMain\\OurServicesMain.jsx:73:16-to-src\\screens\\ContactUs\\ContactUs.jsx",
-      "source": "src\\screens\\OurServicesMain\\OurServicesMain.jsx",
-      "target": "src\\screens\\ContactUs\\ContactUs.jsx",
+      "id": "src/screens/OurServicesMain/OurServicesMain.jsx:73:16-to-src/screens/ContactUs/ContactUs.jsx",
+      "source": "src/screens/OurServicesMain/OurServicesMain.jsx",
+      "target": "src/screens/ContactUs/ContactUs.jsx",
       "data": {
         "viaRoute": "/contact-us",
         "trigger": {
@@ -304,14 +288,14 @@
           "endLine": 78,
           "column": 16,
           "endColumn": 23,
-          "sourceFile": "src\\screens\\OurServicesMain\\OurServicesMain.jsx"
+          "sourceFile": "src/screens/OurServicesMain/OurServicesMain.jsx"
         }
       }
     },
     {
-      "id": "src\\screens\\OurServicesMain\\sections\\Group3Subsection\\Group3Subsection.jsx:45:12-to-src\\screens\\FrameScreen\\FrameScreen.jsx",
-      "source": "src\\screens\\OurServicesScreen\\OurServicesScreen.jsx",
-      "target": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "id": "src/screens/OurServicesMain/sections/Group3Subsection/Group3Subsection.jsx:45:12-to-src/screens/FrameScreen/FrameScreen.jsx",
+      "source": "src/screens/OurServicesScreen/OurServicesScreen.jsx",
+      "target": "src/screens/FrameScreen/FrameScreen.jsx",
       "data": {
         "viaRoute": "/",
         "trigger": {
@@ -320,23 +304,23 @@
           "endLine": 51,
           "column": 12,
           "endColumn": 19,
-          "sourceFile": "src\\screens\\OurServicesMain\\sections\\Group3Subsection\\Group3Subsection.jsx"
+          "sourceFile": "src/screens/OurServicesMain/sections/Group3Subsection/Group3Subsection.jsx"
         }
       }
     },
     {
-      "id": "src\\screens\\AboutUs\\AboutUs.jsx:596:16-to-src\\screens\\FrameScreen\\FrameScreen.jsx",
-      "source": "src\\screens\\AboutUs\\AboutUs.jsx",
-      "target": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "id": "src/screens/AboutUs/AboutUs.jsx:457:32-to-src/screens/FrameScreen/FrameScreen.jsx",
+      "source": "src/screens/AboutUs/AboutUs.jsx",
+      "target": "src/screens/FrameScreen/FrameScreen.jsx",
       "data": {
         "viaRoute": "/",
         "trigger": {
-          "element": "<Link to=\"/\">\n                  <img\n                    className=\"h-[191px] w-[191px] object-cover hover:scale-105 transition-transform duration-300\"\n                    alt=\"Logo\"\n                    src=\"https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png\"\n                  />\n                </Link>",
-          "line": 596,
-          "endLine": 602,
-          "column": 16,
-          "endColumn": 23,
-          "sourceFile": "src\\screens\\AboutUs\\AboutUs.jsx"
+          "element": "<Link to=\"/\">\n                                    <img\n                                        className=\"h-[191px] w-[191px] object-cover hover:scale-105 transition-transform duration-300\"\n                                        alt=\"Logo\"\n                                        src=\"https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png\"\n                                    />\n                                </Link>",
+          "line": 457,
+          "endLine": 463,
+          "column": 32,
+          "endColumn": 39,
+          "sourceFile": "src/screens/AboutUs/AboutUs.jsx"
         }
       }
     }

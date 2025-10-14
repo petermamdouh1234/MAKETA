@@ -53,6 +53,7 @@ module.exports = {
         },
       },
       fontFamily: {
+        // Existing font families
         "body-default": "var(--body-default-font-family)",
         "text-single-200-regular": "var(--text-single-200-regular-font-family)",
         "text-single-300-bold": "var(--text-single-300-bold-font-family)",
@@ -65,6 +66,14 @@ module.exports = {
           '"Segoe UI Symbol"',
           '"Noto Color Emoji"',
         ],
+        
+        // 👇 Added Custom Fonts for the design
+        rockybilly: ['Rockybilly', 'cursive'],
+        bebas: ['Bebas Neue', 'sans-serif'],
+        gilroy: ['Gilroy', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+        playfair: ['Playfair Display', 'serif'],
+        robotoSlab: ['Roboto Slab', 'serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -80,10 +89,22 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        // 👇 Added Custom Keyframes for Marquee and Fade-In
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(calc(-50% - var(--gap)))' },
+        },
+        'fade-in': {
+            'from': { opacity: '0', transform: 'translateY(-1rem)' },
+            'to': { opacity: '1', transform: 'translateY(0)' },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        // 👇 Added Custom Animations
+        marquee: 'marquee var(--duration, 30s) linear infinite',
+        'fade-in': 'fade-in 0.8s ease-out forwards var(--animation-delay, 0s)',
       },
     },
     container: { center: true, padding: "2rem", screens: { "2xl": "1400px" } },
