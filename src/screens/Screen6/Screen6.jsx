@@ -5,90 +5,93 @@ import { Frame10Subsection } from "./sections/Frame10Subsection/Frame10Subsectio
 import { Frame11Subsection } from "./sections/Frame11Subsection/Frame11Subsection";
 import { Frame12Subsection } from "./sections/Frame12Subsection/Frame12Subsection";
 import { Frame13Subsection } from "./sections/Frame13Subsection/Frame13Subsection";
-import { Group2Subsection } from "./sections/Group2Subsection/Group2Subsection";
 import { OurServices2Subsection } from "./sections/OurServices2Subsection/OurServices2Subsection";
-import { Group3Subsection } from "../OurServicesMain/sections/Group3Subsection/Group3Subsection"; // Import the standardized footer
+import { Group3Subsection } from "../OurServicesMain/sections/Group3Subsection/Group3Subsection";
 
 export const Screen6 = () => {
   return (
     <div className="bg-black min-h-screen w-full relative overflow-hidden">
-      {/* Header */}
+      {/* ===== HEADER ===== */}
       <Frame9Subsection />
 
-      {/* Hero Section */}
-      <section className="relative px-4 md:px-8 py-8 md:py-16">
-        <div className="text-center mb-8 md:mb-16">
-          <h1 className="[font-family:'Rockybilly-Regular',Helvetica] font-normal text-[#ffcc04] text-[60px] md:text-[90px] lg:text-[120px] tracking-[0] leading-[normal] mb-4 md:mb-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
+      {/* ===== HERO SECTION ===== */}
+      <section className="relative flex flex-col items-center justify-center px-4 md:px-8 py-10 md:py-14">
+        <div className="text-center mb-6 md:mb-10">
+          <h1 className="[font-family:'Rockybilly-Regular',Helvetica] font-normal text-[#ffcc04] text-[50px] sm:text-[70px] md:text-[90px] lg:text-[110px] tracking-[0] leading-[1.1] mb-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
             Branding
           </h1>
-          
-          <OurServices2Subsection />
+
+          <div className="max-w-[85%] md:max-w-[65%] lg:max-w-[55%] mx-auto">
+            <OurServices2Subsection />
+          </div>
         </div>
 
-        {/* Background decorative image */}
-        <img
-          className="absolute top-0 right-0 w-[400px] md:w-[650px] lg:w-[883px] h-[500px] md:h-[800px] lg:h-[1122px] bg-blend-difference object-cover opacity-30"
-          alt="Layer"
-          src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/layer-1-1-1.png"
-        />
+        {/* ===== BACKGROUND IMAGE ===== */}
+        <div className="absolute top-8 left-[-60px] pointer-events-none opacity-30">
+          <img
+            className="w-[500px] sm:w-[650px] md:w-[750px] lg:w-[800px] h-auto object-contain"
+            alt="Decorative background"
+            src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/layer-1-1-1.png"
+          />
+        </div>
       </section>
 
-      {/* Description Section */}
-      <section className="relative px-4 md:px-8 py-8 md:py-16">
-        <div className="max-w-6xl mx-auto text-center mb-8 md:mb-16">
-          <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-white text-[24px] md:text-[35px] lg:text-[45px] text-center tracking-[0] leading-[1.2] mb-4 md:mb-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms] px-4">
-            YOUR BRAND IS MORE THAN A LOGO — IT&apos;S A STORY
+      {/* ===== DESCRIPTION SECTION ===== */}
+      <section className="relative px-4 md:px-8 py-8 md:py-12">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-white text-[22px] sm:text-[28px] md:text-[34px] lg:text-[40px] leading-tight mb-4 animate-fade-in opacity-0 [--animation-delay:400ms]">
+            YOUR BRAND IS MORE THAN A LOGO IT&apos;S A STORY
           </h2>
 
-          <p className="[font-family:'Gilroy-SemiBold-SemiBold',Helvetica] font-semibold text-white text-base md:text-xl lg:text-[25px] tracking-[0] leading-7 md:leading-9 lg:leading-10 max-w-4xl mx-auto translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:600ms] px-4">
+          <p className="[font-family:'Gilroy-SemiBold-SemiBold',Helvetica] font-semibold text-white text-[15px] sm:text-[17px] md:text-[19px] lg:text-[21px] leading-relaxed md:leading-8 max-w-3xl mx-auto animate-fade-in opacity-0 [--animation-delay:600ms]">
             {"We help you craft a unique identity that makes your audience instantly <br/> recognize and trust you. From strategy to visuals, we ensure every <br/> detail reflects who you are and what you stand for."
-              .split('<br/>').map((line, i) => (
+              .split("<br/>")
+              .map((line, i, arr) => (
                 <React.Fragment key={i}>
                   {line}
-                  {i < "We help you craft a unique identity that makes your audience instantly <br/> recognize and trust you. From strategy to visuals, we ensure every <br/> detail reflects who you are and what you stand for."
-                    .split('<br/>').length - 1 && <br />}
+                  {i < arr.length - 1 && <br />}
                 </React.Fragment>
               ))}
           </p>
         </div>
       </section>
 
-      {/* Services List */}
-      <section className="relative px-4 md:px-8 py-8 md:py-16">
-        <div className="max-w-6xl mx-auto space-y-4 md:space-y-8">
-          <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:800ms]">
+      {/* ===== SERVICES LIST ===== */}
+      <section className="relative px-4 md:px-8 py-10 md:py-14">
+        <div className="max-w-6xl mx-auto space-y-8 md:space-y-12">
+          <div className="animate-fade-in opacity-0 [--animation-delay:800ms]">
             <Frame10Subsection />
           </div>
 
-          <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1000ms]">
+          <div className="animate-fade-in opacity-0 [--animation-delay:1000ms]">
             <Frame11Subsection />
           </div>
 
-          <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1200ms]">
+          <div className="animate-fade-in opacity-0 [--animation-delay:1200ms]">
             <Frame12Subsection />
           </div>
 
-          <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1400ms]">
+          <div className="animate-fade-in opacity-0 [--animation-delay:1400ms]">
             <Frame13Subsection />
           </div>
         </div>
       </section>
 
-      {/* Call to Action */}
-      <section className="relative px-4 md:px-8 py-8 md:py-16 text-center">
-        <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-white text-[24px] md:text-[35px] lg:text-[45px] text-center tracking-[0] leading-[1.2] mb-6 md:mb-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1600ms] px-4">
+      {/* ===== CALL TO ACTION ===== */}
+      <section className="relative px-4 md:px-8 py-10 md:py-14 text-center">
+        <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-white text-[22px] sm:text-[28px] md:text-[34px] lg:text-[40px] leading-tight mb-4 animate-fade-in opacity-0 [--animation-delay:1600ms]">
           BUILD A BRAND THAT PEOPLE BELIEVE IN
         </h2>
 
         <Link
-          className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[24px] md:text-[35px] lg:text-[45px] text-center tracking-[0] leading-[1.2] underline block translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1800ms] hover:text-[#ffdd33] transition-colors duration-300 px-4"
           to="/contact-us"
+          className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[18px] sm:text-[24px] md:text-[30px] lg:text-[36px] underline hover:text-[#ffdd33] transition-colors duration-300 animate-fade-in opacity-0 [--animation-delay:1800ms]"
         >
           LET&apos;S CRAFT YOUR IDENTITY
         </Link>
       </section>
 
-      {/* Footer */}
+      {/* ===== FOOTER ===== */}
       <Group3Subsection />
     </div>
   );

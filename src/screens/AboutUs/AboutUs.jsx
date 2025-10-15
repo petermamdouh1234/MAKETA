@@ -16,7 +16,7 @@ export const AboutUs = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const navigationItems = [
-    { label: "HOME", href: "/", isActive: false },
+    { label: "HOME", href: "/home", isActive: false },
     { label: "OUR WORK", href: "/our-work", isActive: false },
     { label: "ABOUT US", href: "/about-us", isActive: true },
     { label: "SERVICES", href: "/our-services-u45-main", isActive: false },
@@ -42,7 +42,7 @@ export const AboutUs = () => {
       name: "HADEER SLAMA",
       title: "Account Manager",
       image: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/rectangle-18-9.svg",
-      quote: "I'm your partner <br/> consider me part of your team",
+      quote: "I'm your partner <br/>  consider <br/> me part of your team",
       delay: "200ms",
     },
     {
@@ -82,16 +82,16 @@ export const AboutUs = () => {
     },
     {
       name: "MALAK ABDELRAZIK",
-      title: "MidLevel Graphic Designer / UX & UI Designer",
+      title: "UI & UX Designer",
       image: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/rectangle-18-6.svg",
       quote: "I design journeys <br/> people enjoy",
       delay: "800ms",
     },
     {
       name: "NOURHAN OSAMA",
-      title: "Senior Content Creator",
+      title: " Content Creator",
       image: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/rectangle-18-10.svg",
-      quote: "I'm here to keep your brand <br/> always alive and engaging",
+      quote: " I'm here to keep<br/>  your brand  always <br/> alive and engaging",
       delay: "900ms",
     },
     {
@@ -101,13 +101,7 @@ export const AboutUs = () => {
       quote: "I build the digital home <br/> for your brand",
       delay: "1000ms",
     },
-    {
-      name: "ALAA ABDELNABY",
-      title: "Account Manager",
-      image: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/rectangle-18-9.svg",
-      quote: "I'm your partner <br/> consider me part of your team",
-      delay: "1100ms",
-    },
+    
   ];
 
   const clientLogos = [
@@ -343,21 +337,70 @@ export const AboutUs = () => {
       <section id="our-team" className="relative px-8 py-12">
         <div className="text-center mb-12 reveal-scale">
           <div className="[font-family:'Bebas_Neue',Helvetica] font-normal text-white text-[120px] md:text-[180px] lg:text-[240px] tracking-[0] leading-[0.8]">
-            <div className="reveal-stagger">
-              <span className="block">Our</span>
-              <span className="block">Team</span>
-            </div>
+{/* === Our Team Title === */}
+<div className="relative w-full max-w-[1440px] mx-auto mb-16">
+  {/* "Our" — aligned to left */}
+  <div 
+    className="reveal-stagger"
+    style={{
+      width: "100%",
+      display: "flex",
+      justifyContent: "flex-start",
+      marginBottom: "0",
+    }}
+  >
+    <h2
+      className="[font-family:'Bebas_Neue',Helvetica] font-normal text-white tracking-[0] leading-[0.8]"
+      style={{ fontSize: "250px", margin: 0, whiteSpace: "nowrap", lineHeight: 1 }}
+    >
+      Our
+    </h2>
+  </div>
+
+  {/* "Team" — centered under "Our" */}
+  <div 
+    className="reveal-stagger"
+    style={{
+      width: "100%",
+      display: "flex",
+      justifyContent: "center",
+      marginTop: "-40px", // smaller gap
+    }}
+  >
+    <h2
+      className="[font-family:'Bebas_Neue',Helvetica] font-normal text-[#FFCC04] tracking-[0] leading-[0.8]"
+      style={{ fontSize: "250px", margin: 0, whiteSpace: "nowrap", lineHeight: 1 }}
+    >
+      Team
+    </h2>
+  </div>
+</div>
+
           </div>
         </div>
 
-        <div className="max-w-[400px] mx-auto text-center mb-12 reveal-up">
-          <p className="[font-family:'Gilroy-Medium-Medium',Helvetica] font-medium text-white text-base tracking-[0] leading-[24px]">
-            BEHIND MAKETA IS A GROUP OF STRATEGISTS, DESIGNERS, STORYTELLERS, AND
-            INNOVATORS WHO SHARE ONE MISSION: TO HELP BRANDS SHINE. OUR TEAM THRIVES
-            ON COLLABORATION, BRINGING DIFFERENT SKILLS AND PERSPECTIVES TOGETHER TO
-            CRAFT WORK THAT IS FRESH, RELEVANT, AND EFFECTIVE.
-          </p>
-        </div>
+      {/* === Description under Our Team === */}
+<div 
+  className="reveal-up"
+  style={{
+    maxWidth: "700px",
+    margin: "60px auto 0 auto",
+    textAlign: "center",
+  }}
+>
+  <p 
+    className="[font-family:'Gilroy-Medium-Medium',Helvetica] font-medium text-white text-lg md:text-xl tracking-[0] leading-[32px] opacity-90"
+    style={{
+      lineHeight: "1.6",
+    }}
+  >
+    BEHIND <span className="text-[#FFCC04] font-bold">MAKETA</span> IS A GROUP OF 
+    STRATEGISTS, DESIGNERS, STORYTELLERS, AND INNOVATORS WHO SHARE ONE MISSION: 
+    TO HELP BRANDS SHINE. OUR TEAM THRIVES ON COLLABORATION, BRINGING DIFFERENT 
+    SKILLS AND PERSPECTIVES TOGETHER TO CRAFT WORK THAT IS FRESH, RELEVANT, AND EFFECTIVE.<br/> <br/> <br/> 
+  </p>
+</div>
+
 
         <div className="reveal-fade">
           <section className="w-full relative">
@@ -420,186 +463,159 @@ export const AboutUs = () => {
         </div>
       </section>
 
-      {/* Clients Section */}
-      <section id="our-clients" className="relative px-8 py-16 min-h-[1000px]">
-        <div className="relative max-w-[1440px] mx-auto">
-         {/* "Our" text */}
+     {/* Clients Section */}
+<section id="our-clients" className="relative px-8 py-32 bg-black min-h-[1000px] overflow-hidden">
+  <div className="relative max-w-[1440px] mx-auto">
+    
+    {/* === "Our" text === */}
+ {/* === OUR / CLIENTS Section === */}
 <div 
-  className="absolute reveal-stagger"
-  style={{ 
-    left: '50%',
-    top: '0px',
-    transform: 'translateX(-50%)',
-    width: '90%',
+  style={{
+    width: '100%',
     display: 'flex',
-    justifyContent: 'left',
-    paddingBottom: '50px'
+    flexDirection: 'column',
+    alignItems: 'center',
+    backgroundColor: '#000',
+    padding: '100px 0',
   }}
 >
-  <h2 
-    className="[font-family:'Bebas_Neue',Helvetica] font-normal text-[#ffff] tracking-[0] leading-[0.8]"
-    style={{ fontSize: '280px', margin: 0, whiteSpace: 'nowrap' }}
+  {/* OUR - Left aligned */}
+  <div 
+    className="reveal-stagger"
+    style={{ 
+      width: '100%',
+      display: 'flex',
+      justifyContent: 'flex-start', 
+    }}
   >
-    Our
-  </h2>
-</div>
+    <h2
+      className="[font-family:'Bebas_Neue',Helvetica] font-normal text-white"
+      style={{ 
+        fontSize: '250px', 
+        margin: 0,
+        lineHeight: 1,
+        paddingLeft: '100px' // adjust this to move closer or further left
+      }}
+    >
+      OUR
+    </h2>
+  </div>
 
-{/* "Clients" text */}
-<div 
-  className="absolute reveal-stagger"
-  style={{ 
-    left: '50%',
-    top: '300px',
-    transform: 'translateX(-50%)',
-    width: '80%',
-    display: 'flex',
-    justifyContent: 'right',
-    paddingBottom: '200px'
-
-  }}
->
-  <h2 
-    className="[font-family:'Bebas_Neue',Helvetica] font-normal text-[#ffcc04] tracking-[0] leading-[0.8]"
-    style={{ fontSize: '280px', margin: 0, whiteSpace: 'nowrap' }}
+  {/* CLIENTS - Center aligned under OUR */}
+  <div 
+    className="reveal-stagger"
+    style={{ 
+      width: '100%',
+      display: 'flex',
+      justifyContent: 'center',
+      marginTop: '-40px', // reduces the gap between OUR and CLIENTS
+    }}
   >
-    Clients
-  </h2>
+    <h2
+      className="[font-family:'Bebas_Neue',Helvetica] font-normal text-[#FFCC04]"
+      style={{ 
+        fontSize: '250px', 
+        margin: 0,
+        lineHeight: 1,
+      }}
+    >
+      CLIENTS
+    </h2>
+  </div>
+
+  {/* Paragraph */}
+  <div 
+    className="reveal-up"
+    style={{ 
+      width: '100%',
+      maxWidth: '800px',
+      marginTop: '40px',
+      textAlign: 'center',
+    }}
+  >
+    <p 
+      className="[font-family:'Gilroy-Medium-Medium',Helvetica] font-medium text-white text-lg md:text-xl tracking-[0] leading-[30px] opacity-90"
+    >
+      OVER THE YEARS, WE&apos;VE PARTNERED WITH AMBITIOUS BRANDS THAT TRUSTED
+      US TO DECLARE THEIR PRESENCE. FROM LOCAL BUSINESSES TO INTERNATIONAL
+      NAMES, OUR CLIENTS ARE PROOF THAT WHEN CREATIVITY MEETS STRATEGY,
+      AMAZING THINGS HAPPEN.
+    </p>
+  </div>
 </div>
 
-{/* Description text */}
-<div 
-  className="absolute reveal-up"
-  style={{ 
-    left: '50%',
-    top: '463px',
-    transform: 'translateX(-50%)',
-    width: '30%',
-    maxWidth: '90vw',
-    paddingBottom: '100px',
-    margin: '200px',
-  }}>
 
-  <p className="[font-family:'Gilroy-Medium-Medium',Helvetica] font-medium text-white text-xl tracking-[0] leading-[30px] paddingTop-[100px]">
-    OVER THE YEARS, WE&apos;VE PARTNERED WITH AMBITIOUS BRANDS THAT TRUSTED
-    US TO DECLARE THEIR PRESENCE. FROM LOCAL BUSINESSES TO INTERNATIONAL
-    NAMES, OUR CLIENTS ARE PROOF THAT WHEN CREATIVITY MEETS STRATEGY,
-    AMAZING THINGS HAPPEN.
-  </p>
-</div>
 
-          {/* Client logos section */}
-          <div className="absolute reveal-fade" style={{ paddingTop:'auto' , top: '700px', left: '0', right: '0' }}>
-            <section className="w-full h-32 overflow-hidden relative translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
-              <div
-                className="flex items-center gap-[23px] px-0 py-[22px] h-32 animate-marquee"
-                style={{
-                  width: "max-content",
-                  "--duration": "30s",
-                  "--gap": "23px",
-                }}
-              >
-                {/* First set of logos */}
-                {clientLogos.map((logo, index) => (
-                  <img
-                    key={`logo-${index}`}
-                    className={`relative ${logo.width} ${logo.height} flex-shrink-0`}
-                    alt={logo.alt}
-                    src={logo.src}
-                  />
-                ))}
+    {/* === Client Logos === */}
+    <div className="relative mt-20 reveal-fade">
+      <section className="w-full h-32 overflow-hidden relative">
+        <div
+          className="flex items-center gap-[23px] px-0 py-[22px] h-32 animate-marquee"
+          style={{
+            width: "max-content",
+            "--duration": "30s",
+            "--gap": "23px",
+          }}
+        >
+          {/* First set of logos */}
+          {clientLogos.map((logo, index) => (
+            <img
+              key={`logo-${index}`}
+              className={`relative ${logo.width} ${logo.height} flex-shrink-0`}
+              alt={logo.alt}
+              src={logo.src}
+            />
+          ))}
 
-                {/* Silver Light Foods component */}
-                <div
-                  className={`relative ${silverLightFoods.width} ${silverLightFoods.height} flex-shrink-0`}
-                >
-                  <img
-                    className="absolute w-[43.07%] h-[55.26%] top-0 left-[32.17%]"
-                    alt="Silver Light Foods logo"
-                    src={silverLightFoods.logoSrc}
-                  />
-                  <div className="absolute w-[102.08%] h-[20.54%] top-[62.25%] left-0">
-                    <div className="absolute w-[42.70%] h-full top-0 left-0 [font-family:'Playfair_Display',Helvetica] font-bold text-white text-xs tracking-[0] leading-[normal]">
-                      SILVER
-                    </div>
-                    <div className="absolute w-[39.65%] h-full top-0 left-[56.28%] [font-family:'Playfair_Display',Helvetica] font-bold text-white text-xs tracking-[0] leading-[normal]">
-                      LIGHT
-                    </div>
-                  </div>
-                  <div className="absolute w-[42.55%] h-[20.54%] top-[79.46%] left-[31.18%] [font-family:'Playfair_Display',Helvetica] font-medium text-white text-xs tracking-[0] leading-[normal]">
-                    FOODS
-                  </div>
-                </div>
-
-                {/* Finomena component */}
-                <div
-                  className={`relative ${finomenaData.width} ${finomenaData.height} flex-shrink-0`}
-                >
-                  <div className="absolute w-[67.98%] h-[42.46%] top-[53.85%] left-[29.21%] [font-family:'Roboto_Slab',Helvetica] font-normal text-white text-xs tracking-[0] leading-[normal]">
-                    We&apos;ve been there
-                  </div>
-                  <div className="absolute w-[40.65%] h-[42.46%] top-[30.89%] left-[29.21%] [font-family:'Roboto_Slab',Helvetica] font-medium text-white text-xs tracking-[0] leading-[normal]">
-                    Finomena
-                  </div>
-                  <img
-                    className="absolute w-[26.41%] h-full top-0 left-0"
-                    alt="Finomena logo"
-                    src={finomenaData.logoSrc}
-                  />
-                </div>
-
-                {/* Duplicate set for seamless loop */}
-                {clientLogos.map((logo, index) => (
-                  <img
-                    key={`logo-duplicate-${index}`}
-                    className={`relative ${logo.width} ${logo.height} flex-shrink-0`}
-                    alt={logo.alt}
-                    src={logo.src}
-                  />
-                ))}
-
-                {/* Duplicate Silver Light Foods component */}
-                <div
-                  className={`relative ${silverLightFoods.width} ${silverLightFoods.height} flex-shrink-0`}
-                >
-                  <img
-                    className="absolute w-[43.07%] h-[55.26%] top-0 left-[32.17%]"
-                    alt="Silver Light Foods logo"
-                    src={silverLightFoods.logoSrc}
-                  />
-                  <div className="absolute w-[102.08%] h-[20.54%] top-[62.25%] left-0">
-                    <div className="absolute w-[42.70%] h-full top-0 left-0 [font-family:'Playfair_Display',Helvetica] font-bold text-white text-xs tracking-[0] leading-[normal]">
-                      SILVER
-                    </div>
-                    <div className="absolute w-[39.65%] h-full top-0 left-[56.28%] [font-family:'Playfair_Display',Helvetica] font-bold text-white text-xs tracking-[0] leading-[normal]">
-                      LIGHT
-                    </div>
-                  </div>
-                  <div className="absolute w-[42.55%] h-[20.54%] top-[79.46%] left-[31.18%] [font-family:'Playfair_Display',Helvetica] font-medium text-white text-xs tracking-[0] leading-[normal]">
-                    FOODS
-                  </div>
-                </div>
-
-                {/* Duplicate Finomena component */}
-                <div
-                  className={`relative ${finomenaData.width} ${finomenaData.height} flex-shrink-0`}
-                >
-                  <div className="absolute w-[67.98%] h-[42.46%] top-[53.85%] left-[29.21%] [font-family:'Roboto_Slab',Helvetica] font-normal text-white text-xs tracking-[0] leading-[normal]">
-                    We&apos;ve been there
-                  </div>
-                  <div className="absolute w-[40.65%] h-[42.46%] top-[30.89%] left-[29.21%] [font-family:'Roboto_Slab',Helvetica] font-medium text-white text-xs tracking-[0] leading-[normal]">
-                    Finomena
-                  </div>
-                  <img
-                    className="absolute w-[26.41%] h-full top-0 left-0"
-                    alt="Finomena logo"
-                    src={finomenaData.logoSrc}
-                  />
-                </div>
+          {/* Silver Light Foods component */}
+          <div className={`relative ${silverLightFoods.width} ${silverLightFoods.height} flex-shrink-0`}>
+            <img
+              className="absolute w-[43.07%] h-[55.26%] top-0 left-[32.17%]"
+              alt="Silver Light Foods logo"
+              src={silverLightFoods.logoSrc}
+            />
+            <div className="absolute w-[102.08%] h-[20.54%] top-[62.25%] left-0">
+              <div className="absolute w-[42.70%] h-full top-0 left-0 [font-family:'Playfair_Display',Helvetica] font-bold text-white text-xs">
+                SILVER
               </div>
-            </section>
+              <div className="absolute w-[39.65%] h-full top-0 left-[56.28%] [font-family:'Playfair_Display',Helvetica] font-bold text-white text-xs">
+                LIGHT
+              </div>
+            </div>
+            <div className="absolute w-[42.55%] h-[20.54%] top-[79.46%] left-[31.18%] [font-family:'Playfair_Display',Helvetica] font-medium text-white text-xs">
+              FOODS
+            </div>
           </div>
+
+          {/* Finomena component */}
+          <div className={`relative ${finomenaData.width} ${finomenaData.height} flex-shrink-0`}>
+            <div className="absolute w-[67.98%] h-[42.46%] top-[53.85%] left-[29.21%] [font-family:'Roboto_Slab',Helvetica] font-normal text-white text-xs">
+              We&apos;ve been there
+            </div>
+            <div className="absolute w-[40.65%] h-[42.46%] top-[30.89%] left-[29.21%] [font-family:'Roboto_Slab',Helvetica] font-medium text-white text-xs">
+              Finomena
+            </div>
+            <img
+              className="absolute w-[26.41%] h-full top-0 left-0"
+              alt="Finomena logo"
+              src={finomenaData.logoSrc}
+            />
+          </div>
+
+          {/* Duplicate set for seamless loop */}
+          {clientLogos.map((logo, index) => (
+            <img
+              key={`logo-duplicate-${index}`}
+              className={`relative ${logo.width} ${logo.height} flex-shrink-0`}
+              alt={logo.alt}
+              src={logo.src}
+            />
+          ))}
         </div>
       </section>
+    </div>
+  </div>
+</section>
 
       {/* Footer */}
       <div className="mt-32">

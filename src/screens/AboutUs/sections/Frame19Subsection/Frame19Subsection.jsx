@@ -25,7 +25,7 @@ export const Frame19Subsection = () => {
       name: "HADEER SLAMA",
       title: "Account Manager",
       image: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/rectangle-18-9.svg",
-      quote: "I'm your partner <br/> consider me part of your team",
+      quote: "I'm your partner <br/> consider <br/> me part  of your team",
       delay: "200ms",
     },
     {
@@ -84,13 +84,7 @@ export const Frame19Subsection = () => {
       quote: "I build the digital home <br/> for your brand",
       delay: "1000ms",
     },
-    {
-      name: "ALAA ABDELNABY",
-      title: "Account Manager",
-      image: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/rectangle-18-9.svg", // Placeholder image, replace if needed
-      quote: "I'm your partner <br/> consider me part of your team",
-      delay: "1100ms",
-    },
+    
   ];
 
   return (

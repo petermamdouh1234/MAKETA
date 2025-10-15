@@ -23,7 +23,7 @@ export const ContactUs = () => {
   const [message, setMessage] = useState("");
 
   const navigationItems = [
-    { label: "HOME", href: "/", active: false },
+    { label: "HOME", href: "/home", active: false },
     { label: "OUR WORK", href: "/our-work", active: false },
     { label: "ABOUT US", href: "/about-us", active: false },
     { label: "SERVICES", href: "/our-services-u45-main", active: false },

@@ -9,7 +9,7 @@ import {
 
 export const Frame20Subsection = () => {
   const navigationItems = [
-    { label: "HOME", href: "/", isActive: false },
+    { label: "HOME", href: "/home", isActive: false },
     { label: "OUR WORK", href: "/our-work", isActive: false },
     { label: "ABOUT US", href: "/about-us", isActive: true },
     { label: "SERVICES", href: "/our-services-u45-main", isActive: false },
