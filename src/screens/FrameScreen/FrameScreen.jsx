@@ -40,9 +40,9 @@ export const FrameScreen = () => {
   ];
 
   const socialMediaLinks = [
-    { icon: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/social-media-icon-square-facebook.svg", label: "Facebook", href: "#" },
-    { icon: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/social-media-icon-square-instagram.svg", label: "Instagram", href: "#" },
-    { icon: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/social-media-icon-square-linkedin.svg", label: "LinkedIn", href: "#" },
+    { icon: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/social-media-icon-square-facebook.svg", label: "Facebook", href: "https://www.facebook.com/share/1GDRYiwd6N/?mibextid=wwXIfr" },
+    { icon: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/social-media-icon-square-instagram.svg", label: "Instagram", href: "https://www.instagram.com/maketaagency?igsh=aDgyaHhmYWl5bHR2" },
+    { icon: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/social-media-icon-square-linkedin.svg", label: "LinkedIn", href: "https://www.linkedin.com/company/maketaagency/" },
   ];
 
   return (
@@ -205,13 +205,18 @@ export const FrameScreen = () => {
           alt="Metallic Shape"
           src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/layer-1-1-1.png"
         />
-        <Link to="/about-us" className="inline-block reveal-scale relative z-10">
-          <h2 className="[font-family:'Bebas_Neue',Helvetica] font-normal text-white text-[80px] md:text-[100px] tracking-[0] leading-[normal] relative inline-block">
-            DISCOVER 
-            <span className="text-[#ffcc04] ml-4">WHO WE ARE</span>
-            <span className="absolute bottom-0 left-0 w-full h-1 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-          </h2>
-        </Link>
+        <Link
+  to="/about-us"
+  className="inline-block relative group reveal-scale z-10"
+>
+  <h2 className="[font-family:'Bebas_Neue',Helvetica] font-normal text-white text-[80px] md:text-[100px] tracking-[0] leading-[normal] relative inline-block">
+    DISCOVER 
+    <span className="text-[#ffcc04] ml-4">WHO WE ARE</span>
+  </h2>
+
+  {/* Animated yellow underline appearing from outside */}
+  <span className="absolute -bottom-2 left-0 w-full h-1 bg-[#ffcc04] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+</Link>
       </section>
 
       {/* Footer */}

@@ -133,15 +133,15 @@
       }
     },
     {
-      "id": "src\\screens\\OurWork\\OurWork.jsx:81:8-to-src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "id": "src\\screens\\OurWork\\OurWork.jsx:82:8-to-src\\screens\\FrameScreen\\FrameScreen.jsx",
       "source": "src\\screens\\OurWork\\OurWork.jsx",
       "target": "src\\screens\\FrameScreen\\FrameScreen.jsx",
       "data": {
         "viaRoute": "/",
         "trigger": {
           "element": "<Link to=\"/\">\n          <img\n            className=\"h-[100px] w-[120px] object-contain hover:scale-105 transition-transform duration-300\"\n            alt=\"Logo\"\n            src=\"https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png\"\n          />\n        </Link>",
-          "line": 81,
-          "endLine": 87,
+          "line": 82,
+          "endLine": 88,
           "column": 8,
           "endColumn": 15,
           "sourceFile": "src\\screens\\OurWork\\OurWork.jsx"
@@ -181,15 +181,15 @@
       }
     },
     {
-      "id": "src\\screens\\OurServicesWebApp\\OurServicesWebApp.jsx:115:8-to-src\\screens\\ContactUs\\ContactUs.jsx",
+      "id": "src\\screens\\OurServicesWebApp\\OurServicesWebApp.jsx:122:8-to-src\\screens\\ContactUs\\ContactUs.jsx",
       "source": "src\\screens\\OurServicesWebApp\\OurServicesWebApp.jsx",
       "target": "src\\screens\\ContactUs\\ContactUs.jsx",
       "data": {
         "viaRoute": "/contact-us",
         "trigger": {
           "element": "<Link\n          className=\"[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[45px] text-center tracking-[0] leading-[30px] underline block translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1800ms] hover:text-[#ffdd44] transition-colors duration-300\"\n          to=\"/contact-us\"\n        >\n          START YOUR PROJECT TODAY\n        </Link>",
-          "line": 115,
-          "endLine": 120,
+          "line": 122,
+          "endLine": 127,
           "column": 8,
           "endColumn": 15,
           "sourceFile": "src\\screens\\OurServicesWebApp\\OurServicesWebApp.jsx"
@@ -213,18 +213,34 @@
       }
     },
     {
-      "id": "src\\screens\\OurServicesMedia\\OurServicesMedia.jsx:84:8-to-src\\screens\\ContactUs\\ContactUs.jsx",
+      "id": "src\\screens\\OurServicesMedia\\OurServicesMedia.jsx:94:8-to-src\\screens\\ContactUs\\ContactUs.jsx",
       "source": "src\\screens\\OurServicesMedia\\OurServicesMedia.jsx",
       "target": "src\\screens\\ContactUs\\ContactUs.jsx",
       "data": {
         "viaRoute": "/contact-us",
         "trigger": {
-          "element": "<Link\n          to=\"/contact-us\"\n          className=\"[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[45px] text-center tracking-[0] leading-[30px] underline block translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1800ms] hover:text-[#ffcc04]/80 transition-colors\"\n        >\n          LET&apos;S CREATE TOGETHER\n        </Link>",
-          "line": 84,
-          "endLine": 89,
+          "element": "<Link\n          to=\"/contact-us\"\n          className=\"[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[36px] md:text-[42px] tracking-[0] underline block translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1800ms] hover:text-[#ffcc04]/80 transition-colors\"\n        >\n          LET&apos;S CREATE TOGETHER\n        </Link>",
+          "line": 94,
+          "endLine": 99,
           "column": 8,
           "endColumn": 15,
           "sourceFile": "src\\screens\\OurServicesMedia\\OurServicesMedia.jsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\OurServicesMedia\\sections\\Frame4Subsection\\Frame4Subsection.jsx:18:6-to-src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "source": "src\\screens\\OurServicesMedia\\OurServicesMedia.jsx",
+      "target": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "data": {
+        "viaRoute": "/",
+        "trigger": {
+          "element": "<Link to=\"/\" className=\"translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]\">\n        <img\n          className=\"h-[120px] w-[191px] object-cover\"\n          alt=\"Logo\"\n          src=\"https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png\"\n        />\n      </Link>",
+          "line": 18,
+          "endLine": 24,
+          "column": 6,
+          "endColumn": 13,
+          "sourceFile": "src\\screens\\OurServicesMedia\\sections\\Frame4Subsection\\Frame4Subsection.jsx"
         }
       }
     },
@@ -245,18 +261,34 @@
       }
     },
     {
-      "id": "src\\screens\\Screen6\\Screen6.jsx:86:8-to-src\\screens\\ContactUs\\ContactUs.jsx",
+      "id": "src\\screens\\Screen6\\Screen6.jsx:90:8-to-src\\screens\\ContactUs\\ContactUs.jsx",
       "source": "src\\screens\\Screen6\\Screen6.jsx",
       "target": "src\\screens\\ContactUs\\ContactUs.jsx",
       "data": {
         "viaRoute": "/contact-us",
         "trigger": {
           "element": "<Link\n          to=\"/contact-us\"\n          className=\"[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[18px] sm:text-[24px] md:text-[30px] lg:text-[36px] underline hover:text-[#ffdd33] transition-colors duration-300 animate-fade-in opacity-0 [--animation-delay:1800ms]\"\n        >\n          LET&apos;S CRAFT YOUR IDENTITY\n        </Link>",
-          "line": 86,
-          "endLine": 91,
+          "line": 90,
+          "endLine": 95,
           "column": 8,
           "endColumn": 15,
           "sourceFile": "src\\screens\\Screen6\\Screen6.jsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\Screen6\\sections\\Frame9Subsection\\Frame9Subsection.jsx:24:6-to-src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "source": "src\\screens\\Screen6\\Screen6.jsx",
+      "target": "src\\screens\\FrameScreen\\FrameScreen.jsx",
+      "data": {
+        "viaRoute": "/",
+        "trigger": {
+          "element": "<Link to=\"/\" className=\"translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]\">\n        <img\n          className=\"h-[80px] w-[95px] md:h-[120px] md:w-[143px] lg:h-[161px] lg:w-[191px] object-cover cursor-pointer\"\n          alt=\"Logo\"\n          src=\"https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png\"\n        />\n      </Link>",
+          "line": 24,
+          "endLine": 30,
+          "column": 6,
+          "endColumn": 13,
+          "sourceFile": "src\\screens\\Screen6\\sections\\Frame9Subsection\\Frame9Subsection.jsx"
         }
       }
     },

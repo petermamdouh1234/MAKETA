@@ -18,17 +18,21 @@ export const GroupWrapperSubsection = () => {
   const socialMediaLinks = [
     {
       icon: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/social-media-icon-square-facebook.svg",
-      text: "Facebook",
+      label: "Facebook",
+      href: "https://www.facebook.com/share/1GDRYiwd6N/?mibextid=wwXIfr",
     },
     {
       icon: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/social-media-icon-square-instagram.svg",
-      text: "Instagram",
+      label: "Instagram",
+      href: "https://www.instagram.com/maketaagency?igsh=aDgyaHhmYWl5bHR2",
     },
     {
       icon: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/social-media-icon-square-linkedin.svg",
-      text: "LinkedIn",
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/company/maketaagency/",
     },
   ];
+
 
   return (
     <footer className="relative w-full h-[370px] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:0ms]">

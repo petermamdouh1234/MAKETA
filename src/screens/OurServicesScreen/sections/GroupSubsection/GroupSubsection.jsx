@@ -19,17 +19,17 @@ export const GroupSubsection = () => {
     {
       icon: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/social-media-icon-square-facebook.svg",
       text: "Facebook",
-      href: "#",
+      href: "https://www.facebook.com/share/1GDRYiwd6N/?mibextid=wwXIfr",
     },
     {
       icon: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/social-media-icon-square-instagram.svg",
       text: "Instagram",
-      href: "#",
+      href: "https://www.instagram.com/maketaagency?igsh=aDgyaHhmYWl5bHR2",
     },
     {
       icon: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/social-media-icon-square-linkedin.svg",
       text: "LinkedIn",
-      href: "#",
+      href: "https://www.linkedin.com/company/maketaagency/",
     },
   ];
 

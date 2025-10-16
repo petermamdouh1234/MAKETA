@@ -202,17 +202,17 @@ export const AboutUs = () => {
     {
       icon: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/social-media-icon-square-facebook.svg",
       label: "Facebook",
-      href: "#",
+      href: "https://www.facebook.com/share/1GDRYiwd6N/?mibextid=wwXIfr",
     },
     {
       icon: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/social-media-icon-square-instagram.svg",
       label: "Instagram",
-      href: "#",
+      href: "https://www.instagram.com/maketaagency?igsh=aDgyaHhmYWl5bHR2",
     },
     {
       icon: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/social-media-icon-square-linkedin.svg",
       label: "LinkedIn",
-      href: "#",
+      href: "https://www.linkedin.com/company/maketaagency/",
     },
   ];
 
@@ -271,7 +271,7 @@ export const AboutUs = () => {
 
         {/* Background decorative image */}
         <img
-          className="absolute top-0 right-0 w-[400px] md:w-[600px] lg:w-[800px] h-[450px] md:h-[675px] lg:h-[900px] bg-blend-difference object-cover opacity-15"
+          className="absolute top-0 right-0 w-[400px] md:w-[600px] lg:w-[800px] h-[450px] md:h-[675px] lg:h-[900px] bg-blend-difference object-cover opacity-50"
           alt="Layer"
           src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/layer-3-1.png"
         />

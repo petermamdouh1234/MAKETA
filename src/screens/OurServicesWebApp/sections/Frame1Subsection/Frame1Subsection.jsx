@@ -2,26 +2,26 @@ import React from "react";
 
 export const Frame1Subsection = () => {
   return (
-    <section className="relative w-full h-[350px] bg-black border-[3px] border-solid border-white translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
-      <div className="flex items-center justify-between h-full px-16">
-        {/* Large number section */}
-        <div className="flex-shrink-0">
-          <div className="[font-family:'Bebas_Neue',Helvetica] font-normal text-white text-[350px] tracking-[0] leading-[normal] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
+    <section className="relative w-full min-h-[250px] md:min-h-[300px] lg:h-[350px] bg-black border-2 md:border-[3px] border-solid border-white translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
+      <div className="flex flex-col md:flex-row items-center justify-between h-full px-4 md:px-8 lg:px-16 py-6 md:py-0 gap-4 md:gap-8">
+
+        {/* Large Number */}
+        <div className="flex-shrink-0 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
+          <div className="[font-family:'Bebas_Neue',Helvetica] font-normal text-white text-[150px] md:text-[250px] lg:text-[350px] tracking-[0] leading-[1]">
             02
           </div>
         </div>
 
-        {/* Content section */}
-        <div className="flex flex-col w-[407px] items-start gap-[30px] ml-auto translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:600ms]">
-          <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-white text-[45px] tracking-[0] leading-[30px]">
+        {/* Content */}
+        <div className="flex flex-col w-full md:w-[407px] items-start gap-4 md:gap-[30px] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:600ms]">
+          <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[28px] sm:text-[32px] md:text-[38px] lg:text-[42px] leading-tight">
             E-COMMERCE SOLUTIONS
           </h2>
-
-          <p className="[font-family:'Gilroy-Medium-Medium',Helvetica] font-medium text-white text-3xl tracking-[0] leading-[41px]">
-            Custom online stores designed to attract, engage, and convert
-            shoppers.
+          <p className="[font-family:'Gilroy-Medium-Medium',Helvetica] font-medium text-white text-lg md:text-2xl lg:text-3xl tracking-[0] leading-[1.4] md:leading-[1.3]">
+            Custom online stores designed to attract, engage, and convert shoppers.
           </p>
         </div>
+
       </div>
     </section>
   );

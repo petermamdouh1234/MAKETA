@@ -40,7 +40,11 @@ export const Screen6 = () => {
       <section className="relative px-4 md:px-8 py-8 md:py-12">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-white text-[22px] sm:text-[28px] md:text-[34px] lg:text-[40px] leading-tight mb-4 animate-fade-in opacity-0 [--animation-delay:400ms]">
-            YOUR BRAND IS MORE THAN A LOGO IT&apos;S A STORY
+            YOUR BRAND IS MORE THAN A LOGO  <h2
+  className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[24px] md:text-[35px] lg:text-[45px] text-center tracking-[0] leading-[1.2] mb-6 md:mb-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1600ms] px-4"
+>
+  “ IT&apos;S A STORY ”
+</h2>
           </h2>
 
           <p className="[font-family:'Gilroy-SemiBold-SemiBold',Helvetica] font-semibold text-white text-[15px] sm:text-[17px] md:text-[19px] lg:text-[21px] leading-relaxed md:leading-8 max-w-3xl mx-auto animate-fade-in opacity-0 [--animation-delay:600ms]">

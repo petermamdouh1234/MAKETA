@@ -11,7 +11,7 @@ export const Frame12Subsection = () => {
         </div>
 
         <div className="flex flex-col w-full md:w-[407px] items-start gap-4 md:gap-[30px] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:800ms]">
-          <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-white text-[28px] md:text-[35px] lg:text-[45px] tracking-[0] leading-[1.2]">
+          <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[28px] sm:text-[32px] md:text-[38px] lg:text-[42px] leading-tight">
             BRAND GUIDELINES
           </h2>
 

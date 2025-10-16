@@ -2,24 +2,26 @@ import React from "react";
 
 export const Frame2Subsection = () => {
   return (
-    <section className="relative w-full h-[350px]">
-      <div className="flex items-center relative w-full h-full">
-        <div className="relative w-full h-full bg-black border-[3px] border-solid border-white" />
+    <section className="relative w-full min-h-[250px] md:min-h-[300px] lg:h-[350px] bg-black border-2 md:border-[3px] border-solid border-white translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
+      <div className="flex flex-col md:flex-row items-center justify-between h-full px-4 md:px-8 lg:px-16 py-6 md:py-0 gap-4 md:gap-8">
 
-        <div className="absolute left-[calc(50%-842px)] top-1/2 -translate-y-1/2 w-[340px] [font-family:'Bebas_Neue',Helvetica] font-normal text-white text-[350px] tracking-[0] leading-[normal] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:0ms]">
-          03
+        {/* Large Number */}
+        <div className="flex-shrink-0 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:600ms]">
+          <div className="[font-family:'Bebas_Neue',Helvetica] font-normal text-white text-[150px] md:text-[250px] lg:text-[350px] tracking-[0] leading-[1]">
+            03
+          </div>
         </div>
-      </div>
 
-      <div className="flex flex-col w-[407px] items-start gap-[30px] absolute top-1/2 -translate-y-1/2 left-[calc(50%+195px)] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
-        <h2 className="relative w-[418px] h-[41px] -mt-1 -mr-[11px] [font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-white text-[45px] tracking-[0] leading-[30px]">
-          APP DEVELOPMENT
-        </h2>
+        {/* Text Content */}
+        <div className="flex flex-col w-full md:w-[407px] items-start gap-4 md:gap-[30px] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:800ms]">
+          <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[28px] sm:text-[32px] md:text-[38px] lg:text-[42px] leading-tight">
+            APP DEVELOPMENT
+          </h2>
+          <p className="[font-family:'Gilroy-Medium-Medium',Helvetica] font-medium text-white text-lg md:text-2xl lg:text-3xl tracking-[0] leading-[1.4] md:leading-[1.3]">
+            Mobile apps that provide value and keep your customers connected on the go.
+          </p>
+        </div>
 
-        <p className="relative w-[459px] -mr-[52px] [font-family:'Gilroy-Medium-Medium',Helvetica] font-medium text-white text-3xl tracking-[0] leading-[41px]">
-          Mobile apps that provide value and keep your customers connected on
-          the go.
-        </p>
       </div>
     </section>
   );

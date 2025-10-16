@@ -5,12 +5,13 @@ import { Button } from "../../components/ui/button";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 
 const navigationItems = [
-  { label: "HOME", href: "/home", active: false },
+  { label: "HOME", href: "/", active: false },
   { label: "OUR WORK", href: "/our-work", active: true },
   { label: "ABOUT US", href: "/about-us", active: false },
   { label: "SERVICES", href: "/our-services-u45-main", active: false },
   { label: "CONTACT US", href: "/contact-us", active: false },
 ];
+
 
 const portfolioItems = [
   { 
@@ -65,9 +66,9 @@ const servicesLinks = [
 ];
 
 const socialMediaLinks = [
-  { icon: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/social-media-icon-square-facebook.svg", label: "Facebook", href: "#" },
-  { icon: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/social-media-icon-square-instagram.svg", label: "Instagram", href: "#" },
-  { icon: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/social-media-icon-square-linkedin.svg", label: "LinkedIn", href: "#" },
+  { icon: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/social-media-icon-square-facebook.svg", label: "Facebook", href: "https://www.facebook.com/share/1GDRYiwd6N/?mibextid=wwXIfr" },
+  { icon: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/social-media-icon-square-instagram.svg", label: "Instagram", href: "https://www.instagram.com/maketaagency?igsh=aDgyaHhmYWl5bHR2" },
+  { icon: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/social-media-icon-square-linkedin.svg", label: "LinkedIn", href: "https://www.linkedin.com/company/maketaagency/" },
 ];
 
 export const OurWork = () => {

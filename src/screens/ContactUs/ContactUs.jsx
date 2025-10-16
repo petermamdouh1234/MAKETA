@@ -29,6 +29,7 @@ export const ContactUs = () => {
     { label: "SERVICES", href: "/our-services-u45-main", active: false },
     { label: "CONTACT US", href: "/contact-us", active: true },
   ];
+  
 
   const subjectOptions = [
     { id: "General Inquiry", label: "General Inquiry" },
@@ -214,25 +215,35 @@ export const ContactUs = () => {
               </div>
 
               {/* Send Message Button */}
-              <Button 
-                type="submit"
-                className="bg-[#ffcc04] hover:bg-[#ffcc04]/90 text-black px-8 py-3 rounded-[15px] h-auto [font-family:'Poppins',Helvetica] font-medium text-sm transition-colors duration-300"
-                onClick={() => {
-                  const phoneNumber = "+201020828280"; // WhatsApp number
-                  const whatsappMessage = encodeURIComponent(
-                    `Hello Maketa Agency,\n\n` +
-                    `I'd like to get in touch regarding: ${subject}\n\n` +
-                    `My details are:\n` +
-                    `Name: ${firstName} ${lastName}\n` +
-                    `Email: ${email}\n` +
-                    `Phone: ${phone}\n\n` +
-                    `Message:\n${message}`
-                  );
-                  window.open(`https://wa.me/${phoneNumber}?text=${whatsappMessage}`, '_blank');
-                }}
-              >
-                Send Message
-              </Button>
+            <Button
+  type="button"
+  className="bg-[#ffcc04] hover:bg-[#ffcc04]/90 text-black px-8 py-3 rounded-[15px] h-auto [font-family:'Poppins',Helvetica] font-medium text-sm transition-colors duration-300"
+  onClick={() => {
+    const phoneNumber = "201020828280"; // ✅ No "+" and no spaces
+
+    const whatsappMessage = encodeURIComponent(
+      `Hello Maketa Agency 👋,\n\n` +
+      `I'd like to get in touch regarding: ${subject}\n\n` +
+      `My details are:\n` +
+      `Name: ${firstName} ${lastName}\n` +
+      `Email: ${email}\n` +
+      `Phone: ${phone}\n\n` +
+      `Message:\n${message}\n\n` +
+      `Sent from Maketa Agency website 🌐`
+    );
+
+    // ✅ Use the correct API endpoint (works on both desktop and mobile)
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    const whatsappURL = isMobile
+      ? `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${whatsappMessage}`
+      : `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${whatsappMessage}`;
+
+    window.open(whatsappURL, "_blank");
+  }}
+>
+  Send Message
+</Button>
+
             </form>
           </div>
 
@@ -264,17 +275,15 @@ export const ContactUs = () => {
 
             {/* Company Profile Download Button */}
             <div className="mt-8 reveal-up">
-              <a 
-                href="/static/Maketa_Company_Profile.pdf" // Placeholder PDF path
-                download="Maketa_Company_Profile.pdf"
-                className="block w-full"
-              >
-                <Button 
-                  className="w-full bg-[#ffcc04] hover:bg-[#ffcc04]/90 text-black px-8 py-3 rounded-[15px] h-auto [font-family:'Poppins',Helvetica] font-medium text-sm transition-colors duration-300"
-                >
-                  Download Company Profile
-                </Button>
-              </a>
+             <a 
+  href="https://drive.google.com/uc?export=download&id=17HW8pbHwoNTC8EBhhlnHm3nl3nRc4hat"
+  className="block w-full"
+>
+  <Button className="w-full bg-[#ffcc04] hover:bg-[#ffcc04]/90 text-black px-8 py-3 rounded-[15px] h-auto [font-family:'Poppins',Helvetica] font-medium text-sm transition-colors duration-300">
+    Download Company Profile
+  </Button>
+</a>
+
             </div>
           </div>
         </div>

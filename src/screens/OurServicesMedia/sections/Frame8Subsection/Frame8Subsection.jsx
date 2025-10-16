@@ -13,7 +13,7 @@ export const Frame8Subsection = () => {
           </div>
 
           <div className="flex flex-col w-full md:max-w-[407px] items-start gap-3 md:gap-[30px] px-4 md:px-0 md:pr-[194px] pb-4 md:pb-0">
-            <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-white text-[24px] md:text-[32px] lg:text-[45px] tracking-[0] leading-[1.2]">
+             <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[28px] sm:text-[32px] md:text-[38px] lg:text-[42px] leading-tight">
               CREATIVE DIRECTION
             </h2>
 

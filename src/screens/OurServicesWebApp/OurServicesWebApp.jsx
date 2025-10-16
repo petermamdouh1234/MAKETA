@@ -58,59 +58,66 @@ export const OurServicesWebApp = () => {
         </div>
 
         {/* Background decorative image */}
-        <img
-          className="absolute top-0 right-0 w-[782px] h-[754px] bg-blend-difference object-cover opacity-30"
-          alt="Img"
+        <div className="absolute top-8 left-[-60px] pointer-events-none opacity-30">
+          <img
+            className="w-[300px] sm:w-[400px] md:w-[600px] lg:w-[500px] h-auto object-contain"
+            alt="Decorative background"
           src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/d81a8ffdbe47a72b1026097b90a62ed9-copy-1-1.png"
         />
+        </div>
       </section>
 
       {/* Description Section */}
-      <section className="relative px-8 py-16">
-        <div className="max-w-6xl mx-auto text-center mb-16">
-          <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-white text-[45px] text-center tracking-[0] leading-[30px] mb-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
-            SEAMLESS, SMART, AND BUILT FOR GROWTH.
-          </h2>
+     
+       <div className="max-w-6xl mx-auto text-center mb-16">
+ <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[45px] text-center tracking-[0] leading-[1.2] mb-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
+  Seamless, Smart, and Built for Growth
+</h2>
 
-          <p className="[font-family:'Gilroy-SemiBold-SemiBold',Helvetica] font-semibold text-white text-[25px] tracking-[0] leading-10 max-w-4xl mx-auto translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:600ms]">
-            {"Your website or app isn't just a tool — it's the core of your <br/> digital presence. At Maketa, we design and develop platforms that are <br/> beautiful, user-friendly, and built to scale with your business."
-              .split('<br/>').map((line, i) => (
-                <React.Fragment key={i}>
-                  {line}
-                  {i < "Your website or app isn't just a tool — it's the core of your <br/> digital presence. At Maketa, we design and develop platforms that are <br/> beautiful, user-friendly, and built to scale with your business."
-                    .split('<br/>').length - 1 && <br />}
-                </React.Fragment>
-              ))}
-          </p>
-        </div>
-      </section>
 
+  <p className="[font-family:'Gilroy-SemiBold-SemiBold',Helvetica] font-semibold text-white text-[25px] tracking-[0] leading-10 max-w-4xl mx-auto translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:600ms]">
+    {"Your website or app is more than a tool — it's the foundation of your digital presence. At Maketa, we craft platforms that are beautiful, intuitive, and designed to grow with your business."
+      .split('. ').map((line, i, arr) => (
+        <React.Fragment key={i}>
+          {line}{i < arr.length - 1 && '.'}<br />
+        </React.Fragment>
+      ))}
+  </p>
+</div>
+
+      
+
+     
       {/* Services List */}
-      <section className="relative px-8 py-16">
-        <div className="max-w-6xl mx-auto space-y-8">
-          <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:800ms]">
-            <SectionComponentNodeSubsection />
-          </div>
+{/* Services List */}
+<section className="relative px-4 md:px-8 py-12 md:py-20">
+  <div className="max-w-6xl mx-auto space-y-10 md:space-y-14">
+    <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:800ms]">
+      <SectionComponentNodeSubsection />
+    </div>
 
-          <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1000ms]">
-            <Frame1Subsection />
-          </div>
+    <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1000ms]">
+      <Frame1Subsection />
+    </div>
 
-          <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1200ms]">
-            <Frame2Subsection />
-          </div>
+    <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1200ms]">
+      <Frame2Subsection />
+    </div>
 
-          <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1400ms]">
-            <Frame3Subsection />
-          </div>
-        </div>
-      </section>
+    <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1400ms]">
+      <Frame3Subsection />
+    </div>
+  </div>
+</section>
+
+
 
       {/* Call to Action */}
       <section className="relative px-8 py-16 text-center">
-        <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-white text-[45px] text-center tracking-[0] leading-[30px] mb-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1600ms]">
-          LET&apos;S BUILD DIGITAL EXPERIENCES THAT MOVE YOUR BUSINESS FORWARD
-        </h2>
+       <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-white text-[45px] text-center tracking-[0] leading-[1.2] mb-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1600ms]">
+  Let’s Create Digital Experiences That Drive Your Business Forward
+</h2>
+
 
         <Link
           className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[45px] text-center tracking-[0] leading-[30px] underline block translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1800ms] hover:text-[#ffdd44] transition-colors duration-300"

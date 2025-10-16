@@ -11,9 +11,9 @@ export const Frame13Subsection = () => {
         </div>
 
         <div className="flex flex-col w-full md:w-[407px] items-start gap-4 md:gap-[30px] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1000ms]">
-          <h3 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-white text-[28px] md:text-[35px] lg:text-[45px] tracking-[0] leading-[1.2]">
+           <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[28px] sm:text-[32px] md:text-[38px] lg:text-[42px] leading-tight">
             REBRANDING
-          </h3>
+          </h2>
 
           <p className="[font-family:'Gilroy-Medium-Medium',Helvetica] font-medium text-white text-lg md:text-2xl lg:text-3xl tracking-[0] leading-[1.4] md:leading-[1.3]">
             Refreshing your brand to stay modern, relevant, and competitive.
@@ -23,3 +23,5 @@ export const Frame13Subsection = () => {
     </section>
   );
 };
+ 
+             

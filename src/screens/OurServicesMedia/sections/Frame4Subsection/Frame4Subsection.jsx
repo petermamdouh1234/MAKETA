@@ -1,44 +1,45 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export const Frame4Subsection = () => {
+  const location = useLocation();
+
   const navigationItems = [
-    { label: "HOME", href: "/home", isActive: false },
-    { label: "OUR WORK", href: "/our-work", isActive: false },
-    { label: "ABOUT US", href: "/about-us", isActive: false },
-    { label: "SERVICES", href: "/our-services-u45-main", isActive: true },
-    { label: "CONTACT US", href: "/contact-us", isActive: false },
+    { label: "HOME", href: "/" },
+    { label: "OUR WORK", href: "/our-work" },
+    { label: "ABOUT US", href: "/about-us" },
+    { label: "SERVICES", href: "/our-services-u45-main" },
+    { label: "CONTACT US", href: "/contact-us" },
   ];
 
   return (
     <header className="flex w-full items-center justify-between px-8 py-6 relative translate-y-[-1rem] animate-fade-in opacity-0">
-      <img
-        className="h-[161px] w-[191px] object-cover translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]"
-        alt="Logo copy"
-        src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png"
-      />
+      {/* Logo */}
+      <Link to="/" className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
+        <img
+          className="h-[120px] w-[191px] object-cover"
+          alt="Logo"
+          src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png"
+        />
+      </Link>
 
-      <nav className="flex items-center gap-[101px] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
-        {navigationItems.map((item, index) =>
-          item.label === "HOME" ? (
-            <div
-              key={item.label}
-              className="[font-family:'Gilroy-Bold-Bold',Helvetica] font-bold text-white text-xs lg:text-sm xl:text-lg tracking-[0] leading-[normal] cursor-pointer hover:text-[#ffcc04] transition-colors duration-300"
-            >
-              {item.label}
-            </div>
-          ) : (
+      {/* Navigation */}
+      <nav className="flex items-center gap-[60px] md:gap-[80px] lg:gap-[100px] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
+        {navigationItems.map((item) => {
+          const isActive = location.pathname === item.href;
+
+          return (
             <Link
               key={item.label}
-              className={`[font-family:'Gilroy-Bold-Bold',Helvetica] font-bold text-xs lg:text-sm xl:text-lg tracking-[0] leading-[normal] block hover:text-[#ffcc04] transition-colors duration-300 ${
-                item.isActive ? "text-[#ffcc04]" : "text-white"
-              }`}
               to={item.href}
+              className={`[font-family:'Gilroy-Bold-Bold',Helvetica] font-bold text-xs md:text-sm lg:text-base xl:text-lg tracking-[0] leading-[normal] transition-colors duration-300 ${
+                isActive ? "text-[#ffcc04]" : "text-white hover:text-[#ffcc04]"
+              }`}
             >
               {item.label}
             </Link>
-          ),
-        )}
+          );
+        })}
       </nav>
     </header>
   );

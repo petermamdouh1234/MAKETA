@@ -14,7 +14,7 @@ export const Frame7Subsection = () => {
             </div>
 
             <div className="flex flex-col w-full md:max-w-[407px] items-start gap-3 md:gap-[30px]">
-              <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-white text-[24px] md:text-[32px] lg:text-[45px] tracking-[0] leading-[1.2]">
+               <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[28px] sm:text-[32px] md:text-[38px] lg:text-[42px] leading-tight">
                 MOTION GRAPHICS
               </h2>
 
