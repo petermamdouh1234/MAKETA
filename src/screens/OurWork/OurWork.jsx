@@ -12,7 +12,6 @@ const navigationItems = [
   { label: "CONTACT US", href: "/contact-us", active: false },
 ];
 
-
 const portfolioItems = [
   { 
     src: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/rectangle-651.png", 
@@ -74,239 +73,231 @@ const socialMediaLinks = [
 export const OurWork = () => {
   useScrollReveal();
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="bg-black w-full min-h-screen relative overflow-hidden">
-      {/* Header */}
-      <header className="relative z-10 flex w-full items-center justify-between px-8 py-6 reveal-fade">
-        <Link to="/">
+      <div className="max-w-[1440px] mx-auto px-4 md:px-8">
+
+        {/* HEADER */}
+        <header className="relative z-10 flex items-center justify-between px-4 md:px-8 py-4 md:py-6 reveal-fade">
+          <Link to="/">
+            <img
+              className="h-[80px] w-[90px] md:h-[100px] md:w-[120px] object-contain hover:scale-105 transition-transform duration-300"
+              alt="Logo"
+              src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png"
+            />
+          </Link>
+
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex items-center gap-[50px]">
+            {navigationItems.map((item) => (
+              <Link
+                key={item.label}
+                to={item.href}
+                className={`font-bold text-sm tracking-wide transition-colors ${
+                  item.active ? "text-[#ffcc04]" : "text-white"
+                } hover:text-[#ffcc04]`}
+                style={{ fontFamily: "Gilroy-Bold, Helvetica" }}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden text-[#ffcc04] text-3xl"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            ☰
+          </button>
+
+          {/* Mobile Menu */}
+          {menuOpen && (
+            <div className="absolute top-[80px] right-4 bg-[#111] border border-[#ffcc04]/20 rounded-xl flex flex-col items-start p-4 gap-3 shadow-lg z-50">
+              {navigationItems.map((item) => (
+                <Link
+                  key={item.label}
+                  to={item.href}
+                  className={`font-semibold text-white hover:text-[#ffcc04] transition-colors text-sm`}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          )}
+        </header>
+
+        {/* HERO SECTION */}
+        <section className="relative flex flex-col items-center justify-center text-center py-10 md:py-20 px-4 overflow-hidden">
           <img
-            className="h-[100px] w-[120px] object-contain hover:scale-105 transition-transform duration-300"
-            alt="Logo"
-            src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png"
+            className="absolute left-[-100px] top-[-60px] w-[350px] sm:w-[500px] h-auto opacity-70 animate-pulse-slow"
+            src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/layer-1-1-1.png"
+            alt="Metallic Shape"
           />
-        </Link>
 
-        <nav className="flex items-center gap-[60px]">
-          {navigationItems.map((item) => (
-            <Link
-              key={item.label}
-              to={item.href}
-              className={`relative font-bold text-sm tracking-wide transition-colors ${
-                item.active ? "text-[#ffcc04]" : "text-white"
-              } hover:text-[#ffcc04]`}
-              style={{ fontFamily: "Gilroy-Bold, Helvetica" }}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
-      </header>
+          <h1
+            className="text-[#C0C0C0]"
+            style={{
+              fontFamily: "Bebas Neue, Helvetica",
+              fontSize: "clamp(40px, 12vw, 160px)",
+              lineHeight: "0.9",
+            }}
+          >
+            HOW WE
+          </h1>
 
-      {/* Hero Section */}
-      <section className="relative flex flex-col items-center justify-center text-center py-28 overflow-hidden">
-        {/* Metallic Shape Background */}
-        <img
-          className="absolute left-[-80px] top-[-40px] w-[650px] h-[500px] object-contain opacity-80 reveal-left animate-pulse-slow"
-          alt="Metallic Shape"
-          src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/layer-1-1-1.png"
-        />
+          <h2
+            className="text-[#ffcc04] italic rotate-2 mt-[-10px]"
+            style={{
+              fontFamily: "Rockybilly-Regular, Helvetica",
+              fontSize: "clamp(50px, 10vw, 140px)",
+            }}
+          >
+            Our Work
+          </h2>
 
-        {/* Top Text */}
-        <h1
-          className="relative z-10 text-silver leading-[0.8] reveal-stagger"
-          style={{
-            fontFamily: "Bebas Neue, Helvetica",
-            fontSize: "clamp(110px,16vw,240px)",
-            color: "#C0C0C0"
-          }}
-        >
-          HOW WE
-        </h1>
+          <h1
+            className="text-[#C0C0C0] mt-[-10px]"
+            style={{
+              fontFamily: "Bebas Neue, Helvetica",
+              fontSize: "clamp(50px, 11vw, 150px)",
+              lineHeight: "0.9",
+            }}
+          >
+            DID IT
+          </h1>
 
-        {/* Middle Text (Our Work) */}
-        <h2
-          className="relative z-20 text-[#ffcc04] italic rotate-2 leading-none mt-[-30px] reveal-scale hover:scale-110 transition-transform duration-500"
-          style={{
-            fontFamily: "Rockybilly-Regular, Helvetica",
-            fontSize: "clamp(120px,14vw,200px)"
-          }}
-        >
-          Our Work
-        </h2>
-
-        {/* Bottom Text */}
-        <h1
-          className="relative z-10 text-silver leading-[0.8] mt-[-20px] reveal-stagger"
-          style={{
-            fontFamily: "Bebas Neue, Helvetica",
-            fontSize: "clamp(110px,16vw,240px)",
-            color: "#C0C0C0"
-          }}
-        >
-          DID IT
-        </h1>
-
-        {/* Description */}
-        <p
-          className="mt-16 max-w-[800px] text-white text-sm md:text-base font-semibold z-10 reveal-fade"
-          style={{ fontFamily: "Gilroy-SemiBold, Helvetica" }}
-        >
-          WE DON&apos;T JUST TALK ABOUT IMPACT — WE CREATE IT. EXPLORE HOW MAKETA HELPED BRANDS
-          DECLARE THEIR PRESENCE THROUGH DIGITAL AND OFFLINE STRATEGIES.
-        </p>
-      </section>
-
-      {/* Portfolio Grid */}
-      <section className="px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-[1200px] mx-auto">
-          {portfolioItems.map((item, index) => (
-            <Card 
-              key={index} 
-              className="bg-transparent border-none shadow-none group cursor-pointer reveal-stagger transform hover:-translate-y-2 transition-all duration-500"
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
-            >
-              <CardContent className="p-0 relative">
-                <div className="relative overflow-hidden rounded-[20px] shadow-lg hover:shadow-2xl hover:shadow-[#ffcc04]/20 transition-all duration-500">
-                  <img 
-                    className="w-full h-[320px] object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-75" 
-                    alt={item.alt} 
-                    src={item.src} 
-                  />
-                  
-                  {/* Overlay on hover */}
-                  <div className={`absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex items-center justify-center transition-all duration-500 ${
-                    hoveredIndex === index ? 'opacity-100' : 'opacity-0'
-                  }`}>
-                    <a
-                      href={item.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={(e) => e.stopPropagation()}
-                      className="transform transition-all duration-300"
-                    >
-                      <Button className="bg-[#ffcc04] hover:bg-[#ffdd44] text-black font-bold px-8 py-3 rounded-[15px] transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-[#ffcc04]/50 animate-bounce-subtle">
-                        View Project
-                      </Button>
-                    </a>
-                  </div>
-
-                  {/* Project Title on Hover */}
-                  <div className={`absolute bottom-0 left-0 right-0 p-6 transform transition-all duration-500 ${
-                    hoveredIndex === index ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
-                  }`}>
-                    <h3 className="text-white font-bold text-2xl" style={{ fontFamily: "Bebas Neue, Helvetica" }}>
-                      {item.title}
-                    </h3>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="relative w-full bg-black py-16 mt-16">
-        <div className="max-w-[1469px] mx-auto px-8">
-          <div className="flex flex-col lg:flex-row gap-12 mb-12">
-            {/* Logo */}
-            <div className="reveal-left">
-              <img
-                className="h-[191px] w-[191px] object-cover hover:scale-105 transition-transform duration-300"
-                alt="Logo"
-                src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png"
-              />
-            </div>
-
-            {/* Footer Links Grid */}
-            <div className="flex-1 grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-[158px]">
-              {/* About Us */}
-              <div className="reveal-stagger">
-                <h3 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-xl tracking-[0] leading-5 mb-[53px]">
-                  About Us
-                </h3>
-                <div className="flex flex-col gap-[27.5px]">
-                  {aboutUsLinks.map((link, index) => (
-                    <Link
-                      key={index}
-                      to={link.href}
-                      className="[font-family:'Gilroy-Medium-Medium',Helvetica] font-medium text-white text-lg tracking-[0] leading-[18px] hover:text-[#ffcc04] transition-colors"
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-
-              {/* Services */}
-              <div className="reveal-stagger">
-                <h3 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-xl tracking-[0] leading-5 mb-[53px]">
-                  Services
-                </h3>
-                <div className="flex flex-col gap-[27.5px]">
-                  {servicesLinks.map((link, index) => (
-                    <Link
-                      key={index}
-                      to={link.href}
-                      className="[font-family:'Gilroy-Medium-Medium',Helvetica] font-medium text-white text-lg tracking-[0] leading-[18px] hover:text-[#ffcc04] transition-colors"
-                    >
-                      {link.label === "Web & App Development" ? (
-                        <>
-                          Web &amp; App <br />
-                          Development
-                        </>
-                      ) : (
-                        link.label
-                      )}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-
-              {/* Contact Us */}
-              <div className="reveal-stagger">
-                <h3 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-xl tracking-[0] leading-5">
-                  Contact Us
-                </h3>
-              </div>
-
-              {/* Follow Us */}
-              <div className="reveal-stagger">
-                <h3 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-xl tracking-[0] leading-5 mb-[53px]">
-                  Follow us
-                </h3>
-                <div className="flex flex-col gap-[15px]">
-                  {socialMediaLinks.map((social, index) => (
-                    <Link
-                      key={index}
-                      to={social.href}
-                      className="flex items-center gap-[10px] group"
-                    >
-                      <img
-                        className="w-[30px] h-[30px] transition-transform group-hover:scale-110"
-                        alt={`${social.label} icon`}
-                        src={social.icon}
-                      />
-                      <span className="[font-family:'Gilroy-Medium-Medium',Helvetica] font-medium text-white text-lg tracking-[0] leading-[18px] group-hover:text-[#ffcc04] transition-colors">
-                        {social.label}
-                      </span>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Copyright */}
-          <div className="reveal-fade">
-            <p className="[font-family:'Gilroy-Medium-Medium',Helvetica] font-medium text-white text-lg tracking-[0] leading-[18px]">
-              Copyright © 2025 | All Rights Reserved
+          <div className="mt-8 md:mt-16 px-3 sm:px-8">
+            <p className="text-white text-sm sm:text-base md:text-lg leading-relaxed font-semibold">
+              WE DON&apos;T JUST TALK ABOUT IMPACT —{" "}
+              <span className="text-[#ffcc04] font-extrabold">WE CREATE IT</span>. EXPLORE HOW MAKETA HELPED BRANDS DECLARE THEIR PRESENCE THROUGH{" "}
+              <span className="text-[#ffcc04] font-extrabold">DIGITAL AND OFFLINE STRATEGIES</span>.
             </p>
           </div>
-        </div>
-      </footer>
+        </section>
+
+        {/* PORTFOLIO GRID */}
+        <section className="px-4 sm:px-8 py-10 sm:py-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-10 max-w-[1200px] mx-auto">
+            {portfolioItems.map((item, index) => (
+              <Card 
+                key={index} 
+                className="bg-transparent border-none shadow-none group cursor-pointer reveal-stagger transform hover:-translate-y-2 transition-all duration-500"
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
+              >
+                <CardContent className="p-0 relative">
+                  <div className="relative overflow-hidden rounded-[20px] shadow-lg hover:shadow-2xl hover:shadow-[#ffcc04]/20 transition-all duration-500">
+                    <img 
+                      className="w-full h-[240px] sm:h-[320px] object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-75" 
+                      alt={item.alt} 
+                      src={item.src} 
+                    />
+                    
+                    <div className={`absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex items-center justify-center transition-all duration-500 ${
+                      hoveredIndex === index ? 'opacity-100' : 'opacity-0'
+                    }`}>
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="transform transition-all duration-300"
+                      >
+                        <Button className="bg-[#ffcc04] hover:bg-[#ffdd44] text-black text-sm sm:text-base px-6 sm:px-8 py-2 sm:py-3 rounded-[12px] transition-all duration-300 hover:scale-110">
+                          View Project
+                        </Button>
+                      </a>
+                    </div>
+
+                    <div className={`absolute bottom-0 left-0 right-0 p-6 transform transition-all duration-500 ${
+                      hoveredIndex === index ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
+                    }`}>
+                      <h3 className="text-white font-bold text-xl sm:text-2xl" style={{ fontFamily: "Bebas Neue, Helvetica" }}>
+                        {item.title}
+                      </h3>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </section>
+
+        {/* FOOTER */}
+        <footer className="bg-black py-12 sm:py-16 mt-16 px-4">
+          <div className="max-w-[1469px] mx-auto flex flex-col gap-12 sm:gap-16">
+            <div className="flex flex-col lg:flex-row gap-10 sm:gap-16">
+              <div className="reveal-left flex justify-center lg:justify-start">
+                <img
+                  className="h-[120px] w-[120px] sm:h-[150px] sm:w-[150px] object-cover hover:scale-105 transition-transform duration-300"
+                  alt="Logo"
+                  src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png"
+                />
+              </div>
+
+              <div className="flex-1 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                  <h3 className="font-extrabold text-[#ffcc04] text-lg sm:text-xl mb-6">About Us</h3>
+                  <div className="flex flex-col gap-4">
+                    {aboutUsLinks.map((link, i) => (
+                      <Link key={i} to={link.href} className="text-white text-sm sm:text-lg hover:text-[#ffcc04]">
+                        {link.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="font-extrabold text-[#ffcc04] text-lg sm:text-xl mb-6">Services</h3>
+                  <div className="flex flex-col gap-4">
+                    {servicesLinks.map((link, i) => (
+                      <Link key={i} to={link.href} className="text-white text-sm sm:text-lg hover:text-[#ffcc04]">
+                        {link.label === "Web & App Development" ? (
+                          <>
+                            Web &amp; App <br /> Development
+                          </>
+                        ) : (
+                          link.label
+                        )}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="font-extrabold text-[#ffcc04] text-lg sm:text-xl mb-6">Contact Us</h3>
+                </div>
+
+                <div>
+                  <h3 className="font-extrabold text-[#ffcc04] text-lg sm:text-xl mb-6">Follow Us</h3>
+                  <div className="flex flex-col gap-3">
+                    {socialMediaLinks.map((social, i) => (
+                      <Link key={i} to={social.href} className="flex items-center gap-3 group">
+                        <img
+                          className="w-[24px] h-[24px] transition-transform group-hover:scale-110"
+                          alt={`${social.label} icon`}
+                          src={social.icon}
+                        />
+                        <span className="text-white text-sm sm:text-lg group-hover:text-[#ffcc04]">
+                          {social.label}
+                        </span>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p className="text-center text-white text-xs sm:text-base mt-6">
+              © 2025 | All Rights Reserved
+            </p>
+          </div>
+        </footer>
+      </div>
     </div>
   );
 };

@@ -11,95 +11,80 @@ import { Group3Subsection } from "../OurServicesMain/sections/Group3Subsection/G
 export const OurServicesMedia = () => {
   return (
     <div className="bg-black min-h-screen w-full relative overflow-hidden">
-      {/* Header */}
+      {/* ===== HEADER ===== */}
       <Frame4Subsection />
 
-      {/* Hero Section */}
-     <section className="relative px-4 md:px-8 pt-12 pb-8 md:pt-16 md:pb-10">
-  {/* Centered Background Image */}
-  <div className="absolute top-8 left-[-60px] pointer-events-none opacity-30">
+      {/* ===== HERO SECTION ===== */}
+      <section className="relative flex flex-col items-center justify-center text-center px-4 md:px-8 py-16 md:py-24 overflow-hidden">
+        {/* Background Decorative Image - Top Left */}
+        <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
           <img
-            className="w-[500px] sm:w-[650px] md:w-[750px] lg:w-[800px] h-auto object-contain"
+            className="absolute top-0 left-0 w-[350px] sm:w-[450px] md:w-[600px] lg:w-[700px] h-auto object-contain opacity-40"
             alt="Decorative background"
-      src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/layer-2-1.png"
-    />
-  </div>
+            src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/layer-2-1.png"
+          />
+        </div>
 
-  <div className="text-center relative z-10">
-    <h1 className="[font-family:'Rockybilly-Regular',Helvetica] font-normal text-[#ffcc04] text-[50px] md:text-[80px] lg:text-[110px] tracking-[0] leading-[1] mb-4 md:mb-6 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
-      Media<br />Production
-    </h1>
-
-    <div className="mt-[-10px]">
-      <OurServices1Subsection />
-    </div>
-  </div>
-</section>
-
-
-      {/* Description Section */}
-      <section className="relative px-4 md:px-8 py-8 md:py-10">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-white text-[22px] md:text-[32px] lg:text-[42px] tracking-[0] leading-tight mb-3 md:mb-4 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
-            <br /> FROM CONCEPT TO CREATION <br /> 
-          <h2
-  className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[24px] md:text-[35px] lg:text-[45px] text-center tracking-[0] leading-[1.2] mb-6 md:mb-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1600ms] px-4"
->
-  “ WE BRING YOUR IDEAS TO LIFE ”
-</h2>
-
-          </h2>
-
-          <p className="[font-family:'Gilroy-SemiBold-SemiBold',Helvetica] font-semibold text-white text-base md:text-lg lg:text-[22px] tracking-[0] leading-7 md:leading-8 lg:leading-9 max-w-3xl mx-auto translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:600ms]">
-            {"Powerful content is at the heart of every campaign. Our production team <br/> creates visuals that inspire, engage, and tell your story with impact. <br/> From cinematic videos to striking photography and dynamic motion <br/> graphics, we make sure your brand shines everywhere it appears."
-              .split('<br/>')
-              .map((line, i, arr) => (
-                <React.Fragment key={i}>
-                  {line}
-                  {i < arr.length - 1 && <br />}
-                </React.Fragment>
-              ))}
-          </p>
+        {/* Hero Text */}
+        <div className="relative z-10 flex flex-col items-center justify-center space-y-3">
+          <h1 className="[font-family:'Rockybilly-Regular',Helvetica] font-normal text-[#ffcc04] text-[50px] sm:text-[80px] md:text-[100px] lg:text-[120px] leading-tight animate-fade-in opacity-0 [--animation-delay:200ms]">
+            Media <br /> Production
+          </h1>
+          <OurServices1Subsection />
         </div>
       </section>
 
-     {/* Services List */}
-<section className="relative px-4 md:px-8 py-12 md:py-20">
-  <div className="max-w-6xl mx-auto space-y-10 md:space-y-14">
-    <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:800ms]">
-      <Frame5Subsection />
-    </div>
+      {/* ===== DESCRIPTION SECTION ===== */}
+      <div className="max-w-5xl mx-auto text-center mb-6 md:mb-10 px-4 md:px-8">
+        <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-white text-[20px] sm:text-[26px] md:text-[32px] lg:text-[38px] leading-tight mb-2 animate-fade-in opacity-0 [--animation-delay:400ms]">
+          FROM CONCEPT TO CREATION
+        </h2>
 
-    <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1000ms]">
-      <Frame6Subsection />
-    </div>
+        <h3 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[22px] sm:text-[30px] md:text-[36px] lg:text-[42px] leading-[1.3] mb-4 animate-fade-in opacity-0 [--animation-delay:600ms]">
+          “ WE BRING YOUR IDEAS TO LIFE ”
+        </h3>
 
-    <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1200ms]">
-      <Frame7Subsection />
-    </div>
+        <p className="[font-family:'Gilroy-SemiBold-SemiBold',Helvetica] font-semibold text-white text-sm sm:text-base md:text-lg lg:text-[20px] leading-relaxed max-w-3xl mx-auto animate-fade-in opacity-0 [--animation-delay:800ms]">
+          Powerful content is at the heart of every campaign. Our production
+          team creates visuals that inspire, engage, and tell your story with
+          impact. From cinematic videos to striking photography and dynamic
+          motion graphics, we make sure your brand shines everywhere it appears.
+        </p>
+      </div>
 
-    <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1400ms]">
-      <Frame8Subsection />
-    </div>
-  </div>
-</section>
+      {/* ===== SERVICES SECTION ===== */}
+      <section className="relative px-4 md:px-8 py-16 md:py-24">
+        <div className="max-w-6xl mx-auto space-y-16 md:space-y-20">
+          <div className="animate-fade-in opacity-0 [--animation-delay:800ms]">
+            <Frame5Subsection />
+          </div>
+          <div className="animate-fade-in opacity-0 [--animation-delay:1000ms]">
+            <Frame6Subsection />
+          </div>
+          <div className="animate-fade-in opacity-0 [--animation-delay:1200ms]">
+            <Frame7Subsection />
+          </div>
+          <div className="animate-fade-in opacity-0 [--animation-delay:1400ms]">
+            <Frame8Subsection />
+          </div>
+        </div>
+      </section>
 
-
-      {/* Call to Action */}
-      <section className="relative px-4 py-12 text-center">
-        <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-white text-[36px] md:text-[42px] tracking-[0] leading-[1.2] mb-6 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1600ms]">
+      {/* ===== CALL TO ACTION ===== */}
+      <section className="relative px-4 py-16 text-center">
+        <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-white text-[28px] sm:text-[34px] md:text-[40px] lg:text-[44px] leading-[1.2] mb-5 animate-fade-in opacity-0 [--animation-delay:1600ms]">
           YOUR STORY DESERVES TO BE SEEN BEAUTIFULLY
         </h2>
 
         <Link
           to="/contact-us"
-          className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[36px] md:text-[42px] tracking-[0] underline block translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1800ms] hover:text-[#ffcc04]/80 transition-colors"
+          className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[28px] sm:text-[34px] md:text-[40px] lg:text-[44px] underline block animate-fade-in opacity-0 [--animation-delay:1800ms] hover:text-[#ffcc04]/80 transition-colors"
         >
           LET&apos;S CREATE TOGETHER
         </Link>
       </section>
 
-      {/* Footer */}
+      {/* ===== FOOTER ===== */}
       <Group3Subsection />
     </div>
   );

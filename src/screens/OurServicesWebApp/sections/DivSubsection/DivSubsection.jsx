@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { MobileMenu } from "../../../../components/MobileMenu";
+
 
 export const DivSubsection = () => {
   const navigationItems = [
@@ -20,7 +22,8 @@ export const DivSubsection = () => {
         />
       </div>
 
-      <nav className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
+      <nav className="hidden md:flex items-center gap-[60px] md:gap-[80px] lg:gap-[100px] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
+
         <div className="flex items-center gap-[101px]">
           {navigationItems.map((item, index) =>
             item.href === "/" ? (
@@ -44,6 +47,9 @@ export const DivSubsection = () => {
           )}
         </div>
       </nav>
+       <div className="md:hidden">
+    <MobileMenu />
+  </div>
     </header>
   );
 };

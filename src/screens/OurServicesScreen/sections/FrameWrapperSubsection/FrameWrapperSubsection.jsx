@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { MobileMenu } from "../../../../components/MobileMenu";
+
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -46,6 +48,9 @@ export const FrameWrapperSubsection = () => {
           </NavigationMenuList>
         </NavigationMenu>
       </nav>
+       <div className="md:hidden">
+    <MobileMenu />
+  </div>
     </header>
   );
 };

@@ -1,5 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import { MobileMenu } from "../../../../components/MobileMenu";
+
 
 export const Frame4Subsection = () => {
   const location = useLocation();
@@ -24,7 +26,8 @@ export const Frame4Subsection = () => {
       </Link>
 
       {/* Navigation */}
-      <nav className="flex items-center gap-[60px] md:gap-[80px] lg:gap-[100px] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
+      <nav className="hidden md:flex items-center gap-[60px] md:gap-[80px] lg:gap-[100px] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
+
         {navigationItems.map((item) => {
           const isActive = location.pathname === item.href;
 
@@ -41,6 +44,9 @@ export const Frame4Subsection = () => {
           );
         })}
       </nav>
+       <div className="md:hidden">
+    <MobileMenu />
+  </div>
     </header>
   );
 };

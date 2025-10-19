@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { MobileMenu } from "../../components/MobileMenu"; // adjust path if needed
+
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -49,7 +51,7 @@ export const FrameScreen = () => {
     <div className="bg-black min-h-screen w-full relative overflow-hidden">
       {/* Header */}
       <header
-        className="flex items-center justify-between w-full px-4 md:px-8 py-4 md:py-6 relative min-h-[80px] md:min-h-[120px] reveal-fade"
+        className="flex items-center justify-between w-full px-4 md:px-8 py-4 md:py-6 relative min-h-[80px] md:min-h-[120px] reveal-fade z-50"
       >
         <div className="reveal-left">
           <Link to="/">
@@ -61,24 +63,33 @@ export const FrameScreen = () => {
           </Link>
         </div>
 
-        <NavigationMenu className="reveal-right hidden md:block">
-          <NavigationMenuList className="flex items-center gap-4 lg:gap-[60px]">
-            {navigationItems.map((item) => (
-              <NavigationMenuItem key={item.label}>
-                <NavigationMenuLink asChild>
-                  <Link
-                    className={`relative w-fit [font-family:'Gilroy-Bold-Bold',Helvetica] font-bold text-xs lg:text-sm tracking-[0] leading-[normal] transition-all duration-300 hover:text-[#ffcc04] hover:scale-105 ${
-                      item.isActive ? "text-[#ffcc04]" : "text-white"
-                    }`}
-                    to={item.href}
-                  >
-                    {item.label}
-                  </Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-            ))}
-          </NavigationMenuList>
-        </NavigationMenu>
+        {/* Desktop Navigation (hidden on small screens) */}
+        <div className="hidden md:block">
+          <NavigationMenu className="reveal-right">
+            <NavigationMenuList className="flex items-center gap-4 lg:gap-[60px]">
+              {navigationItems.map((item) => (
+                <NavigationMenuItem key={item.label}>
+                  <NavigationMenuLink asChild>
+                    <Link
+                      className={`relative w-fit [font-family:'Gilroy-Bold-Bold',Helvetica] font-bold text-xs lg:text-sm tracking-[0] leading-[normal] transition-all duration-300 hover:text-[#ffcc04] hover:scale-105 ${
+                        item.isActive ? "text-[#ffcc04]" : "text-white"
+                      }`}
+                      to={item.href}
+                    >
+                      {item.label}
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+              ))}
+            </NavigationMenuList>
+          </NavigationMenu>
+        </div>
+
+        {/* Mobile Menu (visible only on small screens) */}
+        <div className="md:hidden">
+          {/* pass navigationItems so MobileMenu can mark active item if implemented */}
+          <MobileMenu navigationItems={navigationItems} />
+        </div>
       </header>
 
       {/* Hero Section */}
@@ -220,107 +231,76 @@ export const FrameScreen = () => {
       </section>
 
       {/* Footer */}
-      <footer className="relative w-full bg-black py-16 mt-16">
-        <div className="max-w-[1469px] mx-auto px-8">
-          <div className="flex flex-col lg:flex-row gap-12 mb-12">
-            {/* Logo */}
-            <div className="reveal-left">
-              <Link to="/"> {/* Ensure logo links to home */}
-                <img
-                  className="h-[191px] w-[191px] object-cover hover:scale-105 transition-transform duration-300"
-                  alt="Logo"
-                  src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png"
-                />
-              </Link>
-            </div>
-
-            {/* Footer Links Grid */}
-            <div className="flex-1 grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-[158px]">
-              {/* About Us */}
-              <div className="reveal-stagger">
-                <h3 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-xl tracking-[0] leading-5 mb-[53px]">
-                  About Us
-                </h3>
-                <div className="flex flex-col gap-[27.5px]">
-                  {aboutUsLinks.map((link, index) => (
-                    <Link
-                      key={index}
-                      to={link.href}
-                      className="[font-family:'Gilroy-Medium-Medium',Helvetica] font-medium text-white text-lg tracking-[0] leading-[18px] hover:text-[#ffcc04] transition-colors"
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-
-              {/* Services */}
-              <div className="reveal-stagger">
-                <h3 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-xl tracking-[0] leading-5 mb-[53px]">
-                  Services
-                </h3>
-                <div className="flex flex-col gap-[27.5px]">
-                  {servicesLinks.map((link, index) => (
-                    <Link
-                      key={index}
-                      to={link.href}
-                      className="[font-family:'Gilroy-Medium-Medium',Helvetica] font-medium text-white text-lg tracking-[0] leading-[18px] hover:text-[#ffcc04] transition-colors"
-                    >
-                      {link.label === "Web & App Development" ? (
-                        <>
-                          Web &amp; App <br />
-                          Development
-                        </>
-                      ) : (
-                        link.label
-                      )}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-
-              {/* Contact Us */}
-              <div className="reveal-stagger">
-                <h3 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-xl tracking-[0] leading-5">
-                  Contact Us
-                </h3>
-              </div>
-
-              {/* Follow Us */}
-              <div className="reveal-stagger">
-                <h3 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-xl tracking-[0] leading-5 mb-[53px]">
-                  Follow us
-                </h3>
-                <div className="flex flex-col gap-[15px]">
-                  {socialMediaLinks.map((social, index) => (
-                    <Link
-                      key={index}
-                      to={social.href}
-                      className="flex items-center gap-[10px] group"
-                    >
+        {/* FOOTER */}
+              <footer className="bg-black py-12 sm:py-16 mt-16 px-4">
+                <div className="max-w-[1469px] mx-auto flex flex-col gap-12 sm:gap-16">
+                  <div className="flex flex-col lg:flex-row gap-10 sm:gap-16">
+                    <div className="reveal-left flex justify-center lg:justify-start">
                       <img
-                        className="w-[30px] h-[30px] transition-transform group-hover:scale-110"
-                        alt={`${social.label} icon`}
-                        src={social.icon}
+                        className="h-[120px] w-[120px] sm:h-[150px] sm:w-[150px] object-cover hover:scale-105 transition-transform duration-300"
+                        alt="Logo"
+                        src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png"
                       />
-                      <span className="[font-family:'Gilroy-Medium-Medium',Helvetica] font-medium text-white text-lg tracking-[0] leading-[18px] group-hover:text-[#ffcc04] transition-colors">
-                        {social.label}
-                      </span>
-                    </Link>
-                  ))}
+                    </div>
+      
+                    <div className="flex-1 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                      <div>
+                        <h3 className="font-extrabold text-[#ffcc04] text-lg sm:text-xl mb-6">About Us</h3>
+                        <div className="flex flex-col gap-4">
+                          {aboutUsLinks.map((link, i) => (
+                            <Link key={i} to={link.href} className="text-white text-sm sm:text-lg hover:text-[#ffcc04]">
+                              {link.label}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+      
+                      <div>
+                        <h3 className="font-extrabold text-[#ffcc04] text-lg sm:text-xl mb-6">Services</h3>
+                        <div className="flex flex-col gap-4">
+                          {servicesLinks.map((link, i) => (
+                            <Link key={i} to={link.href} className="text-white text-sm sm:text-lg hover:text-[#ffcc04]">
+                              {link.label === "Web & App Development" ? (
+                                <>
+                                  Web &amp; App <br /> Development
+                                </>
+                              ) : (
+                                link.label
+                              )}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+      
+                      <div>
+                        <h3 className="font-extrabold text-[#ffcc04] text-lg sm:text-xl mb-6">Contact Us</h3>
+                      </div>
+      
+                      <div>
+                        <h3 className="font-extrabold text-[#ffcc04] text-lg sm:text-xl mb-6">Follow Us</h3>
+                        <div className="flex flex-col gap-3">
+                          {socialMediaLinks.map((social, i) => (
+                            <Link key={i} to={social.href} className="flex items-center gap-3 group">
+                              <img
+                                className="w-[24px] h-[24px] transition-transform group-hover:scale-110"
+                                alt={`${social.label} icon`}
+                                src={social.icon}
+                              />
+                              <span className="text-white text-sm sm:text-lg group-hover:text-[#ffcc04]">
+                                {social.label}
+                              </span>
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <p className="text-center text-white text-xs sm:text-base mt-6">
+                    © 2025 | All Rights Reserved
+                  </p>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Copyright */}
-          <div className="reveal-fade">
-            <p className="[font-family:'Gilroy-Medium-Medium',Helvetica] font-medium text-white text-lg tracking-[0] leading-[18px]">
-              Copyright © 2025 | All Rights Reserved
-            </p>
-          </div>
-        </div>
-      </footer>
+              </footer>
     </div>
   );
 };

@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { MobileMenu } from "../../../../components/MobileMenu";
+
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -17,39 +19,46 @@ export const Frame20Subsection = () => {
   ];
 
   return (
-    <header className="flex w-full items-center justify-between px-8 py-4 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:0ms]">
-      <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
-        <img
-          className="h-[161px] w-[191px] object-cover"
-          alt="Logo copy"
-          src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png"
-        />
+    <header className="relative flex w-full items-center justify-between px-8 py-4">
+      {/* ===== Logo ===== */}
+      <div>
+        <Link to="/home">
+          <img
+            className="h-[161px] w-[191px] object-cover"
+            alt="Logo"
+            src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png"
+          />
+        </Link>
       </div>
 
-      <NavigationMenu className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
-        <NavigationMenuList className="flex items-center gap-[101px]">
-          {navigationItems.map((item, index) => (
-            <NavigationMenuItem key={item.label}>
-              {item.href === "/" ? (
-                <div className="relative w-fit mt-[-1.00px] [font-family:'Gilroy-Bold-Bold',Helvetica] font-bold text-white text-lg tracking-[0] leading-[normal] cursor-pointer hover:text-[#ffcc04] transition-colors">
-                  {item.label}
-                </div>
-              ) : (
+      {/* ===== Desktop Navigation ===== */}
+      <div className="hidden md:block">
+        <NavigationMenu>
+          <NavigationMenuList className="flex items-center gap-[80px]">
+            {navigationItems.map((item) => (
+              <NavigationMenuItem key={item.label}>
                 <NavigationMenuLink asChild>
                   <Link
-                    className={`relative w-fit mt-[-1.00px] [font-family:'Gilroy-Bold-Bold',Helvetica] font-bold text-lg tracking-[0] leading-[normal] block hover:text-[#ffcc04] transition-colors ${
-                      item.isActive ? "text-[#ffcc04]" : "text-white"
-                    }`}
                     to={item.href}
+                    className={`[font-family:'Gilroy-Bold-Bold',Helvetica] font-bold text-lg transition-colors duration-300 ${
+                      item.isActive
+                        ? "text-[#ffcc04]"
+                        : "text-white hover:text-[#ffcc04]"
+                    }`}
                   >
                     {item.label}
                   </Link>
                 </NavigationMenuLink>
-              )}
-            </NavigationMenuItem>
-          ))}
-        </NavigationMenuList>
-      </NavigationMenu>
+              </NavigationMenuItem>
+            ))}
+          </NavigationMenuList>
+        </NavigationMenu>
+      </div>
+
+      {/* ===== Mobile Menu ===== */}
+      <div className="md:hidden z-50">
+        <MobileMenu />
+      </div>
     </header>
   );
 };

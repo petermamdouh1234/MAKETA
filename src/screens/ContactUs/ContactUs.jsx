@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/button";
+import { MobileMenu } from "../../components/MobileMenu";
+
+
+
 import {
   Card,
   CardContent,
@@ -63,29 +67,35 @@ export const ContactUs = () => {
       </div>
 
       {/* Header Navigation */}
-      <header className="flex w-full items-center justify-between px-8 py-6 relative reveal-fade">
-        <Link to="/" className="reveal-left">
-          <img
-            className="w-[120px] h-[100px] object-cover hover:scale-105 transition-transform duration-300"
-            alt="Logo copy"
-            src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png"
-          />
-        </Link>
+    <header className="flex w-full items-center justify-between px-8 py-6 relative reveal-fade">
+  {/* Logo */}
+  <Link to="/" className="reveal-left">
+    <img
+      className="w-[120px] h-[100px] object-cover hover:scale-105 transition-transform duration-300"
+      alt="Logo copy"
+      src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/logo-copy-1-8.png"
+    />
+  </Link>
 
-        <nav className="flex items-center gap-[60px] reveal-right">
-          {navigationItems.map((item, index) => (
-            <Link
-              key={index}
-              className={`w-fit [font-family:'Gilroy-Bold-Bold',Helvetica] font-bold text-sm tracking-[0] leading-[normal] block transition-colors hover:text-[#ffcc04] ${
-                item.active ? "text-[#ffcc04]" : "text-white"
-              }`}
-              to={item.href}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
-      </header>
+  {/* Desktop Navigation */}
+  <nav className="hidden md:flex items-center gap-[60px] reveal-right">
+    {navigationItems.map((item, index) => (
+      <Link
+        key={index}
+        className={`w-fit [font-family:'Gilroy-Bold-Bold',Helvetica] font-bold text-sm tracking-[0] leading-[normal] block transition-colors hover:text-[#ffcc04] ${
+          item.active ? "text-[#ffcc04]" : "text-white"
+        }`}
+        to={item.href}
+      >
+        {item.label}
+      </Link>
+    ))}
+  </nav>
+
+  {/* Mobile Menu */}
+  <MobileMenu navigationItems={navigationItems} />
+</header>
+
 
       {/* Main Content Container */}
       <div className="container mx-auto px-4 md:px-8 py-8 md:py-16">

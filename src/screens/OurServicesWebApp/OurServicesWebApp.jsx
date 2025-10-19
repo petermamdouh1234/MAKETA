@@ -1,133 +1,95 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { AtMaketaWeBelieveSubsection } from "../AboutUs/sections/AtMaketaWeBelieveSubsection/AtMaketaWeBelieveSubsection";
-import { ComponentSubsection } from "../AboutUs/sections/ComponentSubsection/ComponentSubsection";
-import { Frame19Subsection } from "../AboutUs/sections/Frame19Subsection/Frame19Subsection";
-import { Frame20Subsection } from "../AboutUs/sections/Frame20Subsection/Frame20Subsection";
-import { Group4Subsection } from "../AboutUs/sections/Group4Subsection/Group4Subsection";
-import { WeDonTJustSubsection } from "../AboutUs/sections/WeDonTJustSubsection/WeDonTJustSubsection";
-import { Frame14Subsection } from "../OurServicesMain/sections/Frame14Subsection/Frame14Subsection";
-import { Frame15Subsection } from "../OurServicesMain/sections/Frame15Subsection/Frame15Subsection";
-import { Frame16Subsection } from "../OurServicesMain/sections/Frame16Subsection/Frame16Subsection";
-import { Frame17Subsection } from "../OurServicesMain/sections/Frame17Subsection/Frame17Subsection";
-import { Frame18Subsection } from "../OurServicesMain/sections/Frame18Subsection/Frame18Subsection";
-import { Group3Subsection } from "../OurServicesMain/sections/Group3Subsection/Group3Subsection";
-import { WhatWeDoSubsection } from "../OurServicesMain/sections/WhatWeDoSubsection/WhatWeDoSubsection";
-import { Frame4Subsection } from "../OurServicesMedia/sections/Frame4Subsection/Frame4Subsection";
-import { Frame5Subsection } from "../OurServicesMedia/sections/Frame5Subsection/Frame5Subsection";
-import { Frame6Subsection } from "../OurServicesMedia/sections/Frame6Subsection/Frame6Subsection";
-import { Frame7Subsection } from "../OurServicesMedia/sections/Frame7Subsection/Frame7Subsection";
-import { Frame8Subsection } from "../OurServicesMedia/sections/Frame8Subsection/Frame8Subsection";
-import { Group1Subsection } from "../OurServicesMedia/sections/Group1Subsection/Group1Subsection";
-import { OurServices1Subsection } from "../OurServicesMedia/sections/OurServices1Subsection/OurServices1Subsection";
-import { DivWrapperSubsection } from "../OurServicesScreen/sections/DivWrapperSubsection/DivWrapperSubsection";
-import { FrameSubsection } from "../OurServicesScreen/sections/FrameSubsection/FrameSubsection";
-import { FrameWrapperSubsection } from "../OurServicesScreen/sections/FrameWrapperSubsection/FrameWrapperSubsection";
-import { GroupSubsection } from "../OurServicesScreen/sections/GroupSubsection/GroupSubsection";
-import { OurServicesSubsection } from "../OurServicesScreen/sections/OurServicesSubsection/OurServicesSubsection";
-import { Frame9Subsection } from "../Screen6/sections/Frame9Subsection/Frame9Subsection";
-import { Frame10Subsection } from "../Screen6/sections/Frame10Subsection/Frame10Subsection";
-import { Frame11Subsection } from "../Screen6/sections/Frame11Subsection/Frame11Subsection";
-import { Frame12Subsection } from "../Screen6/sections/Frame12Subsection/Frame12Subsection";
-import { Frame13Subsection } from "../Screen6/sections/Frame13Subsection/Frame13Subsection";
-import { Group2Subsection } from "../Screen6/sections/Group2Subsection/Group2Subsection";
-import { OurServices2Subsection } from "../Screen6/sections/OurServices2Subsection/OurServices2Subsection";
-import { DivSubsection } from "./sections/DivSubsection/DivSubsection";
+import { OurServicesWrapperSubsection } from "./sections/OurServicesWrapperSubsection/OurServicesWrapperSubsection";
+import { SectionComponentNodeSubsection } from "./sections/SectionComponentNodeSubsection/SectionComponentNodeSubsection";
 import { Frame1Subsection } from "./sections/Frame1Subsection/Frame1Subsection";
 import { Frame2Subsection } from "./sections/Frame2Subsection/Frame2Subsection";
 import { Frame3Subsection } from "./sections/Frame3Subsection/Frame3Subsection";
-import { GroupWrapperSubsection } from "./sections/GroupWrapperSubsection/GroupWrapperSubsection";
-import { OurServicesWrapperSubsection } from "./sections/OurServicesWrapperSubsection/OurServicesWrapperSubsection";
-import { SectionComponentNodeSubsection } from "./sections/SectionComponentNodeSubsection/SectionComponentNodeSubsection";
-// import { Group3Subsection } from "../OurServicesMain/sections/Group3Subsection/Group3Subsection"; // This import is not needed if Group3Subsection is already imported or not used directly here
+import { DivSubsection } from "./sections/DivSubsection/DivSubsection";
+import { Group3Subsection } from "../OurServicesMain/sections/Group3Subsection/Group3Subsection";
 
 export const OurServicesWebApp = () => {
   return (
-    <div className="bg-black min-h-screen w-full relative overflow-hidden">
-      {/* Header */}
+    <div
+      className="bg-black min-h-screen w-full relative overflow-hidden
+      [img]:object-cover [img]:object-center"
+      style={{ zoom: 0.95 }} // Slightly zoomed out look
+    >
+      {/* ===== HEADER ===== */}
       <DivSubsection />
 
-      {/* Hero Section */}
-      <section className="relative px-8 py-16">
-        <div className="text-center mb-16">
-          <h1 className="[font-family:'Rockybilly-Regular',Helvetica] font-normal text-[#ffcc04] text-[90px] tracking-[0] leading-[normal] mb-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
-            Web &amp;<br />App Development
-          </h1>
-          
-          <OurServicesWrapperSubsection />
+      {/* ===== HERO SECTION ===== */}
+      <section className="relative px-4 md:px-8 py-12 md:py-20 overflow-hidden">
+        {/* Background Decorative Image */}
+         <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+          <img
+            className="absolute top-0 left-0 w-[300px] sm:w-[420px] md:w-[550px] lg:w-[650px] h-auto object-contain opacity-40"
+            alt="Decorative background"
+            src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/layer-1-1-1.png"
+          />
         </div>
 
-        {/* Background decorative image */}
-        <div className="absolute top-8 left-[-60px] pointer-events-none opacity-30">
-          <img
-            className="w-[300px] sm:w-[400px] md:w-[600px] lg:w-[500px] h-auto object-contain"
-            alt="Decorative background"
-          src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/d81a8ffdbe47a72b1026097b90a62ed9-copy-1-1.png"
-        />
+        {/* Foreground Content */}
+        <div className="relative z-10 text-center mb-16">
+          <h1 className="[font-family:'Rockybilly-Regular',Helvetica] font-normal text-[#ffcc04] text-[50px] sm:text-[70px] md:text-[90px] leading-tight mb-8 animate-fade-in opacity-0 [--animation-delay:200ms]">
+            Web &amp;<br />App Development
+          </h1>
+          <OurServicesWrapperSubsection />
         </div>
       </section>
 
-      {/* Description Section */}
-     
-       <div className="max-w-6xl mx-auto text-center mb-16">
- <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[45px] text-center tracking-[0] leading-[1.2] mb-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
-  Seamless, Smart, and Built for Growth
-</h2>
+      {/* ===== DESCRIPTION SECTION ===== */}
+      <div className="max-w-6xl mx-auto text-center mb-16 px-4">
+        <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[28px] sm:text-[35px] md:text-[45px] leading-[1.2] mb-6 animate-fade-in opacity-0 [--animation-delay:400ms]">
+          Seamless, Smart, and Built for Growth
+        </h2>
 
+        <p className="[font-family:'Gilroy-SemiBold-SemiBold',Helvetica] font-semibold text-white text-[16px] sm:text-[20px] md:text-[25px] leading-relaxed max-w-4xl mx-auto animate-fade-in opacity-0 [--animation-delay:600ms]">
+          {"Your website or app is more than a tool — it's the foundation of your digital presence. At Maketa, we craft platforms that are beautiful, intuitive, and designed to grow with your business."
+            .split('. ')
+            .map((line, i, arr) => (
+              <React.Fragment key={i}>
+                {line}
+                {i < arr.length - 1 && '.'}
+                <br />
+              </React.Fragment>
+            ))}
+        </p>
+      </div>
 
-  <p className="[font-family:'Gilroy-SemiBold-SemiBold',Helvetica] font-semibold text-white text-[25px] tracking-[0] leading-10 max-w-4xl mx-auto translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:600ms]">
-    {"Your website or app is more than a tool — it's the foundation of your digital presence. At Maketa, we craft platforms that are beautiful, intuitive, and designed to grow with your business."
-      .split('. ').map((line, i, arr) => (
-        <React.Fragment key={i}>
-          {line}{i < arr.length - 1 && '.'}<br />
-        </React.Fragment>
-      ))}
-  </p>
-</div>
+      {/* ===== SERVICES LIST ===== */}
+      <section className="relative px-4 md:px-8 py-12 md:py-20 overflow-hidden">
+        <div className="max-w-6xl mx-auto space-y-10 md:space-y-14">
+          <div className="animate-fade-in opacity-0 [--animation-delay:800ms]">
+            <SectionComponentNodeSubsection />
+          </div>
+          <div className="animate-fade-in opacity-0 [--animation-delay:1000ms]">
+            <Frame1Subsection />
+          </div>
+          <div className="animate-fade-in opacity-0 [--animation-delay:1200ms]">
+            <Frame2Subsection />
+          </div>
+          <div className="animate-fade-in opacity-0 [--animation-delay:1400ms]">
+            <Frame3Subsection />
+          </div>
+        </div>
+      </section>
 
-      
-
-     
-      {/* Services List */}
-{/* Services List */}
-<section className="relative px-4 md:px-8 py-12 md:py-20">
-  <div className="max-w-6xl mx-auto space-y-10 md:space-y-14">
-    <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:800ms]">
-      <SectionComponentNodeSubsection />
-    </div>
-
-    <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1000ms]">
-      <Frame1Subsection />
-    </div>
-
-    <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1200ms]">
-      <Frame2Subsection />
-    </div>
-
-    <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1400ms]">
-      <Frame3Subsection />
-    </div>
-  </div>
-</section>
-
-
-
-      {/* Call to Action */}
-      <section className="relative px-8 py-16 text-center">
-       <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-white text-[45px] text-center tracking-[0] leading-[1.2] mb-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1600ms]">
-  Let’s Create Digital Experiences That Drive Your Business Forward
-</h2>
-
+      {/* ===== CALL TO ACTION ===== */}
+      <section className="relative px-4 sm:px-8 py-12 sm:py-16 text-center overflow-hidden">
+        <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-white text-[28px] sm:text-[35px] md:text-[45px] leading-tight mb-6 animate-fade-in opacity-0 [--animation-delay:1600ms]">
+          Let’s Create Digital Experiences That Drive Your Business Forward
+        </h2>
 
         <Link
-          className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[45px] text-center tracking-[0] leading-[30px] underline block translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1800ms] hover:text-[#ffdd44] transition-colors duration-300"
           to="/contact-us"
+          className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[22px] sm:text-[28px] md:text-[35px] leading-[30px] underline block animate-fade-in opacity-0 [--animation-delay:1800ms] hover:text-[#ffdd44] transition-colors duration-300"
         >
           START YOUR PROJECT TODAY
         </Link>
       </section>
 
-      {/* Footer */}
+      {/* ===== FOOTER ===== */}
       <Group3Subsection />
     </div>
   );
