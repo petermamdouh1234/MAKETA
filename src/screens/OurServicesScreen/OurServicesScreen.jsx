@@ -13,36 +13,107 @@ export const OurServicesScreen = () => {
       <FrameWrapperSubsection />
 
       {/* ===== HERO SECTION ===== */}
-      <section className="relative px-4 md:px-6 pt-6 pb-2 text-center">
-        <h1 className="[font-family:'Rockybilly-Regular',Helvetica] font-normal text-[#ffcc04] text-[48px] md:text-[80px] lg:text-[100px] mb-2 md:mb-4 leading-none animate-fade-in opacity-0 [--animation-delay:200ms]">
-          Marketing
-        </h1>
-
-        <div className="mt-0 mb-0">
-          <OurServicesSubsection />
-        </div>
-      </section>
-
-      {/* ===== INTRO SECTION ===== */}
-      <section className="relative px-6 md:px-12 py-14 md:py-20 max-w-5xl mx-auto bg-black border-t border-b border-[#3c3c3c] text-left md:text-center">
-  <div className="space-y-6">
-    <h2 className="[font-family:'Rockybilly-Regular',Helvetica] text-[#ffcc04] text-4xl md:text-6xl font-normal tracking-wide animate-fade-in opacity-0 [--animation-delay:300ms]">
-      We Build Connection, Not Just Campaigns
-    </h2>
-
-    <p className="[font-family:'Gilroy-SemiBold-SemiBold',Helvetica] text-white text-sm md:text-base lg:text-lg leading-relaxed md:leading-8 animate-fade-in opacity-0 [--animation-delay:500ms]">
-      Marketing is more than a campaign — it’s how your brand declares its
-      presence in the world. At <span className="text-[#ffcc04]">Maketa</span>, we combine
-      digital precision and offline experiences to connect you to the right
-      audience, wherever they are.
-    </p>
-
-    <p className="[font-family:'Gilroy-Medium-Medium',Helvetica] text-white/80 text-sm md:text-base lg:text-lg leading-relaxed md:leading-8 animate-fade-in opacity-0 [--animation-delay:700ms]">
-      From social platforms to city streets, from storytelling ads to bold
-      activations — we design strategies that speak, engage, and inspire action.
-    </p>
+      
+   {/* ===== OUR MARKETING SERVICES SECTION (PERFECT STYLE) ===== */}
+<section className="relative flex flex-col items-center justify-center text-center py-10 md:py-20 px-4 overflow-hidden">
+  {/* Background Image */}
+  <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+    <img
+      className="
+        absolute 
+        left-[-100px] 
+        top-[-60px] 
+        w-[350px]          /* 📱 fixed mobile size */
+        sm:w-[350px]       /* same size on small tablets */
+        md:w-[500px]       /* 💻 bigger on laptops */
+        lg:w-[650px]       /* 🖥️ even bigger on desktops */
+        h-auto 
+        opacity-70 
+        animate-pulse-slow
+      "
+      alt="Decorative background"
+      src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/d7a872adcd971a2d4d125cd7b4b0b2fb-copy-1.png"
+    />
   </div>
+
+  {/* HERO TEXT */}
+  <div className="relative z-10 flex flex-col items-center justify-center space-y-2">
+    <h1
+      className="text-white leading-[0.85] drop-shadow-md"
+      style={{
+        fontFamily: "Bebas Neue, Helvetica",
+        fontSize: "clamp(50px, 11vw, 200px)",
+      }}
+    >
+      OUR
+    </h1>
+
+    <h1
+      className="text-[#ffcc04] leading-[0.85] drop-shadow-lg italic rotate-1"
+      style={{
+        fontFamily: "Bebas Neue, Helvetica",
+        fontSize: "clamp(50px, 11vw, 200px)",
+      }}
+    >
+      MARKETING
+    </h1>
+
+    <h1
+      className="text-white leading-[0.85] drop-shadow-md"
+      style={{
+        fontFamily: "Bebas Neue, Helvetica",
+        fontSize: "clamp(50px, 11vw, 200px)",
+      }}
+    >
+      SERVICES
+    </h1>
+  </div>
+
+  {/* DESCRIPTION BELOW HERO */}
+ {/* ===== CREATIVE DESCRIPTION SECTION ===== */}
+<div className="mt-10 md:mt-16 px-4 sm:px-8 max-w-4xl mx-auto text-center relative z-10">
+  {/* Subtle Divider Line */}
+  <div className="h-[1px] w-16 bg-[#ffcc04]/60 mx-auto mb-6"></div>
+
+  {/* First Paragraph */}
+  <p
+    className="text-white text-sm sm:text-base md:text-lg leading-relaxed font-semibold tracking-wide animate-fade-in opacity-0 [--animation-delay:200ms]"
+    style={{ fontFamily: "Gilroy-SemiBold, Helvetica" }}
+  >
+    Marketing is more than a campaign —{" "}
+    <span className="text-[#ffcc04] font-extrabold">
+      it’s your voice to the world.
+    </span>{" "}
+    At <span className="text-[#ffcc04] font-extrabold">Maketa</span>, we
+    transform strategies into emotions and data into experiences — blending
+    creativity and precision to reach your audience wherever they are.
+  </p>
+
+  {/* Second Paragraph */}
+  <p
+    className="text-white/80 text-sm sm:text-base md:text-lg leading-relaxed mt-6 animate-fade-in opacity-0 [--animation-delay:500ms]"
+    style={{ fontFamily: "Gilroy-Medium, Helvetica" }}
+  >
+    From{" "}
+   
+      social platforms
+    {" "}
+    to{" "}
+    
+      city streets
+   
+    , from storytelling ads to bold activations — we design strategies that{" "}
+   
+      speak, engage, and inspire action.
+   
+  </p>
+
+  {/* Decorative Accent Glow */}
+  <div className="absolute bottom-[-20px] left-1/2 -translate-x-1/2 w-[120px] h-[120px] bg-[#ffcc04]/10 blur-3xl rounded-full"></div>
+</div>
+
 </section>
+
 
 
       {/* ===== DIGITAL & OFFLINE MARKETING (Side-by-Side Always) ===== */}

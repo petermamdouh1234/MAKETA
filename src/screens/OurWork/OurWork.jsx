@@ -133,7 +133,18 @@ export const OurWork = () => {
         {/* HERO SECTION */}
         <section className="relative flex flex-col items-center justify-center text-center py-10 md:py-20 px-4 overflow-hidden">
           <img
-            className="absolute left-[-100px] top-[-60px] w-[350px] sm:w-[500px] h-auto opacity-70 animate-pulse-slow"
+  className="
+    absolute 
+    left-[-100px] 
+    top-[-60px] 
+    w-[350px]          /* 📱 fixed mobile size */
+    sm:w-[350px]       /* keeps same size on small tablets */
+    md:w-[500px]       /* 💻 bigger on medium screens (laptops) */
+    lg:w-[650px]       /* 🖥️ even bigger on large desktops */
+    h-auto 
+    opacity-70 
+    animate-pulse-slow
+  "
             src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/layer-1-1-1.png"
             alt="Metallic Shape"
           />

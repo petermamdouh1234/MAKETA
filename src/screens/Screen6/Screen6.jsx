@@ -15,50 +15,106 @@ export const Screen6 = () => {
       <Frame9Subsection />
 
       {/* ===== HERO SECTION ===== */}
-      <section className="relative flex flex-col items-center justify-center px-4 md:px-8 py-8 md:py-10">
-        <div className="text-center mb-4 md:mb-6">
-          <h1 className="[font-family:'Rockybilly-Regular',Helvetica] font-normal text-[#ffcc04] text-[45px] sm:text-[65px] md:text-[85px] lg:text-[100px] leading-[1.05] mb-3 animate-fade-in opacity-0 [--animation-delay:200ms]">
-            Branding
-          </h1>
+     <section className="relative flex flex-col items-center justify-center text-center py-10 md:py-20 px-4 overflow-hidden">
+  {/* Background Image */}
+  <img
+    className="
+      absolute 
+      left-[-100px] 
+      top-[-60px] 
+      w-[350px]          /* 📱 fixed mobile size */
+      sm:w-[350px]       
+      md:w-[500px]       /* 💻 bigger on medium screens */
+      lg:w-[650px]       /* 🖥️ even bigger on large desktops */
+      h-auto 
+      opacity-70 
+      animate-pulse-slow
+    "
+    src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/layer-1-1-1.png"
+    alt="Decorative background"
+  />
 
-          <div className="max-w-[80%] md:max-w-[60%] lg:max-w-[50%] mx-auto">
-            <OurServices2Subsection />
-          </div>
-        </div>
+  {/* HERO TEXT */}
+   <div className="relative z-10 flex flex-col items-center justify-center space-y-2">
+    <h1
+      className="text-white leading-[0.85] drop-shadow-md"
+      style={{
+        fontFamily: "Bebas Neue, Helvetica",
+        fontSize: "clamp(50px, 11vw, 200px)",
+      }}
+    >
+      OUR
+    </h1>
 
-        {/* ===== BACKGROUND IMAGE ===== */}
-        <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
-          <img
-            className="absolute top-0 left-0 w-[300px] sm:w-[420px] md:w-[550px] lg:w-[650px] h-auto object-contain opacity-40"
-            alt="Decorative background"
-            src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/layer-1-1-1.png"
-          />
-        </div>
-      </section>
+    <h1
+      className="text-[#ffcc04] leading-[0.85] drop-shadow-lg italic rotate-1"
+      style={{
+        fontFamily: "Bebas Neue, Helvetica",
+        fontSize: "clamp(50px, 11vw, 200px)",
+      }}
+    >
+     Branding 
+    </h1>
 
-      {/* ===== DESCRIPTION SECTION ===== */}
-      <section className="relative px-4 md:px-8 py-6 md:py-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-white text-[20px] sm:text-[26px] md:text-[32px] lg:text-[38px] leading-tight mb-2 animate-fade-in opacity-0 [--animation-delay:400ms]">
-            YOUR BRAND IS MORE THAN A LOGO
-          </h2>
+    <h1
+      className="text-white leading-[0.85] drop-shadow-md"
+      style={{
+        fontFamily: "Bebas Neue, Helvetica",
+        fontSize: "clamp(50px, 11vw, 200px)",
+      }}
+    >
+      SERVICES
+    </h1>
+  </div>
 
-          <h3 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[22px] md:text-[32px] lg:text-[40px] text-center leading-[1.2] mb-4 animate-fade-in opacity-0 [--animation-delay:600ms]">
-            “ IT&apos;S A STORY ”
-          </h3>
+  {/* DESCRIPTION */}
+ <div className="mt-10 md:mt-16 px-4 sm:px-8 max-w-4xl mx-auto text-center relative z-10">
+  {/* Subtle Divider Line */}
+  <div className="h-[1px] w-16 bg-[#ffcc04]/60 mx-auto mb-6"></div>
 
-          <p className="[font-family:'Gilroy-SemiBold-SemiBold',Helvetica] font-semibold text-white text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] leading-relaxed max-w-3xl mx-auto animate-fade-in opacity-0 [--animation-delay:800ms]">
-            {"We help you craft a unique identity that makes your audience instantly <br/> recognize and trust you. From strategy to visuals, we ensure every <br/> detail reflects who you are and what you stand for."
-              .split("<br/>")
-              .map((line, i, arr) => (
-                <React.Fragment key={i}>
-                  {line}
-                  {i < arr.length - 1 && <br />}
-                </React.Fragment>
-              ))}
-          </p>
-        </div>
-      </section>
+  {/* First Paragraph */}
+  <p
+    className="text-white text-sm sm:text-base md:text-lg leading-relaxed font-semibold tracking-wide animate-fade-in opacity-0 [--animation-delay:200ms]"
+    style={{ fontFamily: "Gilroy-SemiBold, Helvetica" }}
+  >
+    We help you craft a{" "}
+    
+      unique identity
+    {" "}
+    that makes your audience instantly{" "}
+   
+      recognize and trust you.
+     {" "}
+    From strategy to visuals, we ensure every detail reflects who you are and what you stand for.
+  </p>
+
+  {/* Second Paragraph */}
+  <p
+    className="text-white/80 text-sm sm:text-base md:text-lg leading-relaxed mt-6 animate-fade-in opacity-0 [--animation-delay:500ms]"
+    style={{ fontFamily: "Gilroy-Medium, Helvetica" }}
+  >
+    Your brand is more than a logo —{" "}
+    it’s a{" "}
+    <span className="text-[#ffcc04] font-semibold">
+      story that lives in every color, word, and detail.
+    </span>{" "}
+    We build brands that{" "}
+    
+      speak clearly, connect emotionally,
+    {" "}
+    and{" "}
+    
+      stay unforgettable.
+    
+  </p>
+
+  {/* Decorative Accent Glow */}
+  <div className="absolute bottom-[-20px] left-1/2 -translate-x-1/2 w-[120px] h-[120px] bg-[#ffcc04]/10 blur-3xl rounded-full"></div>
+</div>
+
+
+</section>
+
 
       {/* ===== SERVICES LIST ===== */}
       <section className="relative px-4 md:px-8 py-6 md:py-10">

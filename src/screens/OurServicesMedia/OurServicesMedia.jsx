@@ -19,7 +19,18 @@ export const OurServicesMedia = () => {
         {/* Background Decorative Image - Top Left */}
         <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
           <img
-            className="absolute top-0 left-0 w-[350px] sm:w-[450px] md:w-[600px] lg:w-[700px] h-auto object-contain opacity-40"
+  className="
+    absolute 
+    left-[-100px] 
+    top-[-60px] 
+    w-[350px]          /* 📱 fixed mobile size */
+    sm:w-[350px]       /* keeps same size on small tablets */
+    md:w-[500px]       /* 💻 bigger on medium screens (laptops) */
+    lg:w-[650px]       /* 🖥️ even bigger on large desktops */
+    h-auto 
+    opacity-70 
+    animate-pulse-slow
+  "
             alt="Decorative background"
             src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/layer-2-1.png"
           />
@@ -30,27 +41,66 @@ export const OurServicesMedia = () => {
           <h1 className="[font-family:'Rockybilly-Regular',Helvetica] font-normal text-[#ffcc04] text-[50px] sm:text-[80px] md:text-[100px] lg:text-[120px] leading-tight animate-fade-in opacity-0 [--animation-delay:200ms]">
             Media <br /> Production
           </h1>
-          <OurServices1Subsection />
+          <div className="text-center [font-family:'Bebas_Neue',Helvetica] font-normal text-white max-w-[90%] md:max-w-[70%] lg:max-w-[60%] mx-auto leading-tight">
+        
+
+        <h3 className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms] block text-[80px] sm:text-[120px] md:text-[180px] lg:text-[220px] leading-[0.8]">
+          SERVICES
+        </h3>
+      </div>
         </div>
-      </section>
+    
 
       {/* ===== DESCRIPTION SECTION ===== */}
-      <div className="max-w-5xl mx-auto text-center mb-6 md:mb-10 px-4 md:px-8">
-        <h2 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-white text-[20px] sm:text-[26px] md:text-[32px] lg:text-[38px] leading-tight mb-2 animate-fade-in opacity-0 [--animation-delay:400ms]">
-          FROM CONCEPT TO CREATION
-        </h2>
+      <div className="mt-10 md:mt-16 px-4 sm:px-8 max-w-4xl mx-auto text-center relative z-10">
+  {/* Subtle Divider Line */}
+  <div className="h-[1px] w-16 bg-[#ffcc04]/60 mx-auto mb-6"></div>
 
-        <h3 className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-[#ffcc04] text-[22px] sm:text-[30px] md:text-[36px] lg:text-[42px] leading-[1.3] mb-4 animate-fade-in opacity-0 [--animation-delay:600ms]">
-          “ WE BRING YOUR IDEAS TO LIFE ”
-        </h3>
+  {/* First Paragraph */}
+  <p
+    className="text-white text-sm sm:text-base md:text-lg leading-relaxed font-semibold tracking-wide animate-fade-in opacity-0 [--animation-delay:200ms]"
+    style={{ fontFamily: "Gilroy-SemiBold, Helvetica" }}
+  >
+    Powerful content is at the heart of every campaign. Our{" "}
 
-        <p className="[font-family:'Gilroy-SemiBold-SemiBold',Helvetica] font-semibold text-white text-sm sm:text-base md:text-lg lg:text-[20px] leading-relaxed max-w-3xl mx-auto animate-fade-in opacity-0 [--animation-delay:800ms]">
-          Powerful content is at the heart of every campaign. Our production
-          team creates visuals that inspire, engage, and tell your story with
-          impact. From cinematic videos to striking photography and dynamic
-          motion graphics, we make sure your brand shines everywhere it appears.
-        </p>
-      </div>
+      production team
+      at  <span className="text-[#ffcc04] font-semibold">Maketa</span>
+    {" "}
+    creates visuals that inspire, engage, and tell your story with impact —
+    transforming concepts into captivating moments that connect with your
+    audience.
+  </p>
+
+  {/* Second Paragraph */}
+  <p
+    className="text-white/80 text-sm sm:text-base md:text-lg leading-relaxed mt-6 animate-fade-in opacity-0 [--animation-delay:500ms]"
+    style={{ fontFamily: "Gilroy-Medium, Helvetica" }}
+  >
+    From{" "}
+   
+      cinematic videos
+   {" "}
+    and{" "}
+    
+      striking photography
+    {" "}
+    to{" "}
+   
+      dynamic motion graphics
+    
+    — we make sure your brand{" "}
+   
+      shines everywhere it appears.
+   
+  </p>
+
+  {/* Decorative Accent Glow */}
+  <div className="absolute bottom-[-20px] left-1/2 -translate-x-1/2 w-[120px] h-[120px] bg-[#ffcc04]/10 blur-3xl rounded-full"></div>
+</div>
+
+
+      
+    </section>
 
       {/* ===== SERVICES SECTION ===== */}
       <section className="relative px-4 md:px-8 py-16 md:py-24">

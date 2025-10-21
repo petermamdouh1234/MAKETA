@@ -12,40 +12,65 @@ export const OurServicesMain = () => {
       <Frame18Subsection />
 
       {/* ===== HERO SECTION ===== */}
-     <section className="relative flex flex-col items-center justify-center text-center px-4 md:px-8 pt-10 md:pt-15 pb-6 md:pb-8 overflow-hidden">
-  {/* Background Decorative Image - top left */}
-  <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
-    <img
-      className="absolute top-0 left-0 w-[500px] sm:w-[400px] md:w-[700px] lg:w-[700px] h-auto object-contain opacity-40"
-      alt="Decorative background"
-      src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/d7a872adcd971a2d4d125cd7b4b0b2fb-copy-1.png"
-    />
-  </div>
+    {/* ===== HERO SECTION ===== */}
+<section className="relative flex flex-col items-center justify-center text-center py-10 md:py-20 px-4 overflow-hidden">
+  {/* Background Decorative Image */}
+  <img
+    className="
+      absolute 
+      left-[-100px] 
+      top-[-60px] 
+      w-[350px]          /* 📱 fixed mobile size */
+      sm:w-[350px]       /* keeps same size on small tablets */
+      md:w-[500px]       /* 💻 bigger on medium screens (laptops) */
+      lg:w-[650px]       /* 🖥️ even bigger on large desktops */
+      h-auto 
+      opacity-70 
+      animate-pulse-slow
+    "
+    alt="Decorative background"
+    src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/d7a872adcd971a2d4d125cd7b4b0b2fb-copy-1.png"
+  />
 
   {/* Hero Text */}
-  <div className="relative z-10 flex flex-col items-center justify-center space-y-3">
-    <h1 className="[font-family:'Rockybilly-Regular',Helvetica] font-normal text-[#ffcc04] text-[50px] sm:text-[80px] md:text-[100px] lg:text-[120px] leading-tight mb-1 animate-fade-in opacity-0 [--animation-delay:200ms]">
+  <div className="relative z-10 flex flex-col items-center justify-center space-y-2">
+    <h1
+      className="text-[#ffcc04] animate-fade-in opacity-0 [--animation-delay:200ms]"
+      style={{
+        fontFamily: "Rockybilly-Regular, Helvetica",
+        fontSize: "clamp(50px, 12vw, 130px)",
+        lineHeight: "0.9",
+      }}
+    >
       Our Services
     </h1>
 
-    <h2 className="[font-family:'Rockybilly-Regular',Helvetica] font-normal text-[#ffcc04] text-[50px] sm:text-[80px] md:text-[100px] lg:text-[120px] leading-tight mb-1 animate-fade-in opacity-0 [--animation-delay:400ms]">
+    <h2
+      className="text-[#ffcc04] animate-fade-in opacity-0 [--animation-delay:400ms]"
+      style={{
+        fontFamily: "Rockybilly-Regular, Helvetica",
+        fontSize: "clamp(50px, 11vw, 120px)",
+        lineHeight: "0.9",
+      }}
+    >
       What
-      <br />We Do <br /> <br />
+      <br />
+      We Do
     </h2>
+  </div>
+
+  {/* ===== DESCRIPTION SECTION ===== */}
+  <div className="mt-12 md:mt-16 px-3 sm:px-8 max-w-2xl mx-auto ">
+    <p
+      className="text-white text-sm sm:text-base md:text-lg leading-relaxed font-semibold"
+      style={{ fontFamily: "Gilroy-SemiBold, Helvetica" }}
+    >
+      FROM STRATEGY TO EXECUTION, WE PROVIDE EVERYTHING YOUR BRAND NEEDS TO{" "}
+      <span className="text-[#ffcc04] font-extrabold">STAND OUT</span>.
+    </p>
   </div>
 </section>
 
-{/* ===== DESCRIPTION SECTION ===== */}
-<div className="relative max-w-5xl mx-auto text-center mt-6 md:mt-10 mb-12 px-4">
-  <div className="flex items-center justify-center gap-3 sm:gap-6">
-    <div className="h-[1px] w-1/6 bg-[#ffcc04]/50"></div>
-    <p className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-white text-xs sm:text-sm md:text-lg lg:text-xl leading-relaxed">
-      FROM STRATEGY TO EXECUTION, WE PROVIDE EVERYTHING YOUR BRAND NEEDS TO{" "}
-      <span className="text-[#ffcc04]">STAND OUT</span>
-    </p>
-    <div className="h-[1px] w-1/6 bg-[#ffcc04]/50"></div>
-  </div>
-</div>
 
 
 
@@ -57,44 +82,46 @@ export const OurServicesMain = () => {
       </section>
 
       {/* ===== CUSTOM SOLUTIONS SECTION ===== */}
-      <section className="relative px-4 md:px-8 py-8 md:py-12">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12 items-center">
-          {/* Text Column */}
-          <div className="order-2 lg:order-1">
-            <h2 className="[font-family:'Bebas Neue',Helvetica] font-normal text-[#ffcc04] text-[80px] sm:text-[120px] md:text-[180px] lg:text-[200px] leading-[1] mb-4 animate-fade-in opacity-0 [--animation-delay:800ms]">
-              Custom
-            </h2>
+    <section className="relative px-4 sm:px-6 md:px-12 py-10 md:py-20 bg-black overflow-hidden">
+  <div className="max-w-7xl mx-auto flex items-center justify-between gap-6 md:gap-12 flex-nowrap">
+    
+    {/* LEFT — Text Column */}
+    <div className="flex-1 text-left min-w-[200px]">
+      <h2 className="[font-family:'Bebas Neue',Helvetica] font-normal text-[#ffcc04] text-[48px] sm:text-[80px] md:text-[120px] lg:text-[160px] leading-[1] mb-4 animate-fade-in opacity-0 [--animation-delay:800ms]">
+        Custom
+      </h2>
 
-            <p className="[font-family:'Gilroy-SemiBold-SemiBold',Helvetica] font-semibold text-white text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed mb-6 animate-fade-in opacity-0 [--animation-delay:1000ms]">
-              Need more? We&#39;ll create a program that&#39;s just right for you.
-              Precision-crafted solutions tailored to your unique brand needs.
-              Elevating your digital experience and evolving your digital marketing
-              strategies to drive radical results.
-            </p>
+      <p className="[font-family:'Gilroy-SemiBold-SemiBold',Helvetica] font-semibold text-white text-xs sm:text-sm md:text-base lg:text-xl leading-relaxed mb-6 animate-fade-in opacity-0 [--animation-delay:1000ms] max-w-lg">
+        Need more? We&#39;ll create a program that&#39;s just right for you.
+        Precision-crafted solutions tailored to your unique brand needs.
+        Elevating your digital experience and evolving your marketing strategies
+        to drive radical results.
+      </p>
 
-            <Button
-              asChild
-              className="inline-flex items-center justify-center gap-2 px-8 md:px-12 py-3 md:py-[15px] rounded-[15px] border-2 border-solid border-[#ffcc04] bg-transparent text-white hover:bg-[#ffcc04] hover:text-black transition-colors animate-fade-in opacity-0 [--animation-delay:1200ms]"
-            >
-              <Link
-                to="/contact-us"
-                className="[font-family:'Poppins',Helvetica] font-medium text-sm md:text-base text-center"
-              >
-                Let&apos;s Discuss
-              </Link>
-            </Button>
-          </div>
+      <Button
+        asChild
+        className="inline-flex items-center justify-center gap-2 px-8 md:px-12 py-3 md:py-[15px] rounded-[15px] border-2 border-[#ffcc04] bg-transparent text-white hover:bg-[#ffcc04] hover:text-black transition-colors animate-fade-in opacity-0 [--animation-delay:1200ms]"
+      >
+        <Link
+          to="/contact-us"
+          className="[font-family:'Poppins',Helvetica] font-medium text-sm md:text-base text-center"
+        >
+          Let&apos;s Discuss
+        </Link>
+      </Button>
+    </div>
 
-          {/* Image Column */}
-          <div className="order-1 lg:order-2 animate-fade-in opacity-0 [--animation-delay:1400ms] flex justify-center">
-            <img
-              className="w-[65%] max-w-[420px] h-auto object-contain"
-              alt="Custom solutions"
-              src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/d81a8ffdbe47a72b1026097b90a62ed9-copy-1-1.png"
-            />
-          </div>
-        </div>
-      </section>
+    {/* RIGHT — Image Column */}
+    <div className="flex justify-center flex-shrink-0 w-[40%] md:w-[35%] animate-fade-in opacity-0 [--animation-delay:1400ms]">
+      <img
+       className="w-[80%] sm:w-[80%] md:w-[80%] max-w-[420px] h-auto object-contain"
+        alt="Custom solutions"
+        src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/d81a8ffdbe47a72b1026097b90a62ed9-copy-1-1.png"
+      />
+    </div>
+  </div>
+</section>
+
 
       {/* ===== FOOTER ===== */}
       <Group3Subsection />

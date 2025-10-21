@@ -8,7 +8,18 @@ export const OurServicesSubsection = () => {
       {/* Background Image */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
     <img
-      className="absolute top-0 left-0 w-[500px] sm:w-[400px] md:w-[700px] lg:w-[800px] h-auto object-contain opacity-40"
+  className="
+    absolute 
+    left-[-100px] 
+    top-[-60px] 
+    w-[350px]          /* 📱 fixed mobile size */
+    sm:w-[350px]       /* keeps same size on small tablets */
+    md:w-[500px]       /* 💻 bigger on medium screens (laptops) */
+    lg:w-[650px]       /* 🖥️ even bigger on large desktops */
+    h-auto 
+    opacity-70 
+    animate-pulse-slow
+  "
       alt="Decorative background"
       src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/d7a872adcd971a2d4d125cd7b4b0b2fb-copy-1.png"
     />

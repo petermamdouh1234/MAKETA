@@ -37,7 +37,7 @@ export const Group3Subsection = () => {
   ];
 
   return (
-   <footer className="bg-black py-12 sm:py-16 mt-16 px-4">
+   <footer className="bg-black py-8 sm:py-8 mt-4 px-2">
   <div className="max-w-[1469px] mx-auto flex flex-col gap-12 sm:gap-16">
     <div className="flex flex-col lg:flex-row gap-10 sm:gap-16">
       {/* Logo */}
