@@ -266,299 +266,162 @@ export const AboutUs = () => {
       </header>
 
       {/* Hero Section - Our Story */}
-      <section id="our-story" className="relative px-4 md:px-8 py-8 md:py-12">
-        <div className="text-center mb-8 md:mb-12 reveal-up">
-          <h1 className="[font-family:'Rockybilly-Regular',Helvetica] font-normal text-[#ffcc04] text-responsive-title tracking-[0] leading-[normal] mb-4 md:mb-6">
-            About Us
-          </h1>
-          
-          <div className="[font-family:'Bebas_Neue',Helvetica] font-normal text-white text-responsive-hero tracking-[0] leading-[0.8]">
-            <div className="reveal-scale">
-              <span className="block reveal-stagger">Our</span>
-              <span className="block reveal-stagger">Story</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Background decorative image */}
+    <main className="bg-black text-white overflow-hidden">
+      {/* === Hero Section === */}
+      <section className="relative flex flex-col items-center justify-center text-center md:text-left px-4 md:px-8 py-16 md:py-28 overflow-hidden">
         <img
-          className="absolute top-0 right-0 w-[400px] md:w-[600px] lg:w-[800px] h-[450px] md:h-[675px] lg:h-[900px] bg-blend-difference object-cover opacity-50"
-          alt="Layer"
+          className="absolute right-[-60px] top-[-40px] w-[480px] sm:w-[380px] md:w-[520px] lg:w-[700px] h-auto opacity-60 animate-pulse-slow"
+          alt="Metallic Shape"
           src="https://c.animaapp.com/mg7bpj7aUsX0qj/img/layer-3-1.png"
         />
+
+        <div className="relative z-10 w-full max-w-6xl mx-auto flex justify-start reveal-up">
+          <div className="max-w-3xl">
+            <h1 className="font-normal text-white text-[48px] sm:text-[64px] md:text-[90px] lg:text-[100px] leading-[0.9] mb-6">
+              <span className="block">About Us</span>
+              <span className="block text-[#ffcc04] italic transform rotate-[-3deg] inline-block ml-2 md:ml-6 font-serif">
+                Our Story
+              </span>
+            </h1>
+            <p className="text-gray-200 font-medium text-sm sm:text-base md:text-lg leading-7 md:leading-8 max-w-2xl">
+              <span className="text-[#ffcc04] font-semibold">AT MAKETA,</span> WE
+              BELIEVE THAT EVERY BRAND DESERVES TO BE SEEN AND HEARD. FOUNDED
+              WITH A PASSION FOR CREATIVITY AND STRATEGY, WE HELP BUSINESSES IN
+              EGYPT AND BEYOND DECLARE THEIR PRESENCE IN A CROWDED MARKET.{" "}
+              <br />
+              <br />
+              OUR GOAL IS SIMPLE: TO TRANSFORM IDEAS INTO BOLD CAMPAIGNS THAT
+              LEAVE A LASTING IMPACT. WHETHER IT’S A STARTUP OR AN ESTABLISHED
+              BRAND, WE CREATE TAILORED SOLUTIONS THAT BUILD RECOGNITION AND
+              TRUST.
+            </p>
+          </div>
+        </div>
       </section>
 
-      {/* About Content - At Maketa We Believe */}
-      <section className="relative px-8 py-12 reveal-up">
+      {/* === "We Don't Just" Section === */}
+      <section className="relative px-4 md:px-8 py-16 text-center reveal-fade border-t border-[#2b2b2b]">
         <div className="max-w-5xl mx-auto">
-          <div className="w-full max-w-3xl mx-auto px-4 py-6">
-            <div className="[font-family:'Gilroy-Medium-Medium',Helvetica] font-normal text-white text-base tracking-[0] leading-6">
-              <p className="font-medium leading-[24px] mb-4 reveal-stagger">
-                AT MAKETA, WE BELIEVE THAT EVERY BRAND DESERVES TO BE SEEN AND HEARD.
-                FOUNDED WITH A PASSION FOR CREATIVITY AND STRATEGY, WE SET OUT TO HELP
-                BUSINESSES IN EGYPT AND BEYOND DECLARE THEIR PRESENCE IN A CROWDED
-                MARKET.
-              </p>
+          <h2 className="[font-family:'Bebas_Neue',Helvetica] font-normal text-[42px] md:text-[64px] leading-[1] tracking-wide">
+            <span className="block text-white">We don&apos;t just deliver services,</span>
+            <span className="block text-[#ffcc04] mt-2">We build connections.</span>
+            <span className="block text-[#ffcc04] mt-4">
+              We don&apos;t just design campaigns,
+            </span>
+            <span className="block text-white mt-2">
+              We create movements that audiences remember.
+            </span>
+          </h2>
+        </div>
+      </section>
 
-              <p className="font-medium leading-[24px] mb-4 reveal-stagger">
-                FROM DAY ONE, OUR GOAL HAS BEEN SIMPLE: TO TRANSFORM IDEAS INTO BOLD
-                CAMPAIGNS AND EXPERIENCES THAT LEAVE A LASTING IMPACT. WHETHER
-                IT&apos;S A STARTUP TAKING ITS FIRST STEP OR A WELL-KNOWN COMPANY
-                READY FOR A FRESH VOICE, WE CREATE TAILORED SOLUTIONS THAT AMPLIFY
-                THEIR PRESENCE ACROSS EVERY TOUCHPOINT.
-              </p>
+      {/* === Team Section === */}
+      <section
+        id="our-team"
+        className="relative flex flex-col items-center justify-center text-center px-4 md:px-8 py-20 md:py-28 overflow-hidden border-t border-[#2b2b2b]"
+      >
+        {/* Title */}
+        <div className="w-full max-w-[1440px] mb-12 md:mb-16">
+          <h2 className="[font-family:'Bebas_Neue',Helvetica] text-white font-normal leading-[0.9] text-[80px] sm:text-[120px] md:text-[160px] text-left">
+            Our
+          </h2>
+          <h2 className="[font-family:'Bebas_Neue',Helvetica] text-[#FFCC04] font-normal leading-[0.9] text-[80px] sm:text-[120px] md:text-[160px] mt-[-40px] text-center">
+            Team
+          </h2>
+        </div>
 
-              <p className="[font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold leading-[24px] reveal-stagger">
-                PRESENCE IS MORE THAN VISIBILITY—IT&apos;S ABOUT INFLUENCE,
-                RECOGNITION, AND TRUST. THAT&apos;S WHY WE APPROACH EVERY PROJECT WITH
-                A MIX OF STRATEGY, CREATIVITY, AND EXECUTION.
-              </p>
+        {/* Description */}
+        <div className="max-w-3xl mx-auto reveal-up mb-16">
+          <p className="[font-family:'Gilroy-Medium-Medium',Helvetica] text-gray-200 text-base sm:text-lg md:text-xl leading-relaxed opacity-90">
+            BEHIND <span className="text-[#FFCC04] font-bold">MAKETA</span> IS A
+            GROUP OF STRATEGISTS, DESIGNERS, AND STORYTELLERS WHO SHARE ONE
+            MISSION: TO HELP BRANDS SHINE. WE COMBINE DIFFERENT SKILLS TO CRAFT
+            WORK THAT IS FRESH, RELEVANT, AND EFFECTIVE.
+          </p>
+        </div>
+
+        {/* Team Cards */}
+        <div className="reveal-fade w-full">
+          <ScrollArea className="w-full whitespace-nowrap">
+            <div className="flex gap-10 pb-4">
+              {teamMembers.map((member, index) => (
+                <Card
+                  key={index}
+                  className="flex-shrink-0 w-[280px] bg-transparent border-none shadow-none"
+                  onMouseEnter={() => setHoveredIndex(index)}
+                  onMouseLeave={() => setHoveredIndex(null)}
+                >
+                  <CardContent className="p-0 flex flex-col gap-4 relative">
+                    {/* Front */}
+                    <div
+                      className={`relative w-full h-[320px] overflow-hidden rounded-[18px] transition-opacity duration-300 ${
+                        hoveredIndex === index ? "opacity-0" : "opacity-100"
+                      }`}
+                    >
+                      <img
+                        className="w-full h-full object-cover"
+                        alt={member.name}
+                        src={member.image}
+                      />
+                    </div>
+
+                    {/* Back (Quote) */}
+                    <div
+                      className={`absolute inset-0 w-full h-[320px] rounded-[18px] bg-[#ffcc04] flex items-center justify-center p-4 text-center transition-opacity duration-300 ${
+                        hoveredIndex === index ? "opacity-100" : "opacity-0"
+                      }`}
+                    >
+                      <p className="[font-family:'Gilroy-Bold-Bold',Helvetica] font-bold text-black text-xl leading-tight">
+                        {member.quote.split("<br/>").map((line, i) => (
+                          <React.Fragment key={i}>
+                            {line}
+                            {i < member.quote.split("<br/>").length - 1 && <br />}
+                          </React.Fragment>
+                        ))}
+                      </p>
+                    </div>
+
+                    {/* Name + Title */}
+                    <div className="flex flex-col gap-1 px-3">
+                      <Badge
+                        variant="outline"
+                        className="w-fit rounded-[20px] border-white text-white bg-transparent px-3 py-0.5 font-extrabold text-base tracking-[2px]"
+                      >
+                        {member.name}
+                      </Badge>
+                      <p className="text-white text-sm opacity-80">{member.title}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
-          </div>
+            <ScrollBar orientation="horizontal" />
+          </ScrollArea>
         </div>
       </section>
 
-      {/* We Don't Just Section */}
-      <section className="relative px-8 py-12 reveal-fade">
-        <div className="w-full py-12 px-4">
-          <div className="max-w-5xl mx-auto text-center">
-            <h2 className="[font-family:'Bebas_Neue',Helvetica] font-normal text-[50px] md:text-[70px] leading-[0.87] tracking-wide">
-              <span className="text-white reveal-stagger">
-                We don&apos;t just deliver services,{" "}
-              </span>
-              <span className="text-[#ffcc04] reveal-stagger inline-block">
-                We build connections.
-              </span>
-              <br />
-              <span className="text-[#ffcc04] reveal-stagger inline-block">
-                We don&apos;t just design campaigns,
-              </span>
-              <br />
-              <span className="text-white reveal-stagger inline-block">
-                We create movements
-                <br />
-                that audiences remember.
-              </span>
-            </h2>
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section id="our-team" className="relative px-8 py-12">
-        <div className="text-center mb-12 reveal-scale">
-          <div className="[font-family:'Bebas_Neue',Helvetica] font-normal text-white text-[120px] md:text-[180px] lg:text-[240px] tracking-[0] leading-[0.8]">
-{/* === Our Team Title === */}
-<div className="relative w-full max-w-[1440px] mx-auto mb-16">
-  {/* "Our" — aligned to left */}
-  <div 
-    className="reveal-stagger"
-    style={{
-      width: "100%",
-      display: "flex",
-      justifyContent: "flex-start",
-      marginBottom: "0",
-    }}
-  >
-    <h2
-      className="[font-family:'Bebas_Neue',Helvetica] font-normal text-white tracking-[0] leading-[0.8]"
-      style={{ fontSize: "250px", margin: 0, whiteSpace: "nowrap", lineHeight: 1 }}
-    >
-      Our
-    </h2>
-  </div>
-
-  {/* "Team" — centered under "Our" */}
-  <div 
-    className="reveal-stagger"
-    style={{
-      width: "100%",
-      display: "flex",
-      justifyContent: "center",
-      marginTop: "-40px", // smaller gap
-    }}
-  >
-    <h2
-      className="[font-family:'Bebas_Neue',Helvetica] font-normal text-[#FFCC04] tracking-[0] leading-[0.8]"
-      style={{ fontSize: "250px", margin: 0, whiteSpace: "nowrap", lineHeight: 1 }}
-    >
-      Team
-    </h2>
-  </div>
-</div>
-
-          </div>
+      {/* === Clients Section === */}
+      <section
+        id="our-clients"
+        className="relative flex flex-col items-center justify-center text-center px-4 md:px-8 py-20 md:py-28 border-t border-[#2b2b2b]"
+      >
+        <div className="w-full max-w-[1440px] mb-12 md:mb-16">
+          <h2 className="[font-family:'Bebas_Neue',Helvetica] text-white font-normal leading-[0.9] text-[80px] sm:text-[120px] md:text-[160px] text-left">
+            Our
+          </h2>
+          <h2 className="[font-family:'Bebas_Neue',Helvetica] text-[#FFCC04] font-normal leading-[0.9] text-[80px] sm:text-[120px] md:text-[160px] mt-[-40px] text-center">
+            Clients
+          </h2>
         </div>
 
-      {/* === Description under Our Team === */}
-<div 
-  className="reveal-up"
-  style={{
-    maxWidth: "700px",
-    margin: "60px auto 0 auto",
-    textAlign: "center",
-  }}
->
-  <p 
-    className="[font-family:'Gilroy-Medium-Medium',Helvetica] font-medium text-white text-lg md:text-xl tracking-[0] leading-[32px] opacity-90"
-    style={{
-      lineHeight: "1.6",
-    }}
-  >
-    BEHIND <span className="text-[#FFCC04] font-bold">MAKETA</span> IS A GROUP OF 
-    STRATEGISTS, DESIGNERS, STORYTELLERS, AND INNOVATORS WHO SHARE ONE MISSION: 
-    TO HELP BRANDS SHINE. OUR TEAM THRIVES ON COLLABORATION, BRINGING DIFFERENT 
-    SKILLS AND PERSPECTIVES TOGETHER TO CRAFT WORK THAT IS FRESH, RELEVANT, AND EFFECTIVE.<br/> <br/> <br/> 
-  </p>
-</div>
+        <p className="[font-family:'Gilroy-Medium-Medium',Helvetica] text-gray-200 text-base sm:text-lg md:text-xl max-w-3xl leading-relaxed opacity-90 mb-10">
+          WE’VE PARTNERED WITH AMBITIOUS BRANDS THAT TRUSTED US TO DECLARE THEIR
+          PRESENCE. FROM LOCAL BUSINESSES TO INTERNATIONAL NAMES, OUR CLIENTS
+          SHOW THAT WHEN CREATIVITY MEETS STRATEGY — AMAZING THINGS HAPPEN.
+        </p>
 
-
-        <div className="reveal-fade">
-          <section className="w-full relative">
-            <ScrollArea className="w-full whitespace-nowrap">
-              <div className="flex gap-[54px] pb-4">
-                {teamMembers.map((member, index) => (
-                  <Card
-                    key={`team-member-${index}`}
-                    className="flex-shrink-0 w-[292px] bg-transparent border-none shadow-none"
-                    onMouseEnter={() => setHoveredIndex(index)}
-                    onMouseLeave={() => setHoveredIndex(null)}
-                  >
-                    <CardContent className="p-0 flex flex-col gap-4 relative">
-                      {/* Front of the card (image) */}
-                      <div className={`relative w-full h-[336px] overflow-hidden rounded-[20px] transition-opacity duration-300 ${
-                        hoveredIndex === index ? 'opacity-0' : 'opacity-100'
-                      }`}>
-                        <img
-                          className="w-full h-full object-cover"
-                          alt={`${member.name} profile`}
-                          src={member.image}
-                          loading="lazy"
-                        />
-                      </div>
-
-                      {/* Back of the card (quote) */}
-                      <div className={`absolute inset-0 w-full h-[336px] rounded-[20px] bg-[#ffcc04] flex items-center justify-center p-4 text-center transition-opacity duration-300 ${
-                        hoveredIndex === index ? 'opacity-100' : 'opacity-0'
-                      }`}>
-                        <p className="[font-family:'Gilroy-Bold-Bold',Helvetica] font-bold text-black text-2xl leading-tight">
-                          {member.quote.split('<br/>').map((line, i) => (
-                            <React.Fragment key={i}>
-                              {line}
-                              {i < member.quote.split('<br/>').length - 1 && <br />}
-                            </React.Fragment>
-                          ))}
-                        </p>
-                      </div>
-
-                      {/* Name and Title */}
-                      <div className="flex flex-col gap-2 px-4">
-                        <Badge
-                          variant="outline"
-                          className="w-fit rounded-[20px] border-white text-white bg-transparent px-3 py-0.5 [font-family:'Gilroy-ExtraBold-ExtraBold',Helvetica] font-extrabold text-base tracking-[2.00px] leading-5"
-                        >
-                          {member.name}
-                        </Badge>
-
-                        <p className="[font-family:'Inter',Helvetica] font-normal text-white text-lg tracking-[0] leading-[28.8px]">
-                          {member.title}
-                        </p>
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-              <ScrollBar orientation="horizontal" />
-            </ScrollArea>
-          </section>
-        </div>
-      </section>
-
-     {/* Clients Section */}
-<section id="our-clients" className="relative px-8 py-32 bg-black min-h-[1000px] overflow-hidden">
-  <div className="relative max-w-[1440px] mx-auto">
-    
-    {/* === "Our" text === */}
- {/* === OUR / CLIENTS Section === */}
-<div 
-  style={{
-    width: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    backgroundColor: '#000',
-    padding: '100px 0',
-  }}
->
-  {/* OUR - Left aligned */}
-  <div 
-    className="reveal-stagger"
-    style={{ 
-      width: '100%',
-      display: 'flex',
-      justifyContent: 'flex-start', 
-    }}
-  >
-    <h2
-      className="[font-family:'Bebas_Neue',Helvetica] font-normal text-white"
-      style={{ 
-        fontSize: '250px', 
-        margin: 0,
-        lineHeight: 1,
-        paddingLeft: '100px' // adjust this to move closer or further left
-      }}
-    >
-      OUR
-    </h2>
-  </div>
-
-  {/* CLIENTS - Center aligned under OUR */}
-  <div 
-    className="reveal-stagger"
-    style={{ 
-      width: '100%',
-      display: 'flex',
-      justifyContent: 'center',
-      marginTop: '-40px', // reduces the gap between OUR and CLIENTS
-    }}
-  >
-    <h2
-      className="[font-family:'Bebas_Neue',Helvetica] font-normal text-[#FFCC04]"
-      style={{ 
-        fontSize: '250px', 
-        margin: 0,
-        lineHeight: 1,
-      }}
-    >
-      CLIENTS
-    </h2>
-  </div>
-
-  {/* Paragraph */}
-  <div 
-    className="reveal-up"
-    style={{ 
-      width: '100%',
-      maxWidth: '800px',
-      marginTop: '40px',
-      textAlign: 'center',
-    }}
-  >
-    <p 
-      className="[font-family:'Gilroy-Medium-Medium',Helvetica] font-medium text-white text-lg md:text-xl tracking-[0] leading-[30px] opacity-90"
-    >
-      OVER THE YEARS, WE&apos;VE PARTNERED WITH AMBITIOUS BRANDS THAT TRUSTED
-      US TO DECLARE THEIR PRESENCE. FROM LOCAL BUSINESSES TO INTERNATIONAL
-      NAMES, OUR CLIENTS ARE PROOF THAT WHEN CREATIVITY MEETS STRATEGY,
-      AMAZING THINGS HAPPEN.
-    </p>
-  </div>
-</div>
-
-
-
-    {/* === Client Logos === */}
-    <div className="relative mt-20 reveal-fade">
+        {/* Two Marquee Rows */}
+        <div className="relative mt-5 reveal-fade">
       <section className="w-full h-32 overflow-hidden relative">
         <div
           className="flex items-center gap-[23px] px-0 py-[22px] h-32 animate-marquee"
@@ -625,11 +488,82 @@ export const AboutUs = () => {
         </div>
       </section>
     </div>
-  </div>
-</section>
+     <div className="relative mt-5 reveal-fade">
+      <section className="w-full h-32 overflow-hidden relative">
+        <div
+          className="flex items-center gap-[23px] px-0 py-[22px] h-32 animate-marquee"
+          style={{
+            width: "max-content",
+            "--duration": "10s",
+            "--gap": "23px",
+          }}
+        >
+          {/* First set of logos */}
+          {clientLogos.map((logo, index) => (
+            <img
+              key={`logo-${index}`}
+              className={`relative ${logo.width} ${logo.height} flex-shrink-0`}
+              alt={logo.alt}
+              src={logo.src}
+            />
+          ))}
+
+          {/* Silver Light Foods component */}
+          <div className={`relative ${silverLightFoods.width} ${silverLightFoods.height} flex-shrink-0`}>
+            <img
+              className="absolute w-[43.07%] h-[55.26%] top-0 left-[32.17%]"
+              alt="Silver Light Foods logo"
+              src={silverLightFoods.logoSrc}
+            />
+            <div className="absolute w-[102.08%] h-[20.54%] top-[62.25%] left-0">
+              <div className="absolute w-[42.70%] h-full top-0 left-0 [font-family:'Playfair_Display',Helvetica] font-bold text-white text-xs">
+                SILVER
+              </div>
+              <div className="absolute w-[39.65%] h-full top-0 left-[56.28%] [font-family:'Playfair_Display',Helvetica] font-bold text-white text-xs">
+                LIGHT
+              </div>
+            </div>
+            <div className="absolute w-[42.55%] h-[20.54%] top-[79.46%] left-[31.18%] [font-family:'Playfair_Display',Helvetica] font-medium text-white text-xs">
+              FOODS
+            </div>
+          </div>
+
+          {/* Finomena component */}
+          <div className={`relative ${finomenaData.width} ${finomenaData.height} flex-shrink-0`}>
+            <div className="absolute w-[67.98%] h-[42.46%] top-[53.85%] left-[29.21%] [font-family:'Roboto_Slab',Helvetica] font-normal text-white text-xs">
+              We&apos;ve been there
+            </div>
+            <div className="absolute w-[40.65%] h-[42.46%] top-[30.89%] left-[29.21%] [font-family:'Roboto_Slab',Helvetica] font-medium text-white text-xs">
+              Finomena
+            </div>
+            <img
+              className="absolute w-[26.41%] h-full top-0 left-0"
+              alt="Finomena logo"
+              src={finomenaData.logoSrc}
+            />
+          </div>
+
+          {/* Duplicate set for seamless loop */}
+          {clientLogos.map((logo, index) => (
+            <img
+              key={`logo-duplicate-${index}`}
+              className={`relative ${logo.width} ${logo.height} flex-shrink-0`}
+              alt={logo.alt}
+              src={logo.src}
+            />
+          ))}
+        </div>
+      </section>
+    </div>
+  
+  
+      </section>
+    </main>
+  
+  
 
       {/* Footer */}
-      <div className="mt-32">
+      <div className="mt-2">
           {/* FOOTER */}
         <footer className="bg-black py-12 sm:py-16 mt-16 px-4">
           <div className="max-w-[1469px] mx-auto flex flex-col gap-12 sm:gap-16">

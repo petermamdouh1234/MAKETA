@@ -17,37 +17,37 @@ const portfolioItems = [
     src: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/rectangle-651.png", 
     alt: "CARB LESS",
     title: "CARB LESS",
-    link: "https://carbless.com"
+    link: "https://www.behance.net/gallery/229538167/CARBLESS-SOCIAL-MEDIA-CAMPAIGN"
   },
   { 
     src: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/rectangle-651-1.png", 
     alt: "TUYINGO",
     title: "TUYINGO",
-    link: "https://tuyingo.com"
+    link: "https://www.behance.net/gallery/231061525/TUYINGO-BRANDING"
   },
   { 
     src: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/rectangle-651-2.png", 
     alt: "DIVINE",
     title: "DIVINE",
-    link: "https://divine.com"
+    link: "https://www.behance.net/gallery/230899023/BEAUTY-CLINICS-SOCIAL-MEDIA-CAMPAIGN"
   },
   { 
     src: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/rectangle-651-3.png", 
     alt: "RUE Haya",
     title: "RUE Haya",
-    link: "https://ruehaya.com"
+    link: "https://www.behance.net/gallery/230971515/RUE-HAYA-BRANDING"
   },
   { 
     src: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/rectangle-651-4.png", 
     alt: "TWOOPTICS",
     title: "TWOOPTICS",
-    link: "https://twooptics.com"
+    link: "https://www.behance.net/gallery/230810395/TWOOPTICS-SOCIAL-MEDIA-CAMPAIGN"
   },
   { 
     src: "https://c.animaapp.com/mg7bpj7aUsX0qj/img/rectangle-651-5.png", 
     alt: "Finomena",
     title: "Finomena",
-    link: "https://finomena.com"
+    link: "https://www.behance.net/gallery/232043831/FINOMENA-BRANDING"
   },
 ];
 
